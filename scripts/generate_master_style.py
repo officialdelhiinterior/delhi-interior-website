@@ -614,7 +614,35 @@ select.form-control {
 
 @media (max-width: 640px) {
   .top-utility-bar {
+    display: flex !important;
+    height: 32px !important;
+    line-height: 32px !important;
+    padding: 0 0.85rem !important;
+    font-size: 0.72rem !important;
+    background-color: var(--color-dark-surface) !important;
+    color: #94A3B8 !important;
+  }
+  .top-utility-container {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+  .top-utility-left {
+    gap: 0.4rem !important;
+  }
+  .top-utility-left .badge-welcome {
+    font-size: 0.68rem !important;
+    padding: 0.1rem 0.45rem !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+  }
+  .top-utility-right {
+    gap: 0.5rem !important;
+  }
+  .top-utility-right .utility-wa,
+  .top-utility-social {
     display: none !important;
+  }
+  .top-utility-right .utility-call {
+    font-size: 0.72rem !important;
   }
 }
 

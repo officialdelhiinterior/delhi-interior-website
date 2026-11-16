@@ -16,7 +16,8 @@
 > 7. Fixed top utility bar: eliminated vertical scrollbars via `overflow: hidden !important;`, `scrollbar-width: none !important;`, and `::-webkit-scrollbar { display: none !important; }`. Hidden on `<= 640px` for mobile clarity.  
 > 8. Official Brand Emblem Favicons & Google Search 48x48 Multi-Resolution Package Generated & Linked across all 26 HTML files.  
 > 9. Added Google Search Console verification file `google112b923c0b214496.html` and updated `sitemap.xml` timestamps.  
-> 10. Vercel Custom Domain verified: `delhiinterior.com` (A Record -> `216.198.79.1`) and `www.delhiinterior.com` (CNAME -> `76a76e89362cb008.vercel-dns-017.com`) active and serving traffic over HTTPS.  
+> 10. Mobile Color Consistency & Dark Mode Protection: Added `<meta name="color-scheme" content="light">` and `<meta name="theme-color" content="#0B2540">` across all 26 HTML pages. Restored sleek 32px Dark Obsidian Navy (`#060E18`) top utility bar on mobile to ensure desktop and mobile share the exact same top header color anchor. Purged legacy foreign blues (`#2563EB`).
+> 11. Vercel Custom Domain verified: `delhiinterior.com` (A Record -> `216.198.79.1`) and `www.delhiinterior.com` (CNAME -> `76a76e89362cb008.vercel-dns-017.com`) active and serving traffic over HTTPS.  
 
 ---
 

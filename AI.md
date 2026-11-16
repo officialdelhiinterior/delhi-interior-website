@@ -122,6 +122,11 @@
   - Enforced global CSS rule `img { height: auto; max-width: 100%; }`.
   - Verified by headless browser: exact **1.50015** (3:2) aspect ratio with zero facial distortion.
 
+### Phase 17: Mobile Color Consistency & Phone Dark Mode Protection
+- **Mobile Dark Navy Topbar Restored**: Replaced `display: none` on mobile top utility bar with a sleek, 32px Dark Obsidian Navy (`#060E18`) strip displaying `✦ Delhi Interior · Open 24/7` and `📞 +91 96438 17099`. Desktop and mobile now start with the identical brand color anchor.
+- **Phone OS Dark Mode Lock**: Added `<meta name="color-scheme" content="light">` and `<meta name="theme-color" content="#0B2540">` across all 26 HTML pages. Prevents mobile browsers (Chrome Android, Safari iOS, Samsung Internet) from force-inverting or washing out the luxury palette when the user's phone is set to Dark Mode.
+- **Foreign Accent Blues Purged**: Replaced 5 legacy instances of bright electric blue (`#2563EB`) in `index.html` and `#0D47A1` in service subpages with official Deep Navy (`#0B2540`) and Architectural Golden Brass (`#B89058`).
+
 ### Phase 16: Vercel Production Custom Domain Configuration
 - Verified authoritative DNS resolution on global root servers:
   - `delhiinterior.com`: Points to `216.198.79.1` (A Record, 308 redirect).
