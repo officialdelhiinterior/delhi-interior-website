@@ -148,6 +148,22 @@ python scripts/audit_buttons_and_interactions.py
 
 # 3. Check for any forbidden warranty/guarantee/45-day claims
 python scripts/scan_forbidden.py
+```
+
+---
+
+## 5. Official Brand Icons & Favicons
+- **Source Emblem**: Cropped with sub-pixel precision from the user's authentic brand logo (`assets/images/logo-tight.png`), capturing the gold architectural pillar, dark navy arch, hanging pendant light, and gold armchair.
+- **Specifications & Multi-Resolution Pack**:
+  - `favicon.ico`: Multi-resolution container packing `16x16`, `32x32`, and `48x48`.
+  - `favicon-16x16.png`: Small tab icon.
+  - `favicon-32x32.png`: Standard browser tab icon.
+  - `favicon-48x48.png`: **Google Search Guideline Standard** (1:1 aspect ratio, multiple of 48px, high contrast).
+  - `apple-touch-icon.png`: 180x180 iOS home screen bookmark icon.
+  - `android-chrome-192x192.png`: Android PWA home screen icon.
+  - `android-chrome-512x512.png`: High-density splash/manifest icon.
+  - `site.webmanifest`: Configured with `#0B2540` theme color and `#FFFFFF` background.
+  - Linked across all 25 production HTML pages.
 
 # 4. Check for any exaggerated facility or sq ft claims
 python scripts/scan_claims.py

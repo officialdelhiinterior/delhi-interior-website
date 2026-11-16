@@ -1,7 +1,17 @@
 {
-  "name": "Delhi Interior \u2014 Luxury Interior Design Studio",
+  "name": "Delhi Interior — Luxury Interior Design Studio",
   "short_name": "Delhi Interior",
   "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
@@ -13,8 +23,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#060E1A",
-  "background_color": "#060E1A",
+  "theme_color": "#0B2540",
+  "background_color": "#FFFFFF",
   "display": "standalone",
   "start_url": "/"
 }
