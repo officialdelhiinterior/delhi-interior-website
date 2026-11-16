@@ -100,6 +100,11 @@ img, picture, svg {
   max-width: 100%;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
