@@ -2481,3 +2481,454 @@ body > a.call-float:not(.floating-actions-container a) {
   }
 }
 
+/* ==========================================================================
+   DELHI INTERIOR — MASTER RESPONSIVE MOBILE ARCHITECTURE (360px - 1024px)
+   ========================================================================== */
+
+/* 1. Global Viewport Lock & Container Normalization */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* 2. Section 6.5 (An Interior Solution for Every Brief) Complete Styling */
+.brief-solutions-section {
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+  background-color: #F8FAFC;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.brief-solutions-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3rem;
+}
+
+.brief-main-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.18;
+  margin: 0 0 1rem;
+}
+
+.brief-sub-title {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4B5563;
+  margin: 0 auto;
+}
+
+.brief-tiers-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
+.brief-tier-col {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out), border-color 0.25s ease;
+  box-shadow: var(--shadow-subtle);
+  position: relative;
+}
+
+.brief-tier-col:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-accent);
+}
+
+.brief-tier-num {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.brief-tier-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 0 0 0.75rem;
+}
+
+.brief-tier-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #64748B;
+  margin: 0 0 1.5rem;
+  flex-grow: 1;
+}
+
+.brief-tier-link {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s ease, gap 0.2s ease;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.brief-tier-link .arrow-icon {
+  font-size: 1.05rem;
+  transition: transform 0.2s ease;
+}
+
+.brief-tier-col:hover .brief-tier-link {
+  color: var(--color-accent);
+}
+
+.brief-tier-col:hover .brief-tier-link .arrow-icon {
+  transform: translate(2px, -2px);
+}
+
+/* 3. Section 5: USPS Grid KD Styling */
+.usps-grid-kd {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.usp-card-kd {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.25s var(--ease-out);
+}
+
+.usp-card-kd:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* 4. TABLET BREAKPOINTS (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-visual-showcase {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .consult-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .consult-form-grid .form-submit-cell,
+  .consult-form-grid button[type="submit"] {
+    grid-column: span 2;
+  }
+
+  .services-visual-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .brief-tiers-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .trust-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .craftsman-advantage-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .room-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .materials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .usps-grid-kd {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .why-need-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* 5. SMALL TABLET & PHABLET BREAKPOINTS (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-headline h1 {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+
+  .brief-tiers-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .dual-specialty-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* 6. SMARTPHONE / MOBILE BREAKPOINTS (max-width: 640px) */
+@media (max-width: 640px) {
+  /* Prevent Sticky Bottom Bar from obscuring content */
+  body {
+    padding-bottom: 72px !important;
+  }
+
+  /* Coordinate Floating Actions with Sticky Bar:
+     Hide circular floating buttons on mobile because sticky bottom bar
+     already gives full-width, thumb-friendly Call & WhatsApp actions */
+  body > a.whatsapp-float,
+  body > a.call-float,
+  .floating-actions-container {
+    display: none !important;
+  }
+
+  /* Sticky Mobile Bottom Bar */
+  .sticky-mobile-cta {
+    display: flex !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 62px;
+    background: #FFFFFF;
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 -4px 20px rgba(11, 37, 64, 0.12);
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .sticky-mobile-cta .cta-btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .sticky-mobile-cta .btn-call {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 0.88rem;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(11, 37, 64, 0.25);
+  }
+
+  .sticky-mobile-cta .btn-wa {
+    background-color: #25D366;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 0.88rem;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+  }
+
+  /* Containers & Section Spacing */
+  .container {
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+  }
+
+  .section-padding {
+    padding: 2.75rem 0 !important;
+  }
+
+  /* All Multi-Column Grids Stack to Single Column on Mobile */
+  .hero-layout,
+  .hero-usps,
+  .services-visual-grid,
+  .portfolio-grid,
+  .brief-tiers-container,
+  .reviews-grid,
+  .trust-strip-grid,
+  .craftsman-advantage-grid,
+  .process-grid,
+  .room-cards-grid,
+  .materials-grid,
+  .usps-grid-kd,
+  .why-need-layout,
+  .why-need-points,
+  .dual-specialty-grid,
+  .footer-grid,
+  .blog-grid,
+  .consult-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .consult-form-grid .form-submit-cell,
+  .consult-form-grid button[type="submit"] {
+    grid-column: span 1 !important;
+    width: 100% !important;
+  }
+
+  /* Typography & Hero Scaling */
+  .hero-headline h1 {
+    font-size: clamp(1.85rem, 6.8vw, 2.3rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-subhead {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .hero-cta-group {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+
+  .hero-cta-group .btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Lead Consultation Form Card */
+  .hero-visual-showcase .lead-form-card,
+  .consult-form-container,
+  .lead-form-card {
+    padding: 1.5rem 1.15rem !important;
+  }
+
+  /* Service & Portfolio Cards */
+  .service-visual-card,
+  .portfolio-card,
+  .brief-tier-col,
+  .review-card-livspace {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .service-visual-img img,
+  .portfolio-card-img img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1.6 !important;
+    object-fit: cover !important;
+  }
+
+  /* Form Inputs (16px to prevent iOS Safari auto-zoom) */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    font-size: 16px !important;
+    min-height: 48px !important;
+  }
+
+  /* Portfolio Filter Tabs */
+  .portfolio-filter-tabs,
+  .portfolio-filters {
+    display: flex !important;
+    overflow-x: auto !important;
+    padding-bottom: 0.5rem !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 0.5rem !important;
+    scrollbar-width: none !important;
+  }
+  .portfolio-filter-tabs::-webkit-scrollbar,
+  .portfolio-filters::-webkit-scrollbar {
+    display: none !important;
+  }
+  .filter-btn {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    padding: 0.45rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Footer Mobile Refinement */
+  .footer-col {
+    text-align: left !important;
+  }
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    text-align: center !important;
+  }
+  .footer-legal {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+}
+
