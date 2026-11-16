@@ -147,7 +147,7 @@ new_hero_section = '''<!-- 1. EDITORIAL SPLIT HERO -->
               <span class="check-icon">✓</span>
               <div>
                 <strong>10-Year Warranty</strong>
-                <span>100% Factory BWP Marine Ply &amp; German Fittings</span>
+                <span>Certified BWP Marine Ply &amp; German Fittings</span>
               </div>
             </div>
 

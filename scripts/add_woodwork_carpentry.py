@@ -215,7 +215,7 @@ new_bf_dict = """        'slug': 'bedroom-furniture-delhi',
         'hero_img': '/assets/images/service-furniture.webp',
         'alt': 'Custom woodwork and master carpentry services in Delhi NCR by Delhi Interior',
         'overview_h2': 'Master Carpentry. Millimeter Precision. Built to Outlast Generations.',
-        'overview_p1': 'Standard showroom furniture rarely fits the specific alcoves and room dimensions of Delhi homes, leaving awkward dead zones and built with weak particleboard that sags. At Delhi Interior, our 40+ in-house master carpenters (karigars) operate from our dedicated 10,000 sq. ft. precision facility, crafting bespoke woodwork from calibrated Boiling Water Proof (BWP) 710 marine ply, high-density HDMR, and seasoned Burma Teak.',
+        'overview_p1': 'Standard showroom furniture rarely fits the specific alcoves and room dimensions of Delhi homes, leaving awkward dead zones and built with weak particleboard that sags. At Delhi Interior, our in-house master carpenters (karigars) operate from our dedicated South Delhi carpentry workshop, crafting bespoke woodwork from calibrated Boiling Water Proof (BWP) 710 marine ply, high-density HDMR, and seasoned Burma Teak.',
         'overview_p2': 'From sacred teakwood pooja mandirs with illuminated CNC jali screens to effortless hydraulic platform beds, custom home office workstations, and bespoke dining consoles, every joint and surface is hand-finished with cabinet-maker perfection.',
         'checklist': [
             'Handcrafted Solid Teakwood & Sheesham Temple Mandirs',
@@ -227,7 +227,7 @@ new_bf_dict = """        'slug': 'bedroom-furniture-delhi',
             'Precision CNC Backlit Jali Screens & Brass Inlay Details',
             'German Soft-Close Tandem Hardware (Blum & Hettich)',
             'Hand-Rubbed Natural Teak Grain PU & Italian Acrylic Polish',
-            'Dust-Free Factory Sizing & On-Site Alignment by Master Carpenters'
+            'Clean Workshop Pre-Fitting & On-Site Assembly by Master Carpenters'
         ],"""
 
 bs_code = bs_code.replace(old_bf_dict, new_bf_dict)

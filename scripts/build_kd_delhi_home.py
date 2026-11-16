@@ -410,7 +410,7 @@ html_content = f'''<!DOCTYPE html>
         <div>
           <picture>
             <source srcset="/assets/images/about-workshop.webp" type="image/webp">
-            <img src="/assets/images/about-workshop.jpg" alt="Delhi Interior Factory Workshop" style="width: 100%; border-radius: 20px; box-shadow: 0 16px 45px rgba(0,0,0,0.12);" width="800" height="600" loading="lazy">
+            <img src="/assets/images/about-workshop.jpg" alt="Delhi Interior Dedicated Woodworking Workshop in South Delhi" style="width: 100%; border-radius: 20px; box-shadow: 0 16px 45px rgba(0,0,0,0.12);" width="800" height="600" loading="lazy">
           </picture>
         </div>
       </div>

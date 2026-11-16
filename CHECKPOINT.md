@@ -1,7 +1,7 @@
 # AGENT RESUME CHECKPOINT
 
 > **Status**: READY FOR PRODUCTION DEPLOYMENT  
-> **Timestamp**: 2026-11-16T23:25:00+05:30  
+> **Timestamp**: 2026-11-16T23:45:00+05:30  
 > **Remote Repository**: `https://github.com/officialdelhiinterior/delhi-interior-website.git`  
 > **Collaborator**: `anurag9702`  
 > **Local Server**: Running on `http://localhost:8000/` via `scripts/server.py`  
@@ -54,22 +54,27 @@ Do **NOT** violate any of the following constraints under any circumstances:
    - Never reintroduce day-based guarantees or warranty badges.
    - Run `python scripts/scan_forbidden.py` to verify zero violations.
 
-3. **Color System Discipline**:
+3. **NO FABRICATED FACILITY OR EXAGGERATED CLAIMS (STRICT)**:
+   - **ZERO** mentions of `"10,000 sq. ft."`, `"10k sqft"`, automated industrial factories, or robotic beam saw plants.
+   - Grounded strictly and authentically in Delhi Interior's genuine in-house woodworking and furniture workshop located at `F-128/4, Mohammadpur, South Delhi`.
+   - Refer to their master carpenters (*karigars*), hand-planing, and artisanal joinery—not industrial factory assembly lines.
+
+4. **Color System Discipline**:
    - **Primary**: Deep Dark Navy Blue (`#0B2540` / `#0A1626`).
    - **Accent**: Warm Architectural Golden Brass (`#B89058` / `#C5A880`).
    - **Surfaces**: Crisp White (`#FFFFFF`) and Warm Ivory (`#F8F6F0` / `#F8F5EE`).
    - **WhatsApp Green (`#25D366`)**: **STRICTLY AND EXCLUSIVELY** for WhatsApp action buttons (`.whatsapp-float`, `.btn-whatsapp`). Absolutely no other element may be green.
 
-4. **Floating Action Buttons**:
+5. **Floating Action Buttons**:
    - Fixed bottom-right corner.
    - The **Call button** (`#0B2540` with golden border) is located directly **ABOVE** the **WhatsApp button** (`#25D366`).
 
-5. **Section Specifications**:
+6. **Section Specifications**:
    - **Section 2.5 "Why Choose Us"**: Single elevated white floating box (`.why-choose-floating-box`) with 4 columns over a warm interior bedroom photo background with translucent wash. Centered typography, clean line vector icons, no bottom colored badges.
    - **Section 6.5 "An interior solution for every brief"**: Seamless warm sand container (`#F8F5EE`) with 5 side-by-side columns (`01` to `05`), `Playfair Display` serif typography, and `Request details ↗` links.
    - **Section 6 "Certified Materials"**: Permanently removed. Do **NOT** restore it.
 
-6. **Image Standards**:
+7. **Image Standards**:
    - **NO random stock photos**. All 25 images must be high-resolution, luxury architectural interior photographs matching their labels (Modular Kitchen, Walk-in Wardrobe, Master Carpenters in workshop, Design Studio Team, Backlit Brass Jali Mandir, Fluted Master Suite, TV Unit, Teak Pivot Door, etc.).
 
 ---
@@ -81,8 +86,8 @@ If making changes to styling or HTML, update the generator scripts first, then r
 - **Homepage**: Edit `scripts/rebuild_complete_site_v3.py` then run `python scripts/rebuild_complete_site_v3.py` (writes to `index.html`).
 - **Subpages**:
   - `scripts/build_main_and_utility.py` (About, Contact, Portfolio, Process, Legal, 404)
-  - `scripts/update_build_services.py` (9 Service pages)
-  - `scripts/update_build_blog.py` (6 Blog pages)
+  - `scripts/build_services.py` (9 Service pages)
+  - `scripts/build_blog.py` (6 Blog pages)
 
 ---
 
@@ -90,4 +95,5 @@ If making changes to styling or HTML, update the generator scripts first, then r
 - All 25 HTML pages are valid, responsive, and SEO-optimized.
 - All interactive links, buttons, FAQ accordions, and consultation modals are 100% functional.
 - All 25 image assets are optimized WebP + JPG files in `assets/images/`.
-- Git initialized with origin `https://github.com/officialdelhiinterior/delhi-interior-website.git`.
+- All false claims ("10,000 sq. ft.", etc.) permanently removed.
+- Git initialized and synced with origin `https://github.com/officialdelhiinterior/delhi-interior-website.git`.

@@ -41,13 +41,13 @@ html_content = f'''<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Interior Designers in Delhi NCR | Delhi Interior — Home Styling &amp; Modular Studio</title>
-  <meta name="description" content="Premier interior designers and custom woodwork studio in Delhi NCR. 10+ years experience, 500+ homes delivered, direct factory rates, and turnkey master craftsmanship.">
+  <meta name="description" content="Premier interior designers and custom woodwork studio in Delhi NCR. 10+ years experience, 500+ homes delivered, direct workshop rates, and turnkey master craftsmanship.">
   <link rel="canonical" href="https://delhiinterior.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Interior Designers in Delhi NCR | Delhi Interior — Home Styling &amp; Modular Studio">
-  <meta property="og:description" content="Premier interior designers and custom woodwork studio in Delhi NCR. 10+ years experience, 500+ homes delivered, direct factory rates, and turnkey master craftsmanship.">
+  <meta property="og:description" content="Premier interior designers and custom woodwork studio in Delhi NCR. 10+ years experience, 500+ homes delivered, direct workshop rates, and turnkey master craftsmanship.">
   <meta property="og:url" content="https://delhiinterior.com/">
   <meta property="og:image" content="https://delhiinterior.com/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -57,7 +57,7 @@ html_content = f'''<!DOCTYPE html>
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Interior Designers in Delhi NCR | Delhi Interior">
-  <meta name="twitter:description" content="Premier interior designers and custom woodwork studio in Delhi NCR. 10+ years experience, 500+ homes delivered, direct factory rates, and turnkey master craftsmanship.">
+  <meta name="twitter:description" content="Premier interior designers and custom woodwork studio in Delhi NCR. 10+ years experience, 500+ homes delivered, direct workshop rates, and turnkey master craftsmanship.">
   <meta name="twitter:image" content="https://delhiinterior.com/og-image.jpg">
 
   <!-- Favicons -->
@@ -331,7 +331,7 @@ html_content = f'''<!DOCTYPE html>
               <span class="check-icon">✓</span>
               <div>
                 <strong>Authentic Materials</strong>
-                <span>100% Factory BWP Marine Ply &amp; German Fittings</span>
+                <span>Certified BWP Marine Ply &amp; German Fittings</span>
               </div>
             </div>
 
@@ -672,7 +672,7 @@ html_content = f'''<!DOCTYPE html>
           <div>
             <picture>
               <source srcset="/assets/images/about-workshop.webp" type="image/webp">
-              <img src="/assets/images/about-workshop.jpg" alt="Delhi Interior Factory Workshop" style="width: 100%; border-radius: 20px; box-shadow: 0 16px 45px rgba(0,0,0,0.12);" width="800" height="600" loading="lazy">
+              <img src="/assets/images/about-workshop.jpg" alt="Delhi Interior Dedicated Woodworking Workshop in South Delhi" style="width: 100%; border-radius: 20px; box-shadow: 0 16px 45px rgba(0,0,0,0.12);" width="800" height="600" loading="lazy">
             </picture>
           </div>
         </div>
@@ -1199,7 +1199,7 @@ html_content = f'''<!DOCTYPE html>
               <span class="chevron">▼</span>
             </button>
             <div class="faq-answer">
-              <p>We operate our own 10,000 sq. ft. precision manufacturing facility in Delhi NCR. While on-site civil and electrical conduit preparation is underway, all your kitchen cabinets, wardrobe carcasses, and paneling are precision cut and edge-banded in parallel, significantly accelerating on-site installation and ensuring orderly progress.</p>
+              <p>We operate our own dedicated in-house carpentry workshop in Mohammadpur, South Delhi. While on-site civil and electrical conduit preparation is underway, all your kitchen cabinets, wardrobe carcasses, and paneling are precision cut and edge-banded in parallel, significantly accelerating on-site installation and ensuring orderly progress.</p>
             </div>
           </div>
 
@@ -1219,7 +1219,7 @@ html_content = f'''<!DOCTYPE html>
               <span class="chevron">▼</span>
             </button>
             <div class="faq-answer">
-              <p>We source directly from authorized factory distributors of CenturyPly and Greenpanel. Every plywood sheet delivered to our workshop or your site features verifiable QR authentication codes and manufacturer test certificates that you can inspect in person.</p>
+              <p>We source directly from authorized distributors of CenturyPly and Greenpanel. Every plywood sheet delivered to our workshop or your site features verifiable QR authentication codes and manufacturer test certificates that you can inspect in person.</p>
             </div>
           </div>
 

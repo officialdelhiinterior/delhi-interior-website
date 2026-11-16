@@ -7,7 +7,7 @@
 - **WhatsApp**: Direct link via `wa.me/919643817099` with pre-filled consultation text
 - **Operating Hours**: `Open 24 Hours / 24/7`
 - **Service Territory**: South Delhi, Greater Kailash, Vasant Vihar, Panchsheel, Defence Colony, Hauz Khas, Jor Bagh, Chanakyapuri, Gurugram (DLF Phase 1–5, Golf Course Rd), and Delhi NCR.
-- **Craftsmanship Legacy**: In-house master carpenters (*karigars*) & bespoke turnkey interior designers since 2000.
+- **Craftsmanship Legacy**: In-house master carpenters (*karigars*) & bespoke turnkey interior designers since 2000 operating from their dedicated South Delhi workshop in Mohammadpur.
 
 ---
 
@@ -23,6 +23,11 @@
 - Per user directive: Purged all mentions of `"warranty"`, `"guarantee"`, `"45 days"`, and `"42 days"` turnaround commitments.
 - Transformed warranty badges into craftsmanship assurances: *"Authentic Material Direct Sourcing"*, *"In-House Master Carpenters"*, and *"Bespoke Handcrafted Turnkey Execution"*.
 - Verified across all 25 subpages using automated scan script (`scripts/scan_forbidden.py`).
+
+### Phase 2.5: Purging of Fabricated Facility & Size Claims (10,000 Sq. Ft.)
+- Per user directive: **Completely eliminated all exaggerated and false claims of a "10,000 sq. ft. precision manufacturing facility" or industrial factory plants**.
+- Grounded all descriptions in the authentic reality of Delhi Interior: a dedicated, in-house custom woodworking and furniture workshop located in Mohammadpur, South Delhi, operated by their experienced master carpenters (*karigars*).
+- Cleaned across `index.html`, `about/index.html`, `bedroom-furniture-delhi/index.html`, `process/index.html`, all 9 service pages, and all generator scripts.
 
 ### Phase 3: Strict Color Palette & Brand Token Architecture
 - **Primary Brand Color**: Deep Dark Navy Blue (`#0B2540` / `#0A1626`).
@@ -124,6 +129,8 @@ delhi-interior-website/
     ├── server.py                          # Local development server with no-cache headers
     ├── audit_site.py                      # 25-page structural & compliance audit
     ├── audit_buttons_and_interactions.py  # 27-file button, anchor, and accordion validator
+    ├── scan_forbidden.py                  # Zero warranty/guarantee/45-day checker
+    ├── scan_claims.py                     # Zero exaggerated facility checker
     ├── generate_master_style.py           # Master CSS compiler
     ├── rebuild_complete_site_v3.py        # Single source of truth generator for index.html
     └── deploy_all_authentic_images.py     # Image deployment & optimization processor
@@ -142,7 +149,10 @@ python scripts/audit_buttons_and_interactions.py
 # 3. Check for any forbidden warranty/guarantee/45-day claims
 python scripts/scan_forbidden.py
 
-# 4. Start local development server
+# 4. Check for any exaggerated facility or sq ft claims
+python scripts/scan_claims.py
+
+# 5. Start local development server
 python scripts/server.py
 ```
 *Current Audit Status: 0 errors, 0 warnings across all checks.*

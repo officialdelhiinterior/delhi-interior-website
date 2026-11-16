@@ -29,7 +29,7 @@ SERVICES_DATA = [
         'process_steps': [
             ('Consultation & Measurement', 'Detailed site visit in Delhi NCR, laser room scan, and architectural layout consultation.'),
             ('Architectural Working Drawings Design', 'Interactive 3D renders with color swatches, finish selection, and revision iterations.'),
-            ('Factory Build & Handover', 'Factory precision cutting, edge-banding, on-site assembly, and zero-defect handover.')
+            ('Workshop Crafting & Assembly', 'Precision workshop fabrication, edge sealing, on-site assembly, and zero-defect handover.')
         ],
         'gallery': [
             ('/assets/images/portfolio-kitchen.webp', 'L-Shaped Matte Acrylic Kitchen', 'Greater Kailash II'),
@@ -47,7 +47,7 @@ SERVICES_DATA = [
         'faqs': [
             ('How do you determine the scope for a custom modular kitchen in Delhi?', 'Our modular kitchen solutions are custom planned based on your exact layout, counter dimensions, and storage needs. Every design includes architectural layouts, genuine BWP 710 marine ply, premium quartz, and German soft-close fittings with an itemized BOQ commitment.'),
             ('Which plywood grade is best for Indian kitchens?', 'We strictly recommend BWP (Boiling Water Proof) 710-grade plywood for kitchen sink and base units because it withstands steam, water spills, and heavy load without delamination.'),
-            ('How long does modular kitchen installation take?', 'Fabrication takes approximately 20–25 days in our facility. Once delivered on site, our in-house carpentry team installs the kitchen in 3 to 5 working days.'),
+            ('How long does modular kitchen installation take?', 'Fabrication takes approximately 20–25 days in our dedicated workshop. Once delivered on site, our in-house carpentry team installs the kitchen in 3 to 5 working days.'),
             ('Do you provide civil modifications, plumbing, and chimney ducting?', 'Yes. Delhi Interior is a full-service studio. We manage core-cutting for chimney exhaust, plumbing relocation, tile dado work, and electrical switch points under one turnkey contract.'),
             ('What hardware brands do you offer?', 'We work exclusively with certified international brands including Hettich, Ebco, Blum, and Hafele, all installed to authentic manufacturer specifications.')
         ],
@@ -264,7 +264,7 @@ SERVICES_DATA = [
             ('How long does a complete 3BHK interior take in Delhi?', 'A standard 3BHK turnkey transformation takes 60 to 75 days. We provide a milestone-linked calendar before commencement and adhere strictly to it.'),
             ('Can we live in the house while full interior work is ongoing?', 'For full home civil, electrical, and flooring work, we strongly recommend vacating the property so our teams can work without noise and dust constraints to finish faster.'),
             ('Are electrical appliances and loose furniture included?', 'Our core turnkey packages cover all fixed architectural woodwork, civil, electrical, plumbing, ceiling, and painting. Soft furnishings, appliances, and loose sofas can be curated on request.'),
-            ('What is your payment milestone structure?', 'We operate on transparent milestone stages: booking advance, 3D design sign-off, factory production commencement, on-site framework completion, and final handover.'),
+            ('What is your payment milestone structure?', 'We operate on transparent milestone stages: booking advance, 3D design sign-off, workshop production commencement, on-site framework completion, and final handover.'),
             ('What quality assurances do you provide on turnkey work?', 'We conduct detailed multi-point quality audits across all civil, electrical, plumbing, and carpentry installations before handover, accompanied by original manufacturer documentation for certified hardware and materials.')
         ],
         'related': [
@@ -282,7 +282,7 @@ SERVICES_DATA = [
         'hero_img': '/assets/images/service-furniture.webp',
         'alt': 'Custom woodwork and master carpentry services in Delhi NCR by Delhi Interior',
         'overview_h2': 'Master Carpentry. Millimeter Precision. Built to Outlast Generations.',
-        'overview_p1': 'Standard showroom furniture rarely fits the specific alcoves and room dimensions of Delhi homes, leaving awkward dead zones and built with weak particleboard that sags. At Delhi Interior, our 40+ in-house master carpenters (karigars) operate from our dedicated 10,000 sq. ft. precision facility, crafting bespoke woodwork from calibrated Boiling Water Proof (BWP) 710 marine ply, high-density HDMR, and seasoned Burma Teak.',
+        'overview_p1': 'Standard showroom furniture rarely fits the specific alcoves and room dimensions of Delhi homes, leaving awkward dead zones and built with weak particleboard that sags. At Delhi Interior, our in-house master carpenters (karigars) operate from our dedicated South Delhi carpentry workshop, crafting bespoke woodwork from calibrated Boiling Water Proof (BWP) 710 marine ply, high-density HDMR, and seasoned Burma Teak.',
         'overview_p2': 'From sacred teakwood pooja mandirs with illuminated CNC jali screens to effortless hydraulic platform beds, custom home office workstations, and bespoke dining consoles, every joint and surface is hand-finished with cabinet-maker perfection.',
         'checklist': [
             'Handcrafted Solid Teakwood & Sheesham Temple Mandirs',
@@ -294,12 +294,12 @@ SERVICES_DATA = [
             'Precision CNC Backlit Jali Screens & Brass Inlay Details',
             'German Soft-Close Tandem Hardware (Blum & Hettich)',
             'Hand-Rubbed Natural Teak Grain PU & Italian Acrylic Polish',
-            'Dust-Free Factory Sizing & On-Site Alignment by Master Carpenters'
+            'Clean Workshop Pre-Fitting & On-Site Assembly by Master Carpenters'
         ],
         'process_steps': [
             ('Ergonomic Space Analysis', 'Measuring room flow, seated eye levels, reach zones, and storage volume.'),
             ('3D Furniture Customization', 'Personalizing finishes, edge profiles, hardware, and cushion fabrics.'),
-            ('In-House Factory Build', 'Carcass precision cutting, edge sealing, and sturdy on-site assembly.')
+            ('In-House Workshop Crafting', 'Carcass precision cutting, edge sealing, and sturdy on-site assembly.')
         ],
         'gallery': [
             ('/assets/images/portfolio-office.webp', 'Ergonomic Home Office Suite', 'Noida Expressway'),

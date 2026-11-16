@@ -10,8 +10,8 @@ with open('scripts/rebuild_complete_site_v3.py', 'r', encoding='utf-8') as f:
 
 # Meta and Head
 home_code = re.sub(
-    r'10\+ years experience, direct factory rates, modular kitchens, custom wardrobes, turnkey interiors and 10-year warranty\.',
-    '10+ years experience, direct factory rates, modular kitchens, custom wardrobes, and full-home turnkey interiors.',
+    r'10\+ years experience, direct workshop rates, modular kitchens, custom wardrobes, turnkey interiors and 10-year warranty\.',
+    '10+ years experience, direct workshop rates, modular kitchens, custom wardrobes, and full-home turnkey interiors.',
     home_code
 )
 home_code = re.sub(
@@ -35,8 +35,8 @@ home_code = home_code.replace(
     '<span>Certified BWP 710 Marine Plywood</span>'
 )
 home_code = home_code.replace(
-    '<strong>10-Year Warranty</strong>\n                <span>100% Factory BWP Marine Ply &amp; German Fittings</span>',
-    '<strong>Authentic Materials</strong>\n                <span>100% Factory BWP Marine Ply &amp; German Fittings</span>'
+    '<strong>10-Year Warranty</strong>\n                <span>Certified BWP Marine Ply &amp; German Fittings</span>',
+    '<strong>Authentic Materials</strong>\n                <span>Certified BWP Marine Ply &amp; German Fittings</span>'
 )
 home_code = home_code.replace(
     '<strong>10-Year Warranty</strong>',

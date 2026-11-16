@@ -547,10 +547,10 @@ process_html = f'''{get_header(active_nav='process', title='How It Works | Struc
           <div class="step-circle" style="width: 60px; height: 60px; font-size: 1.5rem; margin: 0;">04</div>
           <div>
             <div class="pill-badge" style="display:inline-flex; align-items:center; padding:0.2rem 0.6rem; border-radius:999px; font-size:0.75rem; font-weight:700; margin-bottom:0.5rem;">Stage 4 · Days 15–40</div>
-            <h4>Factory Machining &amp; Turnkey Assembly</h4>
-            <p>All cabinetry and modular carcasses are manufactured in our state-of-the-art facility using computerized beam saws and German edge-banders. Simultaneously, civil, plumbing, electrical, and false ceiling works proceed seamlessly on-site.</p>
+            <h4>Workshop Crafting &amp; Turnkey Assembly</h4>
+            <p>All cabinetry and modular carcasses are handcrafted in our dedicated South Delhi carpentry workshop by our master karigars using precision joinery and calibrated BWP materials. Simultaneously, civil, plumbing, electrical, and false ceiling works proceed seamlessly on-site.</p>
             <ul style="list-style: none; margin-top: 1rem; color: #4B5563; font-size: 0.88rem; line-height: 1.8;">
-              <li>✓ Zero-dust factory fabrication with certified BWP grade materials</li>
+              <li>✓ Clean workshop fabrication with certified BWP grade materials</li>
               <li>✓ Full-time on-site project manager supervising every trade</li>
               <li>✓ Daily WhatsApp photo &amp; video progress reports</li>
             </ul>
@@ -642,7 +642,7 @@ about_html = f'''{get_header(active_nav='about', title='About Delhi Interior | 1
             <div class="pill-badge" style="display:inline-flex; align-items:center; padding:0.3rem 0.8rem; border-radius:999px; font-size:0.78rem; font-weight:700; margin-bottom:0.75rem;">Our Story</div>
             <h2 style="font-size: 2.4rem; margin-bottom: 1.2rem;">Building a Better Way to Design Homes</h2>
             <p style="font-size: 1.05rem; line-height: 1.8; color: #4B5563; margin-bottom: 1.2rem;">Founded in 2014 in the heart of Delhi, Delhi Interior began with a fundamental belief: Indian homeowners deserved a better experience than the fragmented chaos of local contractors and the rigid, overpriced catalog templates of corporate tech startups.</p>
-            <p style="font-size: 1.05rem; line-height: 1.8; color: #4B5563; margin-bottom: 1.2rem;">Over the past 10+ years, we have brought civil masons, master carpenters, certified electricians, and architectural designers under one single roof. We operate our own modern 10,000 sq. ft. fabrication facility in Delhi NCR, giving us 100% control over quality, hardware authenticity, and on-time delivery.</p>
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #4B5563; margin-bottom: 1.2rem;">Over the past 10+ years, we have brought civil masons, master carpenters, certified electricians, and architectural designers under one single roof. We operate our own dedicated in-house carpentry workshop in Mohammadpur, South Delhi, giving us complete, hands-on control over timber quality, joinery precision, and finish excellence.</p>
             <p style="font-size: 1.05rem; line-height: 1.8; color: #4B5563;">Today, with over 500+ completed residences across South Delhi, Gurugram, and Noida, our studio continues to design spaces that are deeply personal, built to withstand generations, and inspiring every single day.</p>
           </div>
           <div>
@@ -683,20 +683,20 @@ about_html = f'''{get_header(active_nav='about', title='About Delhi Interior | 1
       </div>
     </section>
 
-    <!-- Workshop & Facility Section -->
+    <!-- Workshop & Studio Section -->
     <section class="section-padding bg-white">
       <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center;">
           <div>
             <picture>
               <source srcset="/assets/images/about-workshop.webp" type="image/webp">
-              <img src="/assets/images/about-workshop.jpg" alt="Delhi Interior modern manufacturing facility" width="800" height="600" loading="lazy" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); width: 100%;">
+              <img src="/assets/images/about-workshop.jpg" alt="Delhi Interior Dedicated Carpentry Workshop in South Delhi" width="800" height="600" loading="lazy" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); width: 100%;">
             </picture>
           </div>
           <div>
             <div class="pill-badge" style="display:inline-flex; align-items:center; padding:0.3rem 0.8rem; border-radius:999px; font-size:0.78rem; font-weight:700; margin-bottom:0.75rem;">Precision Engineering</div>
-            <h2 style="font-size: 2.4rem; margin-bottom: 1.2rem;">Our 10,000 Sq. Ft. Fabrication Studio</h2>
-            <p style="font-size: 1.05rem; line-height: 1.8; color: #4B5563; margin-bottom: 1.2rem;">Unlike firms that outsource manufacturing to third-party factories where quality corners are cut, we operate our own 10,000 sq. ft. dedicated manufacturing and finishing facility.</p>
+            <h2 style="font-size: 2.4rem; margin-bottom: 1.2rem;">Our Dedicated Woodworking Workshop in South Delhi</h2>
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #4B5563; margin-bottom: 1.2rem;">Unlike firms that outsource manufacturing to third-party factories where quality corners are cut, we operate our own dedicated in-house woodworking and furniture workshop in Mohammadpur, South Delhi.</p>
             <p style="font-size: 1.05rem; line-height: 1.8; color: #4B5563; margin-bottom: 1.2rem;">Equipped with high-precision CNC panel saws, heavy-duty through-feed edge banders, and dedicated dust-free paint and PU spray booths, our workshop ensures that every carcass, hinge cavity, and edge band meets international millimeter tolerances.</p>
             <p style="font-size: 1.05rem; line-height: 1.8; color: #4B5563;">Clients are always welcome to visit our workshop to see their cabinets being assembled and inspect raw plywood sheets before they are dispatched to site.</p>
           </div>
@@ -1171,7 +1171,7 @@ terms_html = f'''{get_header(active_nav='', title='Terms of Service & Studio Pol
         <p>To ensure steady procurement of high-grade raw materials and uninterrupted manufacturing, projects follow a transparent milestone schedule:</p>
         <ul>
           <li><strong>Booking Advance (10%):</strong> Site measurement, space planning, and 3D architectural rendering.</li>
-          <li><strong>Design Sign-Off (40%):</strong> Material finalization, beam saw procurement, and factory carcass cutting.</li>
+          <li><strong>Design Sign-Off (40%):</strong> Material finalization, material procurement, and workshop carcass fabrication.</li>
           <li><strong>On-Site Civil &amp; Framing Completion (40%):</strong> Civil masonry, false ceiling, and modular assembly on site.</li>
           <li><strong>Zero-Snag Handover (10%):</strong> Final quality audit, snag fix, deep cleaning, and key handover.</li>
         </ul>

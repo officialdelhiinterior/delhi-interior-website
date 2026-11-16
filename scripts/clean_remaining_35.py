@@ -6,7 +6,7 @@ with open('scripts/rebuild_complete_site_v3.py', 'r', encoding='utf-8') as f:
 
 code = code.replace(
     '10+ years experience, 500+ homes delivered, 45-day guaranteed handover, 10-year warranty.',
-    '10+ years experience, 500+ homes delivered, direct factory rates, and turnkey master craftsmanship.'
+    '10+ years experience, 500+ homes delivered, direct workshop rates, and turnkey master craftsmanship.'
 )
 code = code.replace('hero-badge-warranty', 'hero-badge-quality')
 
