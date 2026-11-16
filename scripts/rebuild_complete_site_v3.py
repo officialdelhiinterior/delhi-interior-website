@@ -1,0 +1,1357 @@
+import os, json, re
+
+print("=== Rebuilding scripts/build_kd_delhi_home.py ===")
+
+home_schema = {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Delhi Interior",
+    "image": "https://delhiinterior.com/assets/images/logo.png",
+    "url": "https://delhiinterior.com/",
+    "telephone": "+919643817099",
+    "email": "hello@delhiinterior.com",
+    "priceRange": "₹₹₹",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "F-128/4, Mohammadpur",
+        "addressLocality": "New Delhi",
+        "addressRegion": "Delhi",
+        "postalCode": "110066",
+        "addressCountry": "IN"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.5660",
+        "longitude": "77.1850"
+    },
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        }
+    ],
+    "areaServed": ["Delhi", "Gurugram", "Noida", "Faridabad", "Ghaziabad"]
+}
+
+html_content = f'''<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Interior Designers in Delhi NCR | Delhi Interior — Home Styling &amp; Modular Studio</title>
+  <meta name="description" content="Premier interior designers and custom woodwork studio in Delhi NCR. 10+ years experience, 500+ homes delivered, direct factory rates, and turnkey master craftsmanship.">
+  <link rel="canonical" href="https://delhiinterior.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Interior Designers in Delhi NCR | Delhi Interior — Home Styling &amp; Modular Studio">
+  <meta property="og:description" content="Premier interior designers and custom woodwork studio in Delhi NCR. 10+ years experience, 500+ homes delivered, direct factory rates, and turnkey master craftsmanship.">
+  <meta property="og:url" content="https://delhiinterior.com/">
+  <meta property="og:image" content="https://delhiinterior.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Interior Designers in Delhi NCR | Delhi Interior">
+  <meta name="twitter:description" content="Premier interior designers and custom woodwork studio in Delhi NCR. 10+ years experience, 500+ homes delivered, direct factory rates, and turnkey master craftsmanship.">
+  <meta name="twitter:image" content="https://delhiinterior.com/og-image.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=3.0">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+{json.dumps(home_schema, indent=2)}
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- LEVEL 1: TOP UTILITY BAR -->
+  <div class="top-utility-bar">
+    <div class="container top-utility-container">
+      <div class="top-utility-left">
+        <span class="badge-welcome">Welcome to Delhi Interior</span>
+        <span>·</span>
+        <span>Turnkey Interior Designers &amp; Master Carpenters</span>
+        <span>·</span>
+        <span class="utility-timing"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Open 24 Hours (7 Days a Week)</span>
+      </div>
+      <div class="top-utility-right">
+        <a href="tel:+919643817099" class="top-utility-link">
+          <span class="utility-call"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call 24/7: +91 96438 17099</span>
+        </a>
+        <div class="top-utility-social">
+          <a href="https://instagram.com/delhiinterior" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com/delhiinterior" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://youtube.com/delhiinterior" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+        <a href="https://wa.me/919643817099?text=Hi+Delhi+Interior%2C+I+want+to+consult+for+my+home+interior." class="top-utility-link" target="_blank" rel="noopener noreferrer">
+          <span class="utility-wa"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> WhatsApp Designer</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEVEL 2: MAIN BRAND & NAVIGATION BAR -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="/" class="site-logo" aria-label="Delhi Interior Home">
+        <img src="/assets/images/logo.png" alt="Delhi Interior" width="168" height="52" class="brand-logo-img">
+      </a>
+
+      <nav class="main-navigation" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/portfolio/">Projects</a></li>
+          <li class="nav-dropdown-item">
+            <a href="/modular-kitchen-delhi/" class="nav-dropdown-trigger">
+              Services <span class="dropdown-chevron">▼</span>
+            </a>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="/full-home-interior-delhi/" class="dropdown-link" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </span>
+                <div class="dropdown-text">
+                  <strong>Residential Interior Design</strong>
+                  <span>Full Home 2/3/4 BHK &amp; Villas</span>
+                </div>
+              </a>
+              <a href="/modular-kitchen-delhi/" class="dropdown-link" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8z"/><path d="M4 11V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><circle cx="7.5" cy="8" r="1"/><circle cx="16.5" cy="8" r="1"/></svg>
+                </span>
+                <div class="dropdown-text">
+                  <strong>Modular Kitchens</strong>
+                  <span>Acrylic, PU &amp; Quartz Worktops</span>
+                </div>
+              </a>
+              <a href="/wardrobe-design-delhi/" class="dropdown-link" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18"/><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/></svg>
+                </span>
+                <div class="dropdown-text">
+                  <strong>Custom Wardrobes</strong>
+                  <span>Sliding, Walk-in &amp; Lofts</span>
+                </div>
+              </a>
+              <a href="/wall-paneling-delhi/" class="dropdown-link" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="3" x2="8" y2="21"/><line x1="12" y1="3" x2="12" y2="21"/><line x1="16" y1="3" x2="16" y2="21"/></svg>
+                </span>
+                <div class="dropdown-text">
+                  <strong>Wall Paneling &amp; TV Units</strong>
+                  <span>Charcoal Louvers &amp; Fluted Slats</span>
+                </div>
+              </a>
+              <a href="/false-ceiling-delhi/" class="dropdown-link" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="2" y1="4" x2="22" y2="4"/><path d="M7 4v4a5 5 0 0 0 10 0V4"/><line x1="12" y1="13" x2="12" y2="17"/></svg>
+                </span>
+                <div class="dropdown-text">
+                  <strong>False Ceiling &amp; Lighting</strong>
+                  <span>Gypsum, Cove &amp; Track Lights</span>
+                </div>
+              </a>
+              <a href="/doors-partitions-delhi/" class="dropdown-link" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/><circle cx="14" cy="12" r="1"/></svg>
+                </span>
+                <div class="dropdown-text">
+                  <strong>Doors &amp; Partitions</strong>
+                  <span>Fluted Glass &amp; CNC Backlit Jali</span>
+                </div>
+              </a>
+              <a href="/bedroom-furniture-delhi/" class="dropdown-link" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </span>
+                <div class="dropdown-text">
+                  <strong>Custom Woodwork &amp; Carpentry</strong>
+                  <span>Teak Mandirs, Beds, Desks &amp; Millwork</span>
+                </div>
+              </a>
+              <a href="/painting-polishing-delhi/" class="dropdown-link" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18.37 2.63L14 7l3 3 4.37-4.37a2.12 2.12 0 1 0-3-3z"/><path d="M14 7l-9 9v4h4l9-9"/></svg>
+                </span>
+                <div class="dropdown-text">
+                  <strong>Painting &amp; PU Polish</strong>
+                  <span>Asian Paints Royale, PU &amp; Duco</span>
+                </div>
+              </a>
+              <a href="/plumbing-electrical-delhi/" class="dropdown-link" role="menuitem" style="grid-column: span 2;">
+                <span class="dropdown-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </span>
+                <div class="dropdown-text">
+                  <strong>Plumbing &amp; Electrical MEP</strong>
+                  <span>Concealed Piping, 4mm Fire-Proof Wiring &amp; Sanitaryware</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li><a href="/blog/">Blogs</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <a href="/contact/" class="btn btn-primary">Book Consultation</a>
+        <button class="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="mobile-menu-overlay" aria-modal="true" role="dialog">
+    <div class="mobile-menu-header">
+      <div class="site-logo">
+        <img src="/assets/images/logo.png" alt="Delhi Interior" width="150" height="46" class="brand-logo-img">
+      </div>
+      <button class="mobile-menu-close" aria-label="Close menu">✕</button>
+    </div>
+    <div class="mobile-menu-content" style="padding: 1.5rem; overflow-y: auto;">
+      <div class="mobile-menu-section-title">Navigation</div>
+      <ul class="mobile-nav-links" style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 1.5rem;">
+        <li><a href="/" onclick="closeMobileMenu()">Home</a></li>
+        <li><a href="/about/" onclick="closeMobileMenu()">About Our Studio</a></li>
+        <li><a href="/portfolio/" onclick="closeMobileMenu()">Projects &amp; Portfolio</a></li>
+        <li><a href="/process/" onclick="closeMobileMenu()">How It Works</a></li>
+        <li><a href="/blog/" onclick="closeMobileMenu()">Blogs &amp; Design Guides</a></li>
+        <li><a href="/contact/" onclick="closeMobileMenu()">Contact Us</a></li>
+      </ul>
+
+      <div class="mobile-menu-section-title">Our Services</div>
+      <ul class="mobile-nav-services">
+        <li><a href="/full-home-interior-delhi/" onclick="closeMobileMenu()">Residential Interiors (2/3/4 BHK)</a></li>
+        <li><a href="/modular-kitchen-delhi/" onclick="closeMobileMenu()">Modular Kitchens</a></li>
+        <li><a href="/wardrobe-design-delhi/" onclick="closeMobileMenu()">Custom Wardrobes</a></li>
+        <li><a href="/wall-paneling-delhi/" onclick="closeMobileMenu()">Wall Paneling &amp; Louvers</a></li>
+        <li><a href="/false-ceiling-delhi/" onclick="closeMobileMenu()">False Ceiling &amp; Lighting</a></li>
+        <li><a href="/doors-partitions-delhi/" onclick="closeMobileMenu()">Doors &amp; Partitions</a></li>
+        <li><a href="/bedroom-furniture-delhi/" onclick="closeMobileMenu()">Custom Woodwork &amp; Carpentry</a></li>
+        <li><a href="/painting-polishing-delhi/" onclick="closeMobileMenu()">Painting &amp; PU Polish</a></li>
+        <li><a href="/plumbing-electrical-delhi/" onclick="closeMobileMenu()">Plumbing &amp; Electrical MEP</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu-footer">
+      <p style="font-size: 0.85rem; color: #6B7280; margin-bottom: 1rem;">F-128/4, Mohammadpur, New Delhi 110066<br>Open 24 Hours (7 Days a Week)</p>
+      <a href="tel:+919643817099" class="btn btn-primary btn-block">Call +91 96438 17099</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- 1. EDITORIAL SPLIT HERO -->
+    <section class="hero-livspace">
+      <div class="container">
+        <!-- Top 2-Column Showcase -->
+        <div class="hero-layout">
+          <!-- Left Column: Copy, USPs, & Direct Actions -->
+          <div class="hero-headline">
+            <div class="pill-badge pill-badge" style="margin-bottom: 1.2rem;">
+              ✦ Direct Workshop Rates · Turnkey Interior Designers &amp; Master Carpenters
+            </div>
+            <h1>
+              Interior Design &amp; <span class="highlight">Master Carpentry</span> Under One Roof
+            </h1>
+            <p class="hero-subhead">
+              Looking for top-quality home interiors without aggregator middleman markups? We are turnkey interior designers &amp; hands-on master carpenters with our own Delhi workshop. From modular kitchens &amp; sliding wardrobes to bespoke teak woodwork &amp; full 2/3/4 BHK turnkey execution — get direct craftsman rates, structured milestone delivery, and enduring structural durability.
+            </p>
+
+            <!-- Core USPs -->
+            <div class="hero-usps">
+              <div class="hero-usp-item">
+                <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Direct Workshop Rates (Save 30–40%)</span>
+              </div>
+              <div class="hero-usp-item">
+                <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>In-House Master Carpenters &amp; Designers</span>
+              </div>
+              <div class="hero-usp-item">
+                <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Free Site Visit &amp; 24-Hr Quote</span>
+              </div>
+              <div class="hero-usp-item">
+                <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Certified BWP 710 Marine Plywood</span>
+              </div>
+            </div>
+
+            <!-- Direct Action Buttons -->
+            <div class="hero-cta-group">
+              <a href="#consultation-card" class="btn btn-primary">Book Free Site Visit</a>
+              <a href="/portfolio/" class="btn btn-outline">Explore Projects</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Breathtaking Architectural Photography Showcase -->
+          <div class="hero-visual-showcase">
+            <picture>
+              <source srcset="/assets/images/hero-kitchen.webp" type="image/webp">
+              <img src="/assets/images/hero-kitchen.jpg" alt="Luxury Modular Kitchen &amp; Living Room in Greater Kailash II by Delhi Interior" class="hero-main-photo" width="1200" height="825" loading="eager" fetchpriority="high">
+            </picture>
+
+            <!-- Floating Glassmorphic Badges -->
+            <div class="hero-glass-badge hero-badge-location">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="color: #2563EB; flex-shrink: 0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Greater Kailash II, South Delhi</strong>
+                <span>4-BHK Turnkey Delivered in Delivered On Schedule</span>
+              </div>
+            </div>
+
+            <div class="hero-glass-badge hero-badge-quality">
+              <span class="check-icon">✓</span>
+              <div>
+                <strong>Authentic Materials</strong>
+                <span>100% Factory BWP Marine Ply &amp; German Fittings</span>
+              </div>
+            </div>
+
+            <div class="hero-glass-badge hero-badge-rating">
+              <span class="stars">★★★★★</span>
+              <strong>4.9 / 5 Rating</strong>
+              <span>500+ Verified Delhi NCR Homes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Docked Consultation Card (Sleek Horizontal Architectural Ribbon) -->
+        <div class="hero-consult-card-dock" id="consultation-card">
+          <div class="consult-dock-header">
+            <div class="consult-title">
+              <span>✦ Book Free Site Visit &amp; Direct Estimate</span>
+            </div>
+            <p class="consult-sub">Our Master Designer &amp; Carpenter visits your site anywhere in Delhi NCR. Open 24 Hours.</p>
+          </div>
+
+          <form id="quote-form" novalidate>
+            <input type="text" name="honeypot" style="display:none" tabindex="-1">
+
+            <div class="form-fields-container">
+              <div class="consult-form-grid">
+                <div class="form-group">
+                  <label for="client-name" class="form-label">Your Name *</label>
+                  <input type="text" id="client-name" name="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="client-phone" class="form-label">Phone Number *</label>
+                  <input type="tel" id="client-phone" name="phone" class="form-control" placeholder="+91 96438 17099" required>
+                </div>
+                <div class="form-group">
+                  <label for="service-type" class="form-label">Work Required *</label>
+                  <select id="service-type" name="service" class="form-control">
+                    <option value="Full Home 2BHK/3BHK/4BHK" selected>Full Home Turnkey (2/3/4 BHK / Villa)</option>
+                    <option value="Custom Woodwork &amp; Carpentry">Custom Woodwork &amp; Carpentry (Mandir, Beds, Almirahs)</option>
+                    <option value="Modular Kitchen">Modular Kitchen (Acrylic / PU / Quartz)</option>
+                    <option value="Wardrobes &amp; Closets">Custom Sliding Wardrobes &amp; Walk-Ins</option>
+                    <option value="Wall Paneling &amp; TV Units">Wall Paneling &amp; TV Units (Charcoal/Fluted)</option>
+                    <option value="False Ceiling &amp; Lighting">False Ceiling &amp; Architectural Lighting</option>
+                    <option value="Painting &amp; PU Polish">Painting &amp; PU / Duco Polish</option>
+                    <option value="Doors &amp; Partitions">Doors, Partitions &amp; CNC Jalis</option>
+                    <option value="Complete Renovation">Complete Renovation &amp; MEP Works</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="client-area" class="form-label">Locality / City *</label>
+                  <input type="text" id="client-area" name="area" class="form-control" placeholder="e.g. South Delhi, Gurugram, Noida">
+                </div>
+                <div class="form-group form-submit-col">
+                  <label class="form-label label-spacer">&nbsp;</label>
+                  <button type="submit" id="submit-quote-btn" class="btn btn-primary btn-block">
+                    Get Free Estimate
+                  </button>
+                </div>
+              </div>
+
+              <div class="consult-dock-footer">
+                <div class="consult-direct-call">
+                  Need an immediate estimate? <strong><a href="tel:+919643817099">Call Directly: +91 96438 17099</a></strong>
+                </div>
+                <div class="hero-card-trust">
+                  <span>Direct Master Craftsmen · Zero Spam · 100% Free Site Visit in Delhi NCR</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Success State -->
+            <div class="form-success-state" style="display: none; text-align: center; padding: 2rem 0;">
+              <div style="font-size: 2.5rem; color: var(--color-green); margin-bottom: 0.4rem;">✓</div>
+              <h3 style="color: var(--color-dark); margin-bottom: 0.3rem;">Thank you, <span class="client-name-display">there</span>!</h3>
+              <p style="color: var(--color-muted); font-size: 0.95rem; margin-bottom: 1.2rem;">Our lead designer will connect with you within 2 hours to confirm your consultation.</p>
+              <a href="#" class="btn btn-primary wa-direct-link" target="_blank" rel="noopener noreferrer">Send Details on WhatsApp</a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. TRUST METRIC STRIP -->
+    <section class="trust-strip">
+      <div class="container trust-strip-grid">
+        <div class="trust-item">
+          <h4 class="metric-counter" data-target="10" data-suffix="+ Years">10<span>+ Years</span></h4>
+          <p>Design &amp; Woodwork Excellence</p>
+        </div>
+        <div class="trust-item">
+          <h4 class="metric-counter" data-target="500" data-suffix="+">500<span>+</span></h4>
+          <p>Delivered Homes in Delhi NCR</p>
+        </div>
+        <div class="trust-item">
+          <h4 class="metric-counter" data-target="100" data-suffix="%">100<span>%</span></h4>
+          <p>In-House Master Carpenters</p>
+        </div>
+        <div class="trust-item">
+          <h4 class="metric-counter" data-target="100" data-suffix="%">100<span>%</span></h4>
+          <p>Certified Authentic Materials</p>
+        </div>
+      </div>
+    </section>
+
+        <!-- 2.5 WHY CHOOSE US (EXACT IMAGE 1 SPECIFICATION) -->
+    <section class="why-choose-section">
+      <div class="container">
+        <div class="why-choose-header-center">
+          <h2 class="why-choose-main-title">Why Choose Us</h2>
+          <p class="why-choose-main-sub">We offer perfect interior services</p>
+        </div>
+
+        <div class="why-choose-floating-box">
+          <!-- Card 1: Years of Experience -->
+          <div class="why-choose-col">
+            <div class="why-choose-icon-box">
+              <svg viewBox="0 0 64 64" width="52" height="52" fill="none" stroke="#0B2540" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="18" r="7"/>
+                <circle cx="18" cy="18" r="3"/>
+                <path d="M25 18h24v6M39 18v6M45 18v6"/>
+                <path d="M10 38l22-16 22 16"/>
+                <path d="M14 36v20a2 2 0 0 0 2 2h32a2 2 0 0 0 2-2V36"/>
+                <path d="M26 58V42a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/>
+                <circle cx="36" cy="48" r="1.5" fill="#0B2540"/>
+              </svg>
+            </div>
+            <h3 class="why-choose-col-title">Years of Experience</h3>
+            <p class="why-choose-col-desc">Since 2000, Delhi Interior has been a trusted name in Delhi, offering complete interior and furniture solutions with excellence.</p>
+          </div>
+
+          <!-- Card 2: Creative Interior Designers -->
+          <div class="why-choose-col">
+            <div class="why-choose-icon-box">
+              <svg viewBox="0 0 64 64" width="52" height="52" fill="none" stroke="#0B2540" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 26l12-10 12 12-8 8-16-10z"/>
+                <path d="M54 26L42 16 30 28l8 8 16-10z"/>
+                <path d="M26 38l6 6 8-8"/>
+                <path d="M30 46l6 6 8-8"/>
+                <path d="M34 52l4 4 6-6"/>
+                <path d="M16 22L8 30l12 12"/>
+                <path d="M48 22l8 8-12 12"/>
+              </svg>
+            </div>
+            <h3 class="why-choose-col-title">Creative Interior Designers</h3>
+            <p class="why-choose-col-desc">Our expert designers combine artistry with functionality to transform ordinary spaces into elegant and inspiring interiors.</p>
+          </div>
+
+          <!-- Card 3: Skilled Craftsmanship -->
+          <div class="why-choose-col">
+            <div class="why-choose-icon-box">
+              <svg viewBox="0 0 64 64" width="52" height="52" fill="none" stroke="#0B2540" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 22V14a2 2 0 0 1 2-2h26a2 2 0 0 1 2 2v8"/>
+                <path d="M28 12l20 10"/>
+                <rect x="10" y="22" width="44" height="30" rx="4"/>
+                <path d="M40 31h14v12H40a4 4 0 0 1-4-4v-4a4 4 0 0 1 4-4z"/>
+                <circle cx="44" cy="37" r="2.5" fill="#0B2540"/>
+              </svg>
+            </div>
+            <h3 class="why-choose-col-title">Skilled Craftsmanship</h3>
+            <p class="why-choose-col-desc">Our talented carpenter team breathes new life into furniture through customization, restoration, and quality repair work.</p>
+          </div>
+
+          <!-- Card 4: Client-Focused Approach -->
+          <div class="why-choose-col">
+            <div class="why-choose-icon-box">
+              <svg viewBox="0 0 64 64" width="52" height="52" fill="none" stroke="#0B2540" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="22" y="16" width="20" height="32" rx="3"/>
+                <circle cx="32" cy="43" r="1.5" fill="#0B2540"/>
+                <line x1="28" y1="20" x2="36" y2="20"/>
+                <rect x="24" y="6" width="16" height="8" rx="2"/>
+                <circle cx="12" cy="24" r="5"/>
+                <path d="M12 21v3l2 1"/>
+                <rect x="47" y="19" width="10" height="10" rx="2"/>
+                <line x1="47" y1="23" x2="57" y2="23"/>
+                <circle cx="13" cy="41" r="3"/>
+                <path d="M13 44c-2 2-3 4-3 5h6c0-1-1-3-3-5z"/>
+                <circle cx="51" cy="41" r="4"/>
+                <path d="M51 39v2M51 43v.5"/>
+              </svg>
+            </div>
+            <h3 class="why-choose-col-title">Client-Focused Approach</h3>
+            <p class="why-choose-col-desc">We work closely with every client to understand their lifestyle and vision, ensuring each project reflects their personality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DUAL SPECIALIZATION: RESIDENTIAL & COMMERCIAL DESIGN -->
+    <section style="padding: 4.5rem 0; background: #FFFFFF;">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="pill-badge pill-badge" style="margin-bottom: 0.8rem;">
+            ✦ Tailored Expertise
+          </div>
+          <h2>Residential &amp; Commercial Interior Designing</h2>
+          <p>Whether crafting a bespoke sanctuary for your family or an inspiring headquarters for your team, we deliver end-to-end perfection under one single roof.</p>
+        </div>
+
+        <div class="dual-specialty-grid">
+          <!-- Card 1: Residential -->
+          <div class="specialty-card">
+            <picture>
+              <source srcset="/assets/images/service-fullhome.webp" type="image/webp">
+              <img src="/assets/images/service-fullhome.jpg" alt="Residential Interior Designing Delhi NCR" width="800" height="500" loading="lazy">
+            </picture>
+            <div class="specialty-overlay"></div>
+            <div class="specialty-content">
+              <span class="specialty-tag">Residential Interior Designing</span>
+              <h3>Bespoke Luxury For Your Home</h3>
+              <p>Complete turnkey home transformations: modular kitchens, custom sliding wardrobes, bespoke woodwork &amp; precision carpentry, fluted wall paneling, and teakwood pooja mandirs crafted for urban Delhi living.</p>
+              <a href="/full-home-interior-delhi/" class="btn btn-primary" style="padding: 0.75rem 1.6rem; font-size: 0.9rem;">Explore Residential Interiors</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Commercial -->
+          <div class="specialty-card">
+            <picture>
+              <source srcset="/assets/images/portfolio-office.webp" type="image/webp">
+              <img src="/assets/images/portfolio-office.jpg" alt="Commercial Interior Designing Delhi NCR" width="800" height="500" loading="lazy">
+            </picture>
+            <div class="specialty-overlay"></div>
+            <div class="specialty-content">
+              <span class="specialty-tag" style="background-color: #2563EB;">Commercial Interior Designing</span>
+              <h3>Productive &amp; Inspiring Workspaces</h3>
+              <p>Modern corporate offices, collaborative workstations, executive conference rooms, retail showrooms, and clinics that enhance team productivity and reflect your brand prestige.</p>
+              <a href="/portfolio/" class="btn btn-primary" style="background-color: #2563EB; padding: 0.75rem 1.6rem; font-size: 0.9rem;">Explore Commercial Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. UNIQUE SELLING POINTS (KD Signature Value Proposition) -->
+    <section class="usps-section-kd">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="pill-badge pill-badge" style="margin-bottom: 0.8rem;">
+            ✦ Why Delhi Interior
+          </div>
+          <h2>Built to Last. Designed to Impress</h2>
+          <p>Six fundamental principles that set our studio apart from freelance contractors and rigid catalog aggregators.</p>
+        </div>
+
+        <div class="usps-grid-kd">
+          <!-- USP 1 -->
+          <div class="usp-card-kd">
+            <div class="usp-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>100% Start to Finish Execution</h3>
+            <p>From initial masonry and electrical conduit routing to final European PU polish, our in-house master carpenters and project engineers manage every stage without subcontracting chaos.</p>
+          </div>
+
+          <!-- USP 2 -->
+          <div class="usp-card-kd">
+            <div class="usp-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Itemized Scope &amp; Detailed Specifications</h3>
+            <p>100% itemized specifications with exact hardware brands, square footages, and board thicknesses in writing. Zero hidden surprises or mid-project compromises.</p>
+          </div>
+
+          <!-- USP 3 -->
+          <div class="usp-card-kd">
+            <div class="usp-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <h3>Architectural Layouts &amp; Working Drawings</h3>
+            <p>Every project begins with millimeter-accurate AutoCAD architectural working drawings and electrical/plumbing schematics so you know exact clearances before on-site work begins.</p>
+          </div>
+
+          <!-- USP 4 -->
+          <div class="usp-card-kd">
+            <div class="usp-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Authentic Materials &amp; Plywood Safety</h3>
+            <p>We source directly from authorized distributors: genuine CenturyPly Club Prime BWP 710 marine ply, Greenpanel HDHMR, and authentic German hardware from Hettich and Blum.</p>
+          </div>
+
+          <!-- USP 5 -->
+          <div class="usp-card-kd">
+            <div class="usp-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Turnkey Under One Single Roof</h3>
+            <p>Civil masons, master carpenters, false ceiling installers, electrical MEP teams, and Italian painters coordinated by a dedicated on-site site supervisor.</p>
+          </div>
+
+          <!-- USP 6 -->
+          <div class="usp-card-kd">
+            <div class="usp-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Structured Timelines &amp; Video Progress</h3>
+            <p>Milestone-driven execution with structured stage handovers. Weekly WhatsApp photo and video logs keep you updated without taking time off work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHY DO YOU NEED INTERIOR DESIGNERS IN DELHI NCR -->
+    <section class="why-need-section">
+      <div class="container">
+        <div class="why-need-layout">
+          <div>
+            <div class="pill-badge pill-badge" style="margin-bottom: 0.8rem;">
+              ✦ Local Expertise
+            </div>
+            <h2>Why Do You Need Specialized Interior Designers in Delhi NCR?</h2>
+            <p style="font-size: 1.05rem; line-height: 1.8; color: #4B5563; margin-bottom: 2rem;">
+              Designing a home in Delhi NCR is fundamentally different from any other region. Extreme summer heat, monsoon humidity, high urban dust levels, and compact builder floor configurations require engineering foresight — not just pretty catalog pictures.
+            </p>
+
+            <div class="why-need-points">
+              <div class="why-point-box">
+                <h4>Preventing Counterfeit Plywood</h4>
+                <p>Over 60% of wholesale timber markets in Delhi NCR sell commercial grade moisture-prone board stamped with fake IS:710 marks. We use verified QR-coded CenturyPly and Greenpanel delivered with manufacturer authenticity certificates.</p>
+              </div>
+
+              <div class="why-point-box">
+                <h4>Space Optimization in Builder Floors</h4>
+                <p>Delhi builder floors and high-rise apartments have specific structural beams and shaft constraints. Our architectural planning extracts 20% to 35% more usable floor area through floor-to-ceiling loft integration.</p>
+              </div>
+
+              <div class="why-point-box">
+                <h4>Single-Point Accountability</h4>
+                <p>Dealing separately with carpenters, plumbers, painters, and glass vendors leads to blame games when leaks or misalignments occur. With Delhi Interior, one single project manager is 100% accountable.</p>
+              </div>
+
+              <div class="why-point-box">
+                <h4>Transparent Scope &amp; Detailed BOQ</h4>
+                <p>Contractors notoriously quote low upfront and create mid-project disputes through 'unforeseen civil work'. Our comprehensive scope ensures every detail and material specification is committed in writing.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <picture>
+              <source srcset="/assets/images/about-workshop.webp" type="image/webp">
+              <img src="/assets/images/about-workshop.jpg" alt="Delhi Interior Factory Workshop" style="width: 100%; border-radius: 20px; box-shadow: 0 16px 45px rgba(0,0,0,0.12);" width="800" height="600" loading="lazy">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. OUR AWESOME INTERIOR DESIGNING SERVICES -->
+    <section class="services-visual-section" id="what-we-do">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="pill-badge pill-badge" style="margin-bottom: 0.8rem;">
+            ✦ Complete Turnkey Portfolio
+          </div>
+          <h2>Our Interior Designing &amp; Woodwork Services</h2>
+          <p>Every single service executed by specialized in-house craftsmanship teams with verified premium materials.</p>
+        </div>
+
+        <div class="services-visual-grid">
+          <!-- 1. Modular Kitchens -->
+          <div class="service-visual-card">
+            <div class="service-visual-img">
+              <picture>
+                <source srcset="/assets/images/service-kitchen.webp" type="image/webp">
+                <img src="/assets/images/service-kitchen.jpg" alt="Modular Kitchen Designs in Delhi NCR" width="600" height="375" loading="lazy">
+              </picture>
+              <span class="service-visual-tag">BWP 710 Marine Ply</span>
+            </div>
+            <div class="service-visual-body">
+              <h3>Modular Kitchens</h3>
+              <p>Engineered for rigorous Indian cooking. Matte acrylic and PU lacquered shutters, stain-proof Calacatta quartz countertops, and German tandem soft-close drawers.</p>
+              <div class="service-visual-pills">
+                <span class="service-visual-pill">L-Shaped &amp; Island</span>
+                <span class="service-visual-pill">Tandem Drawers</span>
+                <span class="service-visual-pill">Quartz Worktops</span>
+              </div>
+              <div class="service-visual-footer">
+                <span class="service-visual-badge">✦ BWP Marine Ply &amp; Quartz</span>
+                <a href="/modular-kitchen-delhi/" class="service-visual-link">Explore Designs →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Custom Wardrobes -->
+          <div class="service-visual-card">
+            <div class="service-visual-img">
+              <picture>
+                <source srcset="/assets/images/service-wardrobe.webp" type="image/webp">
+                <img src="/assets/images/service-wardrobe.jpg" alt="Custom Wardrobe Designs in Delhi NCR" width="600" height="375" loading="lazy">
+              </picture>
+              <span class="service-visual-tag">Anti-Warp Calibrated</span>
+            </div>
+            <div class="service-visual-body">
+              <h3>Custom Wardrobes</h3>
+              <p>Floor-to-ceiling sliding wardrobes with top-hung silent tracks, smoked bronze glass walk-ins, integrated sensor LED rails, and velvet accessory drawers.</p>
+              <div class="service-visual-pills">
+                <span class="service-visual-pill">Top-Hung Sliding</span>
+                <span class="service-visual-pill">Walk-in Closets</span>
+                <span class="service-visual-pill">Sensor Lighting</span>
+              </div>
+              <div class="service-visual-footer">
+                <span class="service-visual-badge">✦ Soft-Close &amp; Custom Fit</span>
+                <a href="/wardrobe-design-delhi/" class="service-visual-link">Explore Designs →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Full Home Turnkey -->
+          <div class="service-visual-card">
+            <div class="service-visual-img">
+              <picture>
+                <source srcset="/assets/images/portfolio-fullhome.webp" type="image/webp">
+                <img src="/assets/images/portfolio-fullhome.jpg" alt="Full Home Turnkey Interiors Delhi NCR" width="600" height="375" loading="lazy">
+              </picture>
+              <span class="service-visual-tag">Turnkey Execution</span>
+            </div>
+            <div class="service-visual-body">
+              <h3>Full Home Turnkey Interiors</h3>
+              <p>End-to-end transformation for 2, 3, 4 BHK builder floors, apartments, and villas. Civil alterations, MEP, carpentry, ceilings, and luxury Italian PU finishes.</p>
+              <div class="service-visual-pills">
+                <span class="service-visual-pill">2/3/4 BHK Turnkey</span>
+                <span class="service-visual-pill">Single Point Ownership</span>
+                <span class="service-visual-pill">BWP Marine Ply</span>
+              </div>
+              <div class="service-visual-footer">
+                <span class="service-visual-badge">✦ Complete Turnkey Execution</span>
+                <a href="/full-home-interior-delhi/" class="service-visual-link">Explore Designs →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Wall Paneling & TV Units -->
+          <div class="service-visual-card">
+            <div class="service-visual-img">
+              <picture>
+                <source srcset="/assets/images/service-paneling.webp" type="image/webp">
+                <img src="/assets/images/service-paneling.jpg" alt="Wall Paneling and TV Units Delhi NCR" width="600" height="375" loading="lazy">
+              </picture>
+              <span class="service-visual-tag">Acoustic &amp; Fluted</span>
+            </div>
+            <div class="service-visual-body">
+              <h3>Wall Paneling &amp; TV Units</h3>
+              <p>Architectural charcoal louvers, acoustic fluted slats, PVC/WPC cladding, natural smoked veneers, and floating TV consoles with warm LED backlighting.</p>
+              <div class="service-visual-pills">
+                <span class="service-visual-pill">Charcoal Louvers</span>
+                <span class="service-visual-pill">Fluted Panels</span>
+                <span class="service-visual-pill">Concealed Wiring</span>
+              </div>
+              <div class="service-visual-footer">
+                <span class="service-visual-badge">✦ Fluted &amp; Charcoal Louvers</span>
+                <a href="/wall-paneling-delhi/" class="service-visual-link">Explore Designs →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. False Ceiling & Lighting -->
+          <div class="service-visual-card">
+            <div class="service-visual-img">
+              <picture>
+                <source srcset="/assets/images/service-ceiling.webp" type="image/webp">
+                <img src="/assets/images/service-ceiling.jpg" alt="False Ceiling and Lighting Design Delhi NCR" width="600" height="375" loading="lazy">
+              </picture>
+              <span class="service-visual-tag">Saint-Gobain Gyproc</span>
+            </div>
+            <div class="service-visual-body">
+              <h3>False Ceiling &amp; Lighting</h3>
+              <p>Genuine Saint-Gobain gypsum boards, anti-crack GI framework, magnetic track lights, 3000K warm indirect coves, and architectural negative details.</p>
+              <div class="service-visual-pills">
+                <span class="service-visual-pill">Magnetic Tracks</span>
+                <span class="service-visual-pill">Indirect Cove</span>
+                <span class="service-visual-pill">Anti-Crack GI</span>
+              </div>
+              <div class="service-visual-footer">
+                <span class="service-visual-badge">✦ Saint-Gobain Gyproc</span>
+                <a href="/false-ceiling-delhi/" class="service-visual-link">Explore Designs →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Doors & Partitions -->
+          <div class="service-visual-card">
+            <div class="service-visual-img">
+              <picture>
+                <source srcset="/assets/images/service-doors.webp" type="image/webp">
+                <img src="/assets/images/service-doors.jpg" alt="Doors and Partitions Delhi NCR" width="600" height="375" loading="lazy">
+              </picture>
+              <span class="service-visual-tag">Slim Aluminum &amp; Teak</span>
+            </div>
+            <div class="service-visual-body">
+              <h3>Doors &amp; Architectural Partitions</h3>
+              <p>Grand solid teak pivot main doors with digital locks, ultra-slim aluminum fluted glass sliding partitions, pocket doors, and decorative CNC metal screens.</p>
+              <div class="service-visual-pills">
+                <span class="service-visual-pill">Fluted Glass</span>
+                <span class="service-visual-pill">Pivot Main Doors</span>
+                <span class="service-visual-pill">CNC Jali Screens</span>
+              </div>
+              <div class="service-visual-footer">
+                <span class="service-visual-badge">✦ Solid Teak &amp; Aluminum</span>
+                <a href="/doors-partitions-delhi/" class="service-visual-link">Explore Designs →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Custom Woodwork & Precision Carpentry -->
+          <div class="service-visual-card">
+            <div class="service-visual-img">
+              <picture>
+                <source srcset="/assets/images/service-furniture.webp" type="image/webp">
+                <img src="/assets/images/service-furniture.jpg" alt="Custom Woodwork &amp; Carpentry Services in Delhi NCR" width="600" height="375" loading="lazy">
+              </picture>
+              <span class="service-visual-tag">Master Carpenters</span>
+            </div>
+            <div class="service-visual-body">
+              <h3>Custom Woodwork &amp; Carpentry</h3>
+              <p>Handcrafted solid Burma Teak mandirs with CNC jalis, hydraulic storage beds, ergonomic study desks, crockery consoles, and precision architectural millwork.</p>
+              <div class="service-visual-pills">
+                <span class="service-visual-pill">Teak Pooja Mandirs</span>
+                <span class="service-visual-pill">Hydraulic Beds</span>
+                <span class="service-visual-pill">Precision Carpentry</span>
+              </div>
+              <div class="service-visual-footer">
+                <span class="service-visual-badge">✦ Master Woodcraft</span>
+                <a href="/bedroom-furniture-delhi/" class="service-visual-link">Explore Woodwork →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Painting & Luxury Polish -->
+          <div class="service-visual-card">
+            <div class="service-visual-img">
+              <picture>
+                <source srcset="/assets/images/service-painting.webp" type="image/webp">
+                <img src="/assets/images/service-painting.jpg" alt="Painting and Luxury Polishing Delhi NCR" width="600" height="375" loading="lazy">
+              </picture>
+              <span class="service-visual-tag">Italian PU &amp; Duco</span>
+            </div>
+            <div class="service-visual-body">
+              <h3>Painting &amp; PU Polish</h3>
+              <p>Dust-free mechanical wall sanding, Asian Paints Royale Aspira luxury emulsion, Italian PU clear wood finishes, and ultra-smooth matte Duco lacquer.</p>
+              <div class="service-visual-pills">
+                <span class="service-visual-pill">Italian PU Polish</span>
+                <span class="service-visual-pill">Royale Aspira</span>
+                <span class="service-visual-pill">Dust-Free Sanding</span>
+              </div>
+              <div class="service-visual-footer">
+                <span class="service-visual-badge">✦ Italian PU &amp; Duco Finish</span>
+                <a href="/painting-polishing-delhi/" class="service-visual-link">Explore Designs →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Plumbing & Electrical MEP -->
+          <div class="service-visual-card">
+            <div class="service-visual-img">
+              <picture>
+                <source srcset="/assets/images/service-electrical.webp" type="image/webp">
+                <img src="/assets/images/service-electrical.jpg" alt="Plumbing and Electrical MEP Delhi NCR" width="600" height="375" loading="lazy">
+              </picture>
+              <span class="service-visual-tag">Fire-Retardant FRLS</span>
+            </div>
+            <div class="service-visual-body">
+              <h3>Plumbing &amp; Electrical MEP</h3>
+              <p>Pressure-tested Astral CPVC piping, Havells FRLS fire-retardant wiring, Schneider modular switches, and concealed diverter sanitaryware installations.</p>
+              <div class="service-visual-pills">
+                <span class="service-visual-pill">Astral CPVC Piping</span>
+                <span class="service-visual-pill">Havells FRLS Wire</span>
+                <span class="service-visual-pill">Pressure Tested</span>
+              </div>
+              <div class="service-visual-footer">
+                <span class="service-visual-badge">✦ Pressure-Tested MEP</span>
+                <a href="/plumbing-electrical-delhi/" class="service-visual-link">Explore Designs →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6.5 AN INTERIOR SOLUTION FOR EVERY BRIEF (EXACT IMAGE 2 BLU BLOOM SPECIFICATION) -->
+    <section class="brief-solutions-section">
+      <div class="container">
+        <div class="brief-solutions-header">
+          <h2 class="brief-main-title">An interior solution for every<br>brief.</h2>
+          <p class="brief-sub-title">
+            Every property, material palette and scope is different. Choose a starting direction, then let our team prepare a project-specific BOQ and quotation.
+          </p>
+        </div>
+
+        <div class="brief-tiers-container">
+          <!-- 01 Ultra Luxury -->
+          <div class="brief-tier-col" data-tier="Ultra Luxury">
+            <span class="brief-tier-num">01</span>
+            <h3 class="brief-tier-title">Ultra Luxury</h3>
+            <p class="brief-tier-desc">Bespoke detailing and an elevated material palette.</p>
+            <a href="#consultation-card" class="brief-tier-link" data-tier-select="Full Home 2BHK/3BHK/4BHK">
+              Request details <span class="arrow-icon">↗</span>
+            </a>
+          </div>
+
+          <!-- 02 Luxury -->
+          <div class="brief-tier-col" data-tier="Luxury">
+            <span class="brief-tier-num">02</span>
+            <h3 class="brief-tier-title">Luxury</h3>
+            <p class="brief-tier-desc">Premium finishes with complete design and execution support.</p>
+            <a href="#consultation-card" class="brief-tier-link" data-tier-select="Full Home 2BHK/3BHK/4BHK">
+              Request details <span class="arrow-icon">↗</span>
+            </a>
+          </div>
+
+          <!-- 03 Minimalist -->
+          <div class="brief-tier-col" data-tier="Minimalist">
+            <span class="brief-tier-num">03</span>
+            <h3 class="brief-tier-title">Minimalist</h3>
+            <p class="brief-tier-desc">Calm, functional spaces with disciplined material choices.</p>
+            <a href="#consultation-card" class="brief-tier-link" data-tier-select="Full Home 2BHK/3BHK/4BHK">
+              Request details <span class="arrow-icon">↗</span>
+            </a>
+          </div>
+
+          <!-- 04 Essential -->
+          <div class="brief-tier-col" data-tier="Essential">
+            <span class="brief-tier-num">04</span>
+            <h3 class="brief-tier-title">Essential</h3>
+            <p class="brief-tier-desc">A focused interior scope built around everyday priorities.</p>
+            <a href="#consultation-card" class="brief-tier-link" data-tier-select="Full Home 2BHK/3BHK/4BHK">
+              Request details <span class="arrow-icon">↗</span>
+            </a>
+          </div>
+
+          <!-- 05 Basic -->
+          <div class="brief-tier-col" data-tier="Basic">
+            <span class="brief-tier-num">05</span>
+            <h3 class="brief-tier-title">Basic</h3>
+            <p class="brief-tier-desc">Practical solutions for a clearly defined project scope.</p>
+            <a href="#consultation-card" class="brief-tier-link" data-tier-select="Full Home 2BHK/3BHK/4BHK">
+              Request details <span class="arrow-icon">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- 10. SOME OF OUR AWESOME INTERIOR DESIGNING PROJECTS -->
+    <section class="portfolio-section" style="padding: 5rem 0; background: #F9FAFB;">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="pill-badge pill-badge" style="margin-bottom: 0.8rem;">
+            ✦ Real Handover Gallery
+          </div>
+          <h2>Some Of Our Awesome Interior Designing Projects</h2>
+          <p>Explore real apartments, builder floors, and villas delivered across Delhi NCR with architectural layouts and AutoCAD precision.</p>
+        </div>
+
+        <!-- Room Tabs -->
+        <div class="room-tabs-bar" role="tablist">
+          <button class="room-tab-btn active" data-room-target="all">All Projects</button>
+          <button class="room-tab-btn" data-room-target="kitchen">Modular Kitchens</button>
+          <button class="room-tab-btn" data-room-target="bedroom">Master Bedrooms</button>
+          <button class="room-tab-btn" data-room-target="living">Living &amp; Dining</button>
+          <button class="room-tab-btn" data-room-target="wardrobe">Custom Wardrobes</button>
+          <button class="room-tab-btn" data-room-target="woodwork">Woodwork &amp; Mandirs</button>
+        </div>
+
+        <!-- Room Cards Grid -->
+        <div class="room-cards-grid">
+
+          <div class="room-card" data-room="woodwork">
+            <div class="room-card-img">
+              <picture>
+                <source srcset="/assets/images/portfolio-mandir.webp" type="image/webp">
+                <img src="/assets/images/portfolio-mandir.jpg" alt="Sacred Teakwood Mandir &amp; Custom Woodwork in Mohammadpur South Delhi" width="800" height="600" loading="lazy">
+              </picture>
+              <span class="tag">Mohammadpur, New Delhi</span>
+            </div>
+            <div class="room-card-body">
+              <h3>Bespoke Teakwood Mandir &amp; Jali</h3>
+              <p>Solid Burma Teak with intricate backlit CNC jaali, brass temple bells, and concealed samagri storage.</p>
+              <div class="room-card-footer">
+                <div class="price-chip">Scope: <strong>Bespoke Mandir</strong></div>
+                <a href="/bedroom-furniture-delhi/" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">View Woodwork Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="room-card" data-room="kitchen">
+            <div class="room-card-img">
+              <picture>
+                <source srcset="/assets/images/portfolio-kitchen.webp" type="image/webp">
+                <img src="/assets/images/portfolio-kitchen.jpg" alt="L-Shaped Acrylic Kitchen in Greater Kailash" width="800" height="600" loading="lazy">
+              </picture>
+              <span class="tag">Greater Kailash II</span>
+            </div>
+            <div class="room-card-body">
+              <h3>Matte Acrylic Modular Kitchen</h3>
+              <p>Calacatta quartz countertop with German soft-close tandem drawers and tall pantry.</p>
+              <div class="room-card-footer">
+                <div class="price-chip">Scope: <strong>Modular Kitchen</strong></div>
+                <a href="/modular-kitchen-delhi/" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">View Project Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="room-card" data-room="bedroom">
+            <div class="room-card-img">
+              <picture>
+                <source srcset="/assets/images/portfolio-bedroom.webp" type="image/webp">
+                <img src="/assets/images/portfolio-bedroom.jpg" alt="Master Suite with Fluted Backdrop in Panchsheel" width="800" height="600" loading="lazy">
+              </picture>
+              <span class="tag">Panchsheel Park</span>
+            </div>
+            <div class="room-card-body">
+              <h3>Fluted Master Suite &amp; Wardrobe</h3>
+              <p>Bronze glass sliding wardrobe with acoustic charcoal backdrop and floating bed consoles.</p>
+              <div class="room-card-footer">
+                <div class="price-chip">Scope: <strong>Master Suite</strong></div>
+                <a href="/wardrobe-design-delhi/" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">View Project Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="room-card" data-room="living">
+            <div class="room-card-img">
+              <picture>
+                <source srcset="/assets/images/portfolio-living.webp" type="image/webp">
+                <img src="/assets/images/portfolio-living.jpg" alt="Modern Minimalist Lounge in Gulmohar Park" width="800" height="600" loading="lazy">
+              </picture>
+              <span class="tag">Gulmohar Park</span>
+            </div>
+            <div class="room-card-body">
+              <h3>Geometric Veneer Living Lounge</h3>
+              <p>Natural smoked veneer feature wall, integrated warm magnetic track lights, and quartz bar ledge.</p>
+              <div class="room-card-footer">
+                <div class="price-chip">Scope: <strong>Turnkey Lounge</strong></div>
+                <a href="/wall-paneling-delhi/" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">View Project Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="room-card" data-room="wardrobe">
+            <div class="room-card-img">
+              <picture>
+                <source srcset="/assets/images/hero-wardrobe.webp" type="image/webp">
+                <img src="/assets/images/hero-wardrobe.jpg" alt="Walk-In Closet in Jor Bagh" width="800" height="600" loading="lazy">
+              </picture>
+              <span class="tag">Jor Bagh</span>
+            </div>
+            <div class="room-card-body">
+              <h3>Bronze Glass Walk-In Closet</h3>
+              <p>Floor-to-ceiling glass wardrobe suite with velvet jewelry organizers and smart sensor illumination.</p>
+              <div class="room-card-footer">
+                <div class="price-chip">Delivered in <strong>35 Days</strong></div>
+                <a href="/wardrobe-design-delhi/" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">View Project Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="room-card" data-room="living">
+            <div class="room-card-img">
+              <picture>
+                <source srcset="/assets/images/portfolio-tvunit.webp" type="image/webp">
+                <img src="/assets/images/portfolio-tvunit.jpg" alt="Acoustic TV Backdrop in Gurugram" width="800" height="600" loading="lazy">
+              </picture>
+              <span class="tag">Golf Course Rd, Gurugram</span>
+            </div>
+            <div class="room-card-body">
+              <h3>Acoustic Charcoal TV Wall</h3>
+              <p>Acoustic louvers with floating marble console, concealed wiring, and warm backlighting.</p>
+              <div class="room-card-footer">
+                <div class="price-chip">Delivered in <strong>28 Days</strong></div>
+                <a href="/wall-paneling-delhi/" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;">View Project Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="/portfolio/" class="btn btn-primary" style="padding: 1rem 2.8rem; font-size: 1.05rem;">View Full 500+ Project Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECT ESTIMATE BANNER -->
+    <section style="background: #111827; color: #FFFFFF; padding: 3.5rem 0; border-top: 3px solid #2563EB;">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+        <div style="max-width: 650px;">
+          <div class="pill-badge" style="display:inline-flex; align-items:center; padding:0.3rem 0.8rem; border-radius:999px; font-size:0.78rem; font-weight:700; margin-bottom:0.75rem;">✦ Instant Consultation</div>
+          <h3 style="color: #FFFFFF; font-size: 1.8rem; font-weight: 800; margin-bottom: 0.6rem;">Planning an Interior or Carpentry Project in Delhi NCR?</h3>
+          <p style="color: #D1D5DB; font-size: 1rem; line-height: 1.7; margin: 0;">Send us your room dimensions or floor plan on WhatsApp, or speak directly with our Master Contractor. We visit your site anywhere in Delhi NCR — 100% Free.</p>
+        </div>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="tel:+919643817099" class="btn btn-primary" style="padding: 0.9rem 1.8rem; font-size: 0.95rem;">Call +91 96438 17099</a>
+          <a href="https://wa.me/919643817099?text=Hi+Delhi+Interior%2C+I+want+a+direct+estimate+for+my+home+interior+and+carpentry." class="btn btn-outline" style="border-color: #25D366; color: #25D366; padding: 0.9rem 1.8rem; font-size: 0.95rem;" target="_blank" rel="noopener noreferrer">💬 WhatsApp Floor Plan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. REAL HOMES DELIVERED (CLIENT TESTIMONIALS) -->
+    <section class="reviews-livspace-section">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="pill-badge pill-badge" style="margin-bottom: 0.8rem;">
+            ✦ Real Client Reviews
+          </div>
+          <h2>Hear From Delhi NCR Families Who Love Their Homes</h2>
+          <p>Over 500+ delivered turnkey residences and modular spaces across South Delhi, Gurugram, and Noida.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card-livspace">
+            <div class="stars">★★★★★</div>
+            <p>"Delhi Interior executed our complete 3BHK flat in Greater Kailash II promptly on schedule as promised. The modular kitchen finish with German tandem drawers is flawless. Absolutely zero hidden costs!"</p>
+            <div class="client-meta">
+              <div class="client-avatar">RS</div>
+              <div>
+                <strong>Rohit &amp; Sunita Sharma</strong>
+                <span>Greater Kailash II · 3 BHK Turnkey</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-livspace">
+            <div class="stars">★★★★★</div>
+            <p>"We were worried about counterfeit plywood since we had a bad experience earlier with a local contractor. Delhi Interior provided genuine CenturyPly QR verification and delivered on time."</p>
+            <div class="client-meta">
+              <div class="client-avatar">AK</div>
+              <div>
+                <strong>Ananya &amp; Karan Mehra</strong>
+                <span>DLF Phase 5, Gurugram · Luxury Modular Kitchen</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card-livspace">
+            <div class="stars">★★★★★</div>
+            <p>"The teakwood mandir and master bedroom walk-in closet they built are the highlights of our new house. The craftsmanship and edge-banding precision are outstanding."</p>
+            <div class="client-meta">
+              <div class="client-avatar">VG</div>
+              <div>
+                <strong>Vikram &amp; Gayatri Malhotra</strong>
+                <span>Vasant Vihar · 4 BHK Complete Woodwork</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. FAQ ACCORDION -->
+    <section class="faq-section" style="padding: 5rem 0; background: #FFFFFF;">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="pill-badge pill-badge" style="margin-bottom: 0.8rem;">
+            Got Questions?
+          </div>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about working with Delhi Interior for your home renovation.</p>
+        </div>
+
+        <div class="faq-accordion-wrap">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does Delhi Interior streamline project timelines and execution?</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>We operate our own 10,000 sq. ft. precision manufacturing facility in Delhi NCR. While on-site civil and electrical conduit preparation is underway, all your kitchen cabinets, wardrobe carcasses, and paneling are precision cut and edge-banded in parallel, significantly accelerating on-site installation and ensuring orderly progress.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What material quality standards and durability assurances do you follow?</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>We exclusively build using calibrated BWP 710 marine plywood, Greenpanel HDMR boards, and authentic hardware from Blum, Hettich, and Hafele. Our direct joinery techniques and moisture-resistant fabrication deliver lasting structural stability and termite resilience.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do you protect clients against counterfeit plywood?</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>We source directly from authorized factory distributors of CenturyPly and Greenpanel. Every plywood sheet delivered to our workshop or your site features verifiable QR authentication codes and manufacturer test certificates that you can inspect in person.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I visit your Experience Centre in Delhi?</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! Our Experience Centre at F-128/4, Mohammadpur, New Delhi 110066 is open 24 Hours. You can explore full-scale modular kitchens, wardrobe mechanisms, and 500+ material swatches in person.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. HIGH-IMPACT FINAL CTA BANNER -->
+    <section class="final-cta-section">
+      <div class="container">
+        <h2>Ready to Start Your Interior or Carpentry Project?</h2>
+        <p>Book a free on-site measurement and direct consultation with our Master Designer &amp; Carpenter today. Zero obligation, honest craftsman rates.</p>
+        <div class="cta-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="/contact/" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.05rem;">
+            Book Free Site Visit
+          </a>
+          <a href="tel:+919643817099" class="btn btn-secondary" style="background: #FFFFFF; color: #2563EB; font-weight: 700; padding: 1rem 2.2rem; text-decoration: none;">
+            📞 Call +91 96438 17099
+          </a>
+          <a href="https://wa.me/919643817099?text=Hi+Delhi+Interior%2C+I+want+to+book+a+free+interior+design+and+carpentry+consultation." class="btn btn-outline" style="border-color: #FFFFFF; color: #FFFFFF; padding: 1rem 2.2rem;" target="_blank" rel="noopener noreferrer">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modern Editorial Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="footer-logo-card" aria-label="Delhi Interior Home">
+            <img src="/assets/images/logo.png" alt="Delhi Interior" width="165" height="52" class="brand-logo-img">
+          </a>
+          <p>Delhi NCR's trusted residential and commercial interior design brand. Delivering precision modular kitchens, wardrobes, and turnkey homes crafted by master artisans.</p>
+          <div style="display: flex; gap: 0.85rem; margin-top: 1.2rem; font-size: 0.9rem;">
+            <a href="https://instagram.com/delhiinterior" style="color: #9CA3AF;" aria-label="Instagram">Instagram</a> ·
+            <a href="https://facebook.com/delhiinterior" style="color: #9CA3AF;" aria-label="Facebook">Facebook</a> ·
+            <a href="https://youtube.com/delhiinterior" style="color: #9CA3AF;" aria-label="YouTube">YouTube</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="/modular-kitchen-delhi/">Modular Kitchens</a></li>
+            <li><a href="/wardrobe-design-delhi/">Custom Wardrobes</a></li>
+            <li><a href="/full-home-interior-delhi/">Full Home Turnkey Interiors</a></li>
+            <li><a href="/wall-paneling-delhi/">Wall Paneling &amp; TV Units</a></li>
+            <li><a href="/false-ceiling-delhi/">False Ceilings &amp; Lighting</a></li>
+            <li><a href="/doors-partitions-delhi/">Doors &amp; Partitions</a></li>
+            <li><a href="/bedroom-furniture-delhi/">Custom Woodwork &amp; Carpentry</a></li>
+            <li><a href="/painting-polishing-delhi/">Painting &amp; PU Polish</a></li>
+            <li><a href="/plumbing-electrical-delhi/">Plumbing &amp; Electrical MEP</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/portfolio/">Projects Gallery</a></li>
+            <li><a href="/process/">Our Execution Process</a></li>
+            <li><a href="/blog/">Blogs &amp; Guides</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Experience Centre</h4>
+          <p style="margin-bottom: 0.5rem; color: #D1D5DB;">F-128/4, Mohammadpur<br>New Delhi, Delhi 110066</p>
+          <p style="margin-bottom: 0.5rem; color: #D1D5DB;">Open 24 Hours (7 Days a Week)</p>
+          <p style="margin-bottom: 1rem;"><a href="tel:+919643817099" style="color: #FFFFFF; font-weight: 700; text-decoration: none;">+91 96438 17099</a></p>
+          <a href="/contact/" class="btn btn-outline" style="border-color: #4B5563; color: #FFFFFF; font-size: 0.85rem; padding: 0.6rem 1.2rem;">Visit Experience Centre</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved. GST Registered.</p>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-of-service/">Terms of Service</a>
+          <a href="/sitemap/">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Floating Contact Actions (Call above WhatsApp) -->
+  <div class="floating-actions-container" aria-label="Direct studio contacts">
+    <!-- Call Button (Above) -->
+    <a href="tel:+919643817099" class="call-float" aria-label="Call Delhi Interior 24/7">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+      <span class="call-tooltip">Call +91 96438 17099 (24/7)</span>
+    </a>
+
+    <!-- WhatsApp Button (Below Call Button) -->
+    <a href="https://wa.me/919643817099?text=Hi+Delhi+Interior%2C+I+want+to+book+a+free+interior+consultation." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp 24/7">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span class="whatsapp-tooltip">Chat on WhatsApp (24/7)</span>
+    </a>
+  </div>
+
+  <!-- Mobile Sticky Bottom CTA -->
+  <aside class="sticky-mobile-cta" aria-label="Mobile quick actions">
+    <div class="cta-btn-group">
+      <a href="tel:+919643817099" class="cta-btn btn-call">Call Designer</a>
+      <a href="https://wa.me/919643817099?text=Hi+Delhi+Interior%2C+I+want+a+quote." class="cta-btn btn-wa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </aside>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>'''
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("[SUCCESS] Rebuilt index.html with new Logo, 24/7 hours, F-128/4 Mohammadpur address, +91 96438 17099 phone, 10-year type, floating call button, and under-nav bar completely removed!")

@@ -1,0 +1,2298 @@
+<USER_REQUEST>
+╔══════════════════════════════════════════════════════════════════╗
+   MASTER WEBSITE BUILD BRIEF — PREMIUM INTERIOR DESIGN STUDIO
+   Version 3.0 · ₹10 Lakh Quality Standard
+   READ EVERY WORD. FOLLOW EVERY INSTRUCTION. NO ASSUMPTIONS.
+╚══════════════════════════════════════════════════════════════════╝
+
+You are building a world-class, fully SEO-optimised, 
+high-converting interior design website. This is a 20+ page 
+website — not a single-page template. Every design decision, 
+every word, every interaction is specified below. Do not 
+improvise. Do not substitute with template defaults. 
+If something is not clear, ask — do not guess.
+
+The finished website must look indistinguishable from a site 
+that cost ₹10 lakh to build: minimal, editorial, premium, 
+and built to rank on Google and convert visitors into leads.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 1 — BUSINESS DETAILS (Fill all before building)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Business Name       : [BRAND NAME]
+Tagline             : [e.g. "Built to Last. Designed to Impress."]
+City (Primary)      : [YOUR CITY]
+Cities Served       : [CITY 1], [CITY 2], [CITY 3]
+State               : [STATE]
+PIN Code            : [PIN]
+Full Address        : [FULL STREET ADDRESS]
+Primary Phone       : [+91XXXXXXXXXX — no spaces, no dashes]
+WhatsApp Number     : [+91XXXXXXXXXX — SAME FORMAT]
+NOTE: WhatsApp format MUST be +91XXXXXXXXXX — 
+      Do NOT use 0XXXXXXXXXX or 91-XX-XXXX format.
+      Test this link before launch: 
+      https://wa.me/91XXXXXXXXXX
+Email               : [hello@yourdomain.com]
+Domain              : [yourdomain.com]
+Google Maps Embed   : [PASTE FULL GOOGLE MAPS IFRAME CODE]
+Google Maps Link    : [PASTE FULL GOOGLE MAPS URL]
+Instagram           : [https://instagram.com/HANDLE]
+Facebook            : [https://facebook.com/PAGENAME]
+YouTube             : [https://youtube.com/CHANNEL]
+Pinterest           : [https://pinterest.com/HANDLE]
+Years in Business   : [e.g. 12]
+Projects Completed  : [e.g. 500]
+Cities Delivered    : [e.g. 3]
+Warranty Years      : [e.g. 5]
+Google Analytics ID : [G-XXXXXXXXXX]
+Search Console Code : [PASTE META VERIFICATION TAG]
+WhatsApp API Key    : [If using WhatsApp Business API]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 2 — DESIGN SYSTEM (Non-Negotiable. Follow Exactly.)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+▌ BRAND PERSONALITY
+  Premium · Minimal · Trustworthy · Confident · Indian
+  Reference feel: Ritz Carlton website + Architectural Digest 
+  India + High-end architecture firm portfolio
+  NOT: Generic furniture store. NOT: Real estate portal.
+  NOT: SaaS startup. NOT: Livspace clone.
+
+▌ COLOR PALETTE — USE EXACT HEX CODES ONLY
+
+  Deep Navy (darkest, hero BG, footer)  : #060E1A
+  Navy Primary (main dark BG)           : #0A1628
+  Navy Medium (card/section BG)         : #0F2040
+  Navy Muted (lighter navy)             : #1A3055
+  
+  Gold Accent (primary accent)          : #C9A96E
+  Gold Hover (button hover)             : #B8956A
+  Gold Light (subtle highlights)        : #E8D5A3
+  Gold on Dark (text on navy)           : #D4B483
+  
+  Cream (main light background)         : #F8F5F0
+  Stone (alternate section background)  : #EDEBE6
+  White Text / Headings on Dark         : #F5F2ED
+  
+  Body Text (on light bg)               : #0A1628
+  Muted Text (on light bg)              : #6B7A8D
+  Muted Text (on dark bg)               : rgba(245,242,237,0.55)
+  
+  Dividers (on light bg)                : rgba(10,22,40,0.08)
+  Dividers (on dark bg)                 : rgba(245,242,237,0.12)
+  
+  Error / Alert                         : #C0392B
+  Success                               : #27AE60
+  
+  CRITICAL: The navy is NOT generic dark (#111 or #0B0B0B).
+  It has strong blue undertones. Always use exact codes above.
+  The gold is NOT yellow (#FFD700). It is warm, muted, like 
+  aged brass or old coins. Always use #C9A96E exactly.
+  The cream is NOT white (#FFFFFF). It is warm off-white.
+
+▌ ALTERNATING SECTION BACKGROUNDS (follow this exact order)
+  Hero          → Deep Navy     #060E1A    (dark)
+  Stats Bar     → Navy Primary  #0A1628    (dark)
+  About         → Cream         #F8F5F0    (light)
+  Services      → Stone         #EDEBE6    (light)
+  Portfolio     → Cream         #F8F5F0    (light)
+  Materials     → Navy Medium   #0F2040    (dark)
+  Process       → Stone         #EDEBE6    (light)
+  Why Us        → Navy Primary  #0A1628    (dark)
+  Comparison    → Cream         #F8F5F0    (light)
+  Testimonials  → Stone         #EDEBE6    (light)
+  Blog          → Cream         #F8F5F0    (light)
+  FAQ           → Stone         #EDEBE6    (light)
+  CTA Banner    → Navy Primary  #0A1628    (dark)
+  Contact       → Cream         #F8F5F0    (light)
+  Footer        → Deep Navy     #060E1A    (dark)
+
+▌ TYPOGRAPHY SYSTEM
+
+  FONT 1 (Display/Headings): Cormorant Garamond
+  Google Fonts URL: 
+  https://fonts.googleapis.com/css2?family=Cormorant+Garamond:
+  ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600
+  &display=swap
+  
+  Fallback stack: 'Cormorant Garamond', 'Garamond', 
+  'EB Garamond', Georgia, 'Times New Roman', serif
+  
+  FONT 2 (Body/UI): DM Sans
+  Google Fonts URL: 
+  https://fonts.googleapis.com/css2?family=DM+Sans:
+  opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600
+  &display=swap
+  
+  Fallback stack: 'DM Sans', 'Inter', -apple-system, 
+  BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif
+
+  Add to HTML <head> (REQUIRED, in this exact order):
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" 
+  crossorigin>
+  [then font import link]
+
+  TYPE SCALE (desktop → mobile using clamp()):
+  
+  Hero H1      : clamp(3.5rem, 7vw, 8rem)
+                 Weight: 300, Line-height: 1.03
+                 Letter-spacing: -0.02em
+  
+  Section H2   : clamp(2.5rem, 5vw, 5rem)
+                 Weight: 300, Line-height: 1.08
+                 Letter-spacing: -0.015em
+  
+  Card H3      : clamp(1.5rem, 2.5vw, 2.2rem)
+                 Weight: 400, Line-height: 1.2
+  
+  Sub H4       : 1.1rem, DM Sans 600
+  
+  Body para    : clamp(0.93rem, 1vw + 0.65rem, 1.05rem)
+                 Weight: 400, Line-height: 1.72
+  
+  Small/Label  : 0.78rem–0.85rem, DM Sans 500 or 600
+  
+  TYPOGRAPHY RULES (follow strictly):
+  - Italic Cormorant Garamond for key phrases in headings
+  - Gold color (#C9A96E) for the italic emphasis phrases
+  - Max line length: 52 characters for body paragraphs
+  - Body text: LEFT ALIGNED always (never centered except 
+    CTA banners and stats bars)
+  - DO NOT use ALL CAPS for section labels
+  - DO NOT add "→" arrows to button text
+  - DO NOT add "·" middle dots between words
+  - DO NOT underline regular body text links in content
+
+▌ SPACING SYSTEM (CSS custom properties)
+
+  --space-xs    : 0.5rem    (8px)
+  --space-sm    : 1rem      (16px)
+  --space-md    : 1.5rem    (24px)
+  --space-lg    : 2.5rem    (40px)
+  --space-xl    : 4rem      (64px)
+  --space-2xl   : 6rem      (96px)
+  --space-3xl   : 8rem      (128px)
+  
+  Section padding (desktop): 7rem top and bottom
+  Section padding (mobile):  4rem top and bottom
+  Max content width:         1240px centered
+  Side padding:              clamp(1.25rem, 4vw, 3.5rem)
+
+▌ BORDER RADIUS
+  ALL elements: 2px ONLY
+  NO exceptions. No rounded buttons. No pill shapes. 
+  No 8px, 12px, 16px border-radius anywhere.
+  2px creates a sharp, architectural premium feel.
+
+▌ SHADOWS
+  Avoid box shadows. 
+  Acceptable only: 0 2px 12px rgba(10,22,40,0.08) 
+  for form cards on light backgrounds.
+  NO colored shadows. NO multiple shadow layers.
+
+▌ ANIMATION RULES
+  Easing: cubic-bezier(0.16, 1, 0.3, 1) for all transitions
+  Duration: 
+    Hover states: 200ms
+    Accordions: 500ms
+    Page reveals: 700ms
+    Counter: 1800ms
+  
+  WHAT TO ANIMATE (only these):
+    ✓ Nav: transparent → solid on scroll (400ms)
+    ✓ Scroll reveal: fade + translateY(28px) → visible
+      Trigger: when element is 12% in viewport
+      Stagger: 100ms delay between children
+    ✓ Counter: count up from 0 when stats bar enters viewport
+      Trigger: IntersectionObserver at 50% threshold
+      Easing: ease-out cubic (1 - (1-t)³)
+    ✓ Accordion: max-height expand/collapse (500ms ease-out)
+    ✓ Image hover: scale(1.04) on portfolio items (600ms)
+    ✓ Button hover: background color change (200ms)
+    ✓ Mobile menu: translateX(100%) → translateX(0) (450ms)
+  
+  WHAT NOT TO ANIMATE (do not add these):
+    ✗ Auto-rotating sliders/carousels
+    ✗ Parallax scrolling (hurts mobile performance)
+    ✗ Floating/bouncing elements
+    ✗ Pulsing or glowing effects
+    ✗ Text typing animations
+    ✗ Page load splash screens or preloaders
+    ✗ Scroll-triggered section slides from left/right
+    ✗ Hover effects that change element size/position
+    ✗ Background color transitions on scroll
+
+▌ Z-INDEX SYSTEM (follow exactly, prevents overlap bugs)
+  Announcement bar   : 200
+  Navigation         : 150
+  Mobile menu overlay: 300
+  WhatsApp float     : 90
+  Sticky mobile CTA  : 80
+  Modals / overlays  : 400
+  Tooltips           : 500
+  Cookie banner      : 600
+
+▌ BUTTON SYSTEM
+  
+  Primary (dark background, cream text):
+    Background: #0A1628
+    Color: #F5F2ED
+    Padding: 0.85rem 2.2rem
+    Font: DM Sans 500, 0.9rem
+    Border-radius: 2px
+    Border: none
+    Hover: background #1A3055, transition 200ms
+    Focus: outline 2px solid #C9A96E, outline-offset 2px
+    Active: scale(0.98)
+    Mobile: min-width 100% when standalone
+  
+  Secondary (gold background, navy text):
+    Background: #C9A96E
+    Color: #060E1A
+    Same sizing as primary
+    Hover: background #B8956A
+  
+  Ghost (transparent, gold border):
+    Background: transparent
+    Color: #C9A96E
+    Border: 1.5px solid #C9A96E
+    Hover: background rgba(201,169,110,0.1)
+  
+  White on dark:
+    Background: #F5F2ED
+    Color: #0A1628
+    Hover: background #FFFFFF, box-shadow 0 4px 20px 
+    rgba(0,0,0,0.2)
+  
+  Outline white on dark:
+    Background: transparent
+    Color: #F5F2ED
+    Border: 2px solid rgba(245,242,237,0.5)
+    Hover: border-color #F5F2ED
+
+▌ FORM ELEMENTS
+  Input/Select/Textarea:
+    Background: #F8F5F0 (cream, not white)
+    Border: 1.5px solid rgba(10,22,40,0.12)
+    Border-radius: 2px
+    Padding: 0.75rem 1rem
+    Font: DM Sans 400, 0.9rem
+    Color: #0A1628
+    Placeholder color: #6B7A8D
+    Focus: border-color #C9A96E, outline none
+    Error: border-color #C0392B
+    Background on error: rgba(192,57,43,0.04)
+    Label: DM Sans 600, 0.78rem, #6B7A8D, margin-bottom 4px
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 3 — WEBSITE ARCHITECTURE (All pages required)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BUILD ALL OF THESE PAGES:
+
+MAIN PAGES:
+  /                              Homepage
+  /about/                        About Us
+  /portfolio/                    Portfolio (filterable)
+  /process/                      Our Process
+  /contact/                      Contact + Quote
+  /blog/                         Blog listing
+  /blog/[article-slug]/          Individual blog posts (5)
+
+SERVICE PAGES (each is a full SEO-optimised page):
+  /modular-kitchen-[city]/
+  /wardrobe-design-[city]/
+  /wall-paneling-[city]/
+  /false-ceiling-[city]/
+  /full-home-interior-[city]/
+  /bedroom-furniture-[city]/
+  /doors-partitions-[city]/
+  /painting-polishing-[city]/
+  /plumbing-electrical-[city]/
+
+UTILITY PAGES:
+  /thank-you/                    After form submission
+  /privacy-policy/               Legal requirement
+  /terms-of-service/             Legal requirement
+  /sitemap/                      HTML sitemap for users
+  /404/                          Custom 404 error page
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 4 — GLOBAL COMPONENTS (appear on every page)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━ ANNOUNCEMENT BAR (top of every page, above nav) ━━━━━━━━━━━
+
+  Position: Fixed top, above nav
+  Height: 40px
+  Background: #C9A96E (gold)
+  Text: DM Sans 500, 0.78rem, #060E1A (navy)
+  
+  Content: "✦ Free 3D Design with every project · 
+  Call [PHONE] · Available Mon–Sat 9AM–7PM ✦"
+  
+  Right side: "✕" close button that hides the bar and 
+  sets a sessionStorage flag so it doesn't reappear 
+  on the same session.
+  
+  When bar is visible: nav top offset = 40px
+  When bar is dismissed: nav top offset = 0
+  This MUST be handled in JavaScript — otherwise nav 
+  will overlap the announcement bar.
+
+━━━ NAVIGATION BAR ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Position: Fixed, below announcement bar
+  Default state (on dark hero sections):
+    Background: transparent
+    Logo: cream color (#F5F2ED)
+    Nav links: rgba(245,242,237,0.65)
+    CTA button: gold background
+  
+  Scrolled state (after 60px scroll):
+    Background: rgba(248,245,240,0.96)
+    Backdrop-filter: blur(16px) saturate(180%)
+    Box-shadow: 0 1px 0 rgba(10,22,40,0.08)
+    Logo: navy color (#0A1628)
+    Nav links: #6B7A8D
+    CTA button: gold background (same)
+    Transition: all 400ms ease
+  
+  CRITICAL: On pages that start with a LIGHT background 
+  (not dark navy hero), the nav must START in scrolled/
+  solid state, not transparent. Add a class 
+  "nav-light-page" to body on those pages and CSS handles 
+  the nav showing solid from load.
+  
+  LAYOUT:
+  Left:    Logo — "[BRAND]" in Cormorant Garamond 600
+           First word: navy/cream (context dependent)
+           Accent word: gold #C9A96E
+  
+  Center:  Nav links: Services · Portfolio · Process · 
+           Blog · About · Contact
+           Font: DM Sans 500, 0.875rem
+           Spacing: gap 2.2rem
+  
+  Right:   Phone number (clickable, hidden on mobile below
+           768px): DM Sans 500, 0.85rem, with phone icon
+           THEN: "Free Consultation" button (gold background)
+  
+  MOBILE (below 768px):
+  - Hide center links and phone number
+  - Show hamburger (3 lines, 24×18px, 5px gap, 2px height)
+  - Hamburger lines: cream on dark, navy on light
+  
+  MOBILE MENU OVERLAY:
+  - Slides in from RIGHT (translateX)
+  - Full screen takeover
+  - Background: #060E1A (deep navy)
+  - Logo top-left (cream)
+  - Close button top-right (white ✕, 1.6rem)
+  - Nav links: Cormorant Garamond 300, 3rem, cream
+  - Stacked vertically, 2.2rem gap
+  - Each link has thin gold line on the left on hover
+  - Close on: X button click, link click, backdrop click
+  - Body scroll locked when menu is open (overflow:hidden)
+  - CRITICAL: Close MUST work. Add event listener to 
+    all mobile nav links onclick="closeMobileMenu()"
+
+━━━ FLOATING WHATSAPP BUTTON ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Position: Fixed, bottom-right, 2rem from each edge
+  Z-index: 90 (below mobile menu, above content)
+  Size: 58px × 58px
+  Border-radius: 50%
+  Background: #25D366
+  Icon: WhatsApp official SVG, white, 28px
+  Shadow: 0 4px 24px rgba(37,211,102,0.45)
+  Hover: transform scale(1.08), 200ms ease
+  
+  WhatsApp link format (EXACT):
+  https://wa.me/91XXXXXXXXXX?text=Hi%2C+I+am+interested+
+  in+your+interior+design+services.+Please+share+details.
+  
+  Open in: _blank (new tab)
+  rel: "noopener noreferrer"
+  aria-label: "Chat with us on WhatsApp"
+  
+  TOOLTIP on hover (desktop):
+    Appears left of button
+    Text: "Chat Now"
+    Background: #060E1A, cream text, 2px radius
+    Fade in on hover
+
+━━━ STICKY MOBILE BOTTOM CTA BAR ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CRITICAL: This is one of the most important conversion 
+  elements. Many builders skip this. DO NOT SKIP.
+  
+  Visible on: mobile only (below 768px)
+  Position: fixed, bottom 0, left 0, right 0
+  Height: 60px
+  Z-index: 80
+  Background: #0A1628 (navy)
+  Box-shadow: 0 -2px 12px rgba(10,22,40,0.2)
+  
+  LAYOUT: Two equal-width buttons side by side:
+  
+  Left button (50%):
+    Background: #0A1628
+    Icon: Phone icon (SVG, gold) + text "Call Now"
+    Action: tel:+91XXXXXXXXXX
+    Border-right: 1px solid rgba(245,242,237,0.15)
+    Text: DM Sans 600, 0.85rem, cream
+  
+  Right button (50%):
+    Background: #C9A96E (gold)
+    Icon: WhatsApp icon (SVG, white) + text "WhatsApp"
+    Action: wa.me link (same as float button)
+    Text: DM Sans 600, 0.85rem, navy
+  
+  Body padding-bottom: add 60px on mobile so content 
+  isn't hidden behind this bar.
+  
+  Safe area handling (iPhone notch):
+  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom))
+
+━━━ FOOTER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Background: #060E1A (deep navy)
+  
+  TOP SECTION — 4-column grid (1.5fr 1fr 1fr 1fr):
+  
+  Col 1 — Brand:
+    Logo (cream + gold)
+    About text (2 lines):
+      "Premium interior design in [CITY] — custom modular 
+      kitchens, wardrobes, wall paneling, and full home 
+      interiors. Trusted by [X]+ homeowners."
+    Social icons row (Instagram, Facebook, YouTube, 
+    Pinterest): 36px circles, navy-dark background, 
+    gold on hover
+    Use actual SVG icons for each platform, NOT letters.
+  
+  Col 2 — Services:
+    Heading: "Services" (DM Sans 600, cream)
+    Links: Modular Kitchen · Wardrobes · Wall Paneling · 
+    TV Units · Doors & Partitions · Study Tables · 
+    False Ceiling · Paints & Polish · Plumbing & 
+    Electrical
+    Each is a real link to its service page.
+  
+  Col 3 — Company:
+    Heading: "Company"
+    Links: About Us · Portfolio · Our Process · 
+    Testimonials · Blog · FAQ · Contact
+  
+  Col 4 — Contact:
+    Heading: "Get in Touch"
+    Phone (tel: link, gold color)
+    WhatsApp (wa.me link, gold color)
+    Email (mailto: link)
+    Address (2 lines)
+    Hours: Mon–Sat, 9 AM – 7 PM
+    "Get Directions" (opens Google Maps, gold)
+  
+  DIVIDER LINE: 1px, rgba(245,242,237,0.08)
+  
+  BOTTOM BAR:
+    Left: "© 2025 [BRAND] Interiors. All rights reserved."
+    Right: Privacy Policy · Terms · Sitemap
+    Font: DM Sans 400, 0.78rem, 40% cream
+    
+    CRITICAL: Copyright year MUST use JavaScript:
+    <span id="year"></span>
+    <script>document.getElementById('year')
+    .textContent = new Date().getFullYear();</script>
+    This prevents outdated copyright year.
+  
+  Mobile: 2-column grid (brand full width top, 
+  then services/company side by side, then contact)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 5 — HOMEPAGE (Complete Section-by-Section)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━ SECTION 1: HERO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #060E1A (deep navy)
+Layout: Full screen (100svh minimum)
+Grid: 2 columns — 55% text left, 45% photos right
+
+LEFT COLUMN — Copy (bottom-aligned, padding 7rem bottom):
+  
+  Thin line element above eyebrow:
+    40px horizontal gold line (#C9A96E, 1px height)
+    Positioned left-aligned
+  
+  Eyebrow text:
+    Text: "Premium Interior Design · [CITY]"
+    Font: DM Sans 600, 0.78rem, gold #C9A96E
+    Letter-spacing: 0.08em
+    Margin-bottom: 1.4rem
+    DO NOT use ALL CAPS
+  
+  H1 (main headline):
+    Line 1: "Spaces Designed"
+    Line 2: (italic + gold): "to Move You"
+    Line 3: "Every Time"
+    
+    Font: Cormorant Garamond 300, clamp(3.5rem,7vw,8rem)
+    Line-height: 1.03
+    Letter-spacing: -0.02em
+    Color line 1 & 3: #F5F2ED (cream)
+    Color line 2: #C9A96E (gold, italic)
+    Margin-bottom: 2rem
+  
+  Subheadline:
+    "From modular kitchens to complete home transformations 
+    — built in [CITY] by craftsmen who care about every 
+    millimetre. No templates. No shortcuts."
+    Font: DM Sans 300, 1.05rem, rgba(245,242,237,0.65)
+    Max-width: 44 characters
+    Line-height: 1.75
+    Margin-bottom: 2.8rem
+  
+  Buttons row:
+    Button 1: "Get Free Consultation" 
+    Style: Gold background (#C9A96E), navy text (#060E1A)
+    Hover: #B8956A
+    
+    Button 2: "View Our Work"
+    Style: Transparent, cream border 1.5px, cream text
+    Hover: border #F5F2ED, background rgba(245,242,237,0.06)
+    
+    Gap between: 1.2rem
+    Both buttons: padding 0.9rem 2rem, DM Sans 500, 2px radius
+  
+  Trust micro-text below buttons:
+    "★★★★★  Trusted by [X]+ homeowners · 
+    5-year warranty on all work"
+    Font: DM Sans 400, 0.78rem, rgba(245,242,237,0.45)
+    Margin-top: 1.5rem
+
+RIGHT COLUMN — Project Photos:
+  Split into 2 stacked panels (60% / 40% height split)
+  
+  PANEL 1 (top, 60% height):
+    Real project photo: modular kitchen or living room
+    CSS: object-fit cover, width 100%, height 100%
+    Alt text: "Modular kitchen design by [BRAND] in [CITY]"
+    
+    Gold corner accent:
+      3px gold border on bottom-left corner
+      40px wide, 40px tall (L-shape)
+      Position: absolute, bottom 0, left 0
+    
+    Bottom-left italic label:
+      Font: Cormorant Garamond 400 italic, 1.1rem, 
+      rgba(255,255,255,0.75)
+      Text: "Modular Kitchen"
+      Position: absolute, bottom 1.2rem, left 1.2rem
+  
+  PANEL 2 (bottom, 40% height):
+    Real project photo: bedroom/wardrobe
+    Alt text: "Custom wardrobe design by [BRAND] in [CITY]"
+    
+    Bottom-right stat box:
+      Background: rgba(10,22,40,0.75)
+      Backdrop-filter: blur(8px)
+      Padding: 1.2rem 1.5rem
+      Position: absolute, bottom 1.5rem, right 1.5rem
+      Border-left: 3px solid #C9A96E
+      
+      Number: "[X]+" — Cormorant Garamond 600, 2.8rem, 
+      cream, line-height 1
+      "+" in gold #C9A96E
+      
+      Label: "Homes Transformed" — DM Sans 400, 0.75rem, 
+      rgba(245,242,237,0.6)
+
+SERVICES MARQUEE (at very bottom of hero, before next section):
+  Full-width horizontal scrolling ticker
+  Background: rgba(201,169,110,0.08) (subtle gold tint)
+  Border-top: 1px solid rgba(201,169,110,0.2)
+  
+  Content scrolling left continuously (CSS animation, 
+  pause on hover):
+  "Modular Kitchen  ✦  Wardrobes  ✦  Wall Paneling  
+  ✦  Fluted Panels  ✦  Charcoal Panels  ✦  Doors  
+  ✦  False Ceiling  ✦  PVC Paneling  ✦  Electrical  
+  ✦  Plumbing  ✦  Paints & Polish  ✦  Glass Work  
+  ✦  Floor Carpet  ✦  Pooja Mandir  ✦  "
+  
+  Then repeat the same list (for seamless loop)
+  Font: DM Sans 500, 0.82rem, gold #C9A96E
+  Letter-spacing: 0.05em
+  Padding: 0.75rem 0
+  Animation: scroll left, 35s linear infinite
+
+MOBILE HERO:
+  Single column, text stacked above photos
+  Photos: side-by-side row, height 55vw
+  Buttons: full-width stacked
+
+━━━ SECTION 2: STATS BAR ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #0A1628 (navy primary)
+Padding: 3rem vertical
+
+4-column grid, centered, max-width 1240px:
+
+  Stat 1: [X]+ "Projects Completed"
+  Stat 2: [X]+ "Years of Excellence"  
+  Stat 3: [X]% "Client Satisfaction"
+  Stat 4: 5yr  "Warranty on Work"
+
+  Number style: Cormorant Garamond 600, 
+  clamp(2.8rem,4vw,4rem), #F5F2ED
+  Suffix (+, %, yr): gold #C9A96E, 60% of number size
+  
+  Label style: DM Sans 400, 0.77rem, letter-spacing 0.03em
+  Color: rgba(245,242,237,0.45)
+  Margin-top: 0.4rem
+  
+  Thin vertical gold dividers between stats 
+  (desktop only): 1px, rgba(201,169,110,0.25)
+  
+  COUNTER ANIMATION:
+  - Use IntersectionObserver with threshold: 0.5
+  - Fire ONCE only (use "once: true" option or 
+    unobserve after firing)
+  - Duration: 1800ms
+  - Easing: 1 - (1-t)^3 (ease-out cubic)
+  - NEVER fire on page load — only when element 
+    enters viewport
+  
+  Mobile: 2×2 grid
+
+━━━ SECTION 3: ABOUT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #F8F5F0 (cream)
+Layout: 2-column equal grid, centered
+Gap: clamp(2.5rem,5vw,6rem)
+
+LEFT — Photo:
+  Aspect ratio: 4:5 (portrait)
+  Real project or team photo
+  Border-radius: 2px
+  Alt: "Interior design team at [BRAND] [CITY]"
+  
+  Floating badge — top-right, slightly overlapping edge:
+    Background: #C9A96E (gold)
+    Padding: 1.3rem 1.5rem
+    Text center:
+      Number: "[X]" Cormorant Garamond 700, 3rem, 
+      #060E1A, line-height 1
+      Label: "YEARS OF" DM Sans 600, 0.65rem, #060E1A, 
+      letter-spacing 0.1em, margin-top 2px
+      "CRAFT": same style, next line
+    Border-radius: 2px
+    Box-shadow: 0 8px 32px rgba(10,22,40,0.2)
+  
+  Bottom-left italic caption (over image):
+    Text: "Your Home,\nReimagined"
+    Font: Cormorant Garamond 400 italic, 1.5rem
+    Color: rgba(255,255,255,0.88)
+    Background: linear-gradient(to top, 
+    rgba(6,14,26,0.6) 0%, transparent 100%)
+    Padding: 2rem 1.5rem
+    Position: absolute, bottom 0, left 0, right 0
+
+RIGHT — Content:
+  
+  Thin gold line above heading: 
+    40px × 1px, gold #C9A96E, margin-bottom 1.5rem
+  
+  H2: "We Build Spaces\nWorth Living In"
+  "Worth Living In" → Cormorant Garamond italic, 
+  gold color #C9A96E
+  Margin-bottom: 1.5rem
+  
+  Para 1: "We are a full-service interior design firm 
+  in [CITY] — custom modular furniture, carpentry, 
+  wall treatments, electrical, plumbing, and complete 
+  home interiors. Everything under one roof, one team, 
+  one commitment to your home."
+  
+  Para 2: "From your first site visit to the final 
+  coat of polish, we handle it all. Our in-house 
+  craftsmen and designers work together to deliver 
+  your home on time, with zero surprises on the 
+  final bill."
+  
+  4 Pillar boxes (2×2 grid), margin-top 2rem:
+    Background: #EDEBE6 (stone), 2px radius, no shadow
+    Padding: 1.3rem
+    
+    🪵 "Premium Materials"
+       "BWP ply, HDMR, Hettich/Ebco hardware"
+    
+    📐 "3D Design First"
+       "You see it in 3D before we begin"
+    
+    🛡️ "5-Year Warranty"
+       "On carpentry, hardware, and fittings"
+    
+    📅 "On-Time Delivery"
+       "Written timelines. We honour them."
+    
+    Icon: 1.3rem emoji
+    Title: DM Sans 600, 0.87rem, #0A1628
+    Desc: DM Sans 400, 0.78rem, #6B7A8D
+
+━━━ SECTION 4: SERVICES ACCORDION ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #EDEBE6 (stone)
+Layout: 2-column sticky sidebar + accordion
+
+LEFT SIDEBAR (280px, sticky top 6rem):
+  
+  Small label above heading:
+    Gold line 30px + "What We Do" text — DM Sans 500, 
+    0.78rem, gold — same line, with flex alignment
+    DO NOT make this ALL CAPS
+  
+  H2: "Everything Your\nHome Needs"
+  "Home Needs" → italic gold
+  
+  Paragraph: "Modular furniture, carpentry, paneling, 
+  false ceiling, electrical, plumbing — one team, 
+  total transformation."
+  Font: DM Sans 300, 0.93rem, #6B7A8D, margin-bottom 2rem
+  
+  Button: "Discuss Your Project"
+  Style: Gold secondary button (see button system)
+  
+  Below button, margin-top 2rem:
+  Small text: "Or call directly:"
+  Phone number: DM Sans 600, 1rem, #0A1628, 
+  as a tel: link
+
+RIGHT — Accordion list:
+  
+  Separated by thin dividers: 
+  1px solid rgba(10,22,40,0.08)
+  
+  Each item structure:
+    ROW: 
+      Left: circle icon (44px, stone BG) + service name
+      Right: + toggle (gold, 1.3rem, Cormorant or DM Sans)
+    
+    When OPEN:
+      Circle: navy background + gold icon
+      + rotates to × (45deg rotation)
+      Content slides down (max-height transition)
+      Thin gold left border on description area
+    
+    RULE: Only ONE service open at a time
+    RULE: Modular Kitchen OPEN by default on page load
+    RULE: First service gets class "open" in HTML — 
+    do not set all open in JS, or it looks broken on load
+  
+  SERVICE 1 — 🍳 Modular Kitchen
+    Description: "Custom-designed modular kitchens with 
+    premium hardware. We handle layout planning, carcass 
+    fabrication, countertops, appliance cutouts, and all 
+    fittings from scratch to final handover."
+    Tags: Base Cabinets · Wall Cabinets · Pantry Units · 
+    Countertop · Tandem Box · LeMans Corner · Hob Cutout 
+    · Sink Cutout · Soft-Close Drawers · Cutlery Tray
+    Link: "View full Modular Kitchen page" → 
+    /modular-kitchen-[city]/
+
+  SERVICE 2 — 🛏️ Wardrobes & Bedroom
+    Description: "Floor-to-ceiling custom wardrobes, 
+    hydraulic storage beds, dressing units — crafted 
+    to your room's exact dimensions with soft-close 
+    hardware as standard."
+    Tags: Sliding Wardrobe · Hinged Wardrobe · Walk-in 
+    Closet · Loft Storage · Hydraulic Bed · Drawer Bed 
+    · Headboard · Dressing Table · Side Table · 
+    Ottoman Bench
+    Link: → /wardrobe-design-[city]/
+
+  SERVICE 3 — 🏠 Wall Paneling & TV Units
+    Description: "Transform bare walls into design 
+    statements. Charcoal panels, fluted MDF, PVC/WPC 
+    panels, veneer cladding, and floating TV unit 
+    backdrops with integrated LED lighting."
+    Tags: Charcoal Panel · Fluted Panel · PVC Panel · 
+    WPC Panel · Veneer Cladding · TV Unit · Backdrop · 
+    Dado Paneling · Display Shelves · Cove Lighting
+    Link: → /wall-paneling-[city]/
+
+  SERVICE 4 — 🚪 Doors & Partitions
+    Description: "Solid wood main doors, flush doors, 
+    sliding glass doors, pocket doors, CNC-cut wooden 
+    partitions, and glass-and-wood dividers — all with 
+    premium concealed hardware."
+    Tags: Flush Door · Main Door · Sliding Door · 
+    Pocket Door · CNC Partition · Glass Divider · 
+    Louver Partition · Door Frame · Architrave · 
+    Door Hardware
+    Link: → /doors-partitions-[city]/
+
+  SERVICE 5 — 📚 Study & Storage
+    Description: "Custom study tables, L-shaped computer 
+    desks, bookshelves, open shelving, crockery units, 
+    center tables, shoe racks — built-in and made to 
+    your exact measurements."
+    Tags: Study Table · Computer Table · L-Shape Desk · 
+    Bookshelf · Open Shelf · Center Table · 
+    Crockery Unit · Shoe Rack · Console Table · 
+    Bar Cabinet · Pooja Mandir
+    Link: → /bedroom-furniture-[city]/
+
+  SERVICE 6 — 🔧 Electrical & Plumbing
+    Description: "Complete concealed wiring, 
+    switchboards, profile and cove lighting, CPVC 
+    water supply piping, PVC drainage, sanitaryware, 
+    geyser connections, false ceiling, waterproofing, 
+    and tiling — all in-house."
+    Tags: Concealed Wiring · Switchboards · 
+    Profile Lights · Strip Lights · CPVC Piping · 
+    Drainage · Wash Basin · WC Fitting · Geyser · 
+    False Ceiling · Waterproofing · Tiling · 
+    Glass Work
+    Link: → /plumbing-electrical-[city]/
+
+  SERVICE 7 — 🎨 Paints, Polish & Flooring
+    Description: "PU polishing, Duco paint, texture 
+    paints, veneer polishing, wallpaper application, 
+    and floor carpet installation to bring every 
+    surface to a perfect, lasting finish."
+    Tags: PU Polish · Duco Paint · Texture Paint · 
+    Veneer Polish · Wallpaper · Floor Carpet · 
+    Enamel Paint · Wall Prep · Primer
+    Link: → /painting-polishing-[city]/
+
+━━━ SECTION 5: PORTFOLIO PREVIEW ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #F8F5F0 (cream)
+
+Section header (2-column split):
+  Left H2: "Work That\nSpeaks"
+  "Speaks" italic gold
+  
+  Right para: "Every project here started as an empty 
+  room and ended as someone's favourite place in the 
+  world. Here is a glimpse."
+  + "View All Projects" text link (gold, right-aligned)
+  → links to /portfolio/
+
+ASYMMETRIC GRID (desktop):
+  12-column CSS grid, 2 rows, each row 300px height
+  
+  Row 1:
+    Item A: grid-column span 7 — kitchen photo
+    Item B: grid-column span 5 — bedroom photo
+  
+  Row 2:
+    Item C: grid-column span 4 — TV unit photo
+    Item D: grid-column span 8 — full home photo
+
+  Each item:
+    Overflow hidden, border-radius 2px
+    Real project photo, object-fit cover
+    
+    Default visible: italic label bottom-left
+    (Cormorant 400 italic, 1.1rem, rgba white 0.75)
+    
+    On hover:
+      Image: scale(1.04), 600ms ease-out
+      Overlay: linear-gradient bottom to transparent, 
+      rgba(6,14,26,0.80), opacity fades in 300ms
+      
+      White content in overlay:
+        H3: project name (Cormorant 400, 1.3rem, white)
+        P: material details (DM Sans 400, 0.78rem, 
+        rgba white 0.65)
+        Small "View Project" text with thin gold line
+
+  MOBILE: 2×2 equal grid, 180px each, 
+  labels always visible (no hover needed)
+
+Below gallery — centered:
+  Button: "View All Projects" (primary dark style)
+  → links to /portfolio/
+
+━━━ SECTION 6: MATERIAL SHOWCASE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THIS SECTION IS OFTEN MISSED. It is a major premium signal.
+
+Background: #0F2040 (navy medium)
+Text: cream
+
+Section header LEFT-aligned:
+  Small gold line + "Materials We Work With"
+  H2: "Quality You Can\nFeel"
+  "Feel" italic gold
+  Para right: "Every material we specify is chosen for 
+  longevity, finish quality, and suitability to Indian 
+  climate. No compromises in what your home is built from."
+
+HORIZONTAL SCROLLABLE MATERIAL CARDS (or 5-col grid):
+  
+  Card 1: 🪵 BWP Plywood
+    "Boiling Water Proof — the highest grade plywood 
+    for all wet areas and long-term durability."
+  
+  Card 2: 🏗️ HDMR / WPC Board
+    "Waterproof, termite-proof boards for bathrooms, 
+    vanities, and high-humidity spaces."
+  
+  Card 3: ⚙️ Hettich Hardware
+    "German-engineered soft-close hinges, drawer 
+    channels, and hydraulic lifts."
+  
+  Card 4: 🎨 Merino / Greenlam Laminates
+    "Premium branded laminates — scratch-resistant, 
+    1mm and 1.5mm thickness, 500+ designs."
+  
+  Card 5: 🪨 Quartz Countertop
+    "Non-porous, stain-resistant quartz slabs for 
+    kitchen counters and bathroom vanities."
+  
+  Card style:
+    Background: rgba(245,242,237,0.05)
+    Border: 1px solid rgba(245,242,237,0.1)
+    Padding: 1.8rem 1.5rem
+    Border-radius: 2px
+    Gold icon/emoji: 2rem, margin-bottom 1rem
+    Title: DM Sans 600, 0.95rem, cream
+    Desc: DM Sans 300, 0.83rem, 55% cream
+    
+    Hover: border-color gold rgba(201,169,110,0.4), 
+    background rgba(201,169,110,0.05)
+    
+  Mobile: horizontal scroll (overflow-x: auto, 
+  display flex, width 220px each card, snap scroll)
+
+━━━ SECTION 7: PROCESS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #EDEBE6 (stone)
+
+Section header:
+  H2 left: "How We Work"
+  "Work" italic gold
+  Para right: "Every project follows the same structured 
+  process — so you know what to expect at every step, 
+  from your first call to your keys."
+
+5 STEPS — HORIZONTAL (desktop):
+  
+  Connecting line: 1px, dashed, gold #C9A96E, 20% opacity
+  Runs horizontally through center of all step circles
+  
+  Each step:
+    Circle: 52px, navy border 2px (#0A1628), 
+    cream background, number inside (Cormorant 600 1.4rem 
+    gold), z-index above line
+    
+    Title below: DM Sans 600, 0.87rem, #0A1628
+    Desc below: DM Sans 400, 0.78rem, #6B7A8D, 
+    max-width 20ch, centered text alignment (this is 
+    the exception — step descriptions are centered)
+
+  Step 1: "Free Consultation"
+    "Share your vision and budget. No pressure, 
+    no commitment."
+  
+  Step 2: "Site Measurement"
+    "Laser measurements and photos of every corner 
+    of your home."
+  
+  Step 3: "3D Design"
+    "See your home in 3D before work begins. 
+    Revise freely."
+  
+  Step 4: "Execution"
+    "In-house craftsmen: civil, carpentry, electrical, 
+    plumbing."
+  
+  Step 5: "Handover"
+    "Quality check, snag fix, keys — on the 
+    promised date."
+
+Mobile: 2×2+1 single column stacked, left-aligned, 
+connecting line hidden
+
+━━━ SECTION 8: WHY CHOOSE US ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #0A1628 (navy primary)
+Text: cream
+
+Layout: 2-column equal
+
+LEFT — Stat cards (2×2 staggered grid):
+  
+  Card 1 (top-left):       "500+" / "Happy Homes"
+  Card 2 (top-right, +2rem down): "45 days" / "Avg. Delivery"
+  Card 3 (bottom-left, -2rem up): "5yr" / "Warranty"
+  Card 4 (bottom-right):   "0%" / "Hidden Charges"
+  
+  Card style: rgba(245,242,237,0.06) background, 
+  1px border rgba(245,242,237,0.1), 2px radius, 
+  padding 1.5rem
+  
+  Number: Cormorant 600, gold, 2.8rem, line-height 1
+  Label: DM Sans 400, 0.77rem, 50% cream
+
+RIGHT — Trust points:
+  
+  Gold line + "Why Us" label above H2
+  
+  H2: "Why Homeowners\nTrust Us"
+  "Homeowners" italic gold
+  
+  4 points, top-aligned with gold checkmark circle:
+  
+  ✓ "In-House Team, No Subcontracting"
+  "Every craftsman works directly under us. No quality 
+  compromise, no delays from unknown contractors."
+  
+  ✓ "Fixed Price, No Surprises"
+  "Your quote is your final bill — material, labour, 
+  hardware all priced upfront. Nothing added without 
+  your written approval."
+  
+  ✓ "Only Premium-Grade Materials"
+  "BWP waterproof plywood, HDMR boards, Hettich/Ebco/
+  Grass hardware, branded laminates — no shortcuts."
+  
+  ✓ "Dedicated Project Manager"
+  "One point of contact throughout. You always know 
+  what's happening and what comes next."
+
+━━━ SECTION 9: COMPARISON TABLE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THIS IS OFTEN MISSED. Extremely effective for conversion.
+
+Background: #F8F5F0 (cream)
+
+Center header:
+  H2: "Us vs The Typical Contractor"
+  Para: "Here is an honest comparison of what you 
+  get when you choose us versus a general contractor."
+
+TABLE (responsive):
+  
+  Column 1: Feature label
+  Column 2: [BRAND NAME] — with gold checkmarks
+  Column 3: Typical Contractor — with ✗ marks
+
+  ROWS:
+  3D Design before work           ✓   ✗
+  Written price quote             ✓   Rarely
+  In-house team, no outsourcing   ✓   ✗
+  5-year warranty in writing      ✓   ✗
+  Premium hardware (Hettich/Ebco) ✓   Cheap local
+  BWP/BWR plywood grade           ✓   MR grade
+  Dedicated project manager       ✓   ✗
+  On-time delivery commitment     ✓   "It depends"
+  Post-handover support           ✓   ✗
+  
+  [BRAND] column header: gold background, navy text
+  Other column: stone background
+  Row alternating: white / very light stone
+  Checkmarks: gold #C9A96E
+  X marks: rgba(10,22,40,0.25)
+  
+  Below table, centered:
+  "Experience the difference firsthand."
+  Button: "Get Free Consultation" (gold secondary)
+
+━━━ SECTION 10: TESTIMONIALS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #EDEBE6 (stone)
+
+Section header:
+  H2 left: "What Clients Say"
+  "Clients Say" italic gold
+  Para right: "Real homeowners. Real projects. 
+  Unfiltered."
+  
+  Also add: "4.9 ★ on Google · [X]+ verified reviews"
+  Small link: "Read all reviews" → Google Maps link
+
+3-column grid of testimonial cards:
+
+  Card style:
+    Background: #F8F5F0 (cream, slightly lighter than BG)
+    Padding: 2rem 2rem
+    Border-radius: 2px
+    Border: 1px solid rgba(10,22,40,0.07)
+    
+    Opening quote mark:
+      Cormorant Garamond 400, 5rem, #C9A96E, 
+      line-height 0.5, margin-bottom 0.8rem
+      Content: " (large opening double quote)
+    
+    Stars: ★★★★★ in gold #C9A96E, font-size 0.9rem,
+    letter-spacing 2px, margin-bottom 0.8rem
+    
+    Quote text: Cormorant Garamond 400 italic, 1.15rem
+    #0A1628, line-height 1.65
+    
+    Thin gold line divider: 30px × 1px, gold, margin 1.5rem 0
+    
+    Author row:
+      Avatar circle: 44px, navy background, 
+      Cormorant 500 1.3rem gold initial letter
+      Name: DM Sans 600, 0.87rem, #0A1628
+      Project detail: DM Sans 400, 0.77rem, #6B7A8D
+      
+  3 testimonials (replace with real client data):
+  
+  Card 1: Rahul & Priya Sharma
+  Project: "3BHK Renovation, [CITY], 2024"
+  Quote: "The modular kitchen they designed is nothing 
+  short of a dream. The soft-close drawers, the quartz 
+  countertop, the hidden wiring — every single detail 
+  was perfect. I didn't think this was possible in 
+  this budget."
+  
+  Card 2: Amit Verma
+  Project: "Full Home Interior, [CITY], 2023"
+  Quote: "Their project manager kept us informed every 
+  single day. The 3D design matched the final result 
+  almost exactly. And they delivered on the exact date 
+  promised — that is a rare thing."
+  
+  Card 3: Sunita Agarwal
+  Project: "Living Room + Bedroom, [CITY], 2024"
+  Quote: "The charcoal fluted panels completely changed 
+  the feel of my living room. Every guest asks who 
+  designed it. Worth every rupee and more."
+
+━━━ SECTION 11: BLOG PREVIEW ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #F8F5F0 (cream)
+
+Section header:
+  H2 left: "Interior Insights\n& Guides"
+  "Insights" italic gold
+  
+  Right: Para + "View All Articles" gold link → /blog/
+
+3 blog preview cards (3-column grid):
+
+  Card structure:
+    Featured image: 16:9 ratio, real photo or themed 
+    gradient, border-radius 2px top only
+    
+    Category tag: DM Sans 600, 0.72rem, gold, 
+    letter-spacing 0.06em, margin-bottom 0.5rem
+    
+    Title: Cormorant Garamond 400, 1.25rem, #0A1628, 
+    line-height 1.35
+    
+    Excerpt: DM Sans 400, 0.84rem, #6B7A8D, 
+    line-height 1.65, 3 lines max
+    
+    Footer: read time left · "Read Article" gold right
+    "Read Article" has thin gold underline on hover
+    
+    Hover: entire card lifts (box-shadow 
+    0 12px 48px rgba(10,22,40,0.1))
+
+  Article 1:
+    Category: Modular Kitchen
+    Title: "How Much Does a Modular Kitchen Cost 
+    in 2025?"
+    Excerpt: "A complete breakdown — where your 
+    money actually goes and how to plan your budget 
+    without compromising quality."
+    Read time: 8 min
+    
+  Article 2:
+    Category: Wall Paneling
+    Title: "Fluted vs Charcoal Panels: Which Is 
+    Right for Your Home?"
+    Excerpt: "Both are trending. But they suit very 
+    different spaces. Here's how to decide."
+    Read time: 6 min
+    
+  Article 3:
+    Category: Wardrobe
+    Title: "Sliding vs Hinged Wardrobe: What Most 
+    Homeowners Get Wrong"
+    Excerpt: "The decision isn't just about looks. 
+    Space, budget, and lifestyle all matter more."
+    Read time: 5 min
+
+━━━ SECTION 12: FAQ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #EDEBE6 (stone)
+Max-width: 800px, centered
+
+Heading centered:
+  H2: "Frequently Asked\nQuestions"
+  "Questions" italic gold
+
+Accordion FAQ — 9 items:
+
+  Separated by 1px dividers rgba(10,22,40,0.08)
+  Question row: DM Sans 600, 0.95rem, #0A1628
+  Toggle: + in gold, rotates 45deg when open
+  Answer: DM Sans 400, 0.9rem, #6B7A8D, 
+  line-height 1.75
+  Only one open at a time
+  None open by default
+
+  Q1: How much does a modular kitchen cost?
+  A: "Between ₹1.5 lakh to ₹8 lakh depending on size, 
+  layout, material grade, and hardware brands. We 
+  provide a detailed itemised quotation after a free 
+  site visit — no hidden costs, no surprises."
+
+  Q2: How long does full home interior work take?
+  A: "A complete 2BHK takes 45–60 days; 3BHK takes 
+  60–90 days. We share a written timeline before work 
+  begins and honour it."
+
+  Q3: Do you provide a warranty?
+  A: "1-year comprehensive warranty on all interior 
+  work and up to 5 years on structural carpentry and 
+  hardware. Defects during this period are fixed 
+  at no cost."
+
+  Q4: Can I see a 3D design before work starts?
+  A: "Always. After site measurement, we prepare 
+  detailed 3D renderings of every room. Work begins 
+  only after your approval, with unlimited revisions 
+  at no charge."
+
+  Q5: What materials do you use?
+  A: "BWP waterproof plywood for wet areas, BWR/
+  commercial plywood elsewhere, HDMR/WPC in bathrooms, 
+  Merino/Greenlam/Century laminates, and Hettich/Ebco/
+  Grass hardware."
+
+  Q6: Do you handle civil, electrical, and plumbing?
+  A: "Yes — fully. We are a complete interior firm 
+  covering carpentry, civil, electrical, plumbing, 
+  false ceiling, waterproofing, tiling, glass work, 
+  painting, and flooring."
+
+  Q7: Is your team in-house or subcontracted?
+  A: "Every craftsman — carpenter, electrician, 
+  plumber, painter — works directly under us. 
+  We never outsource to unknown contractors."
+
+  Q8: What areas do you serve?
+  A: "We are based in [CITY] and serve clients across 
+  [LIST AREAS]. Contact us to confirm availability 
+  for your location."
+
+  Q9: Is there a minimum project size?
+  A: "We work on projects of all sizes — from a 
+  single modular kitchen to full home interiors. 
+  Contact us and we will tell you honestly if 
+  we're the right fit."
+
+━━━ SECTION 13: CTA BANNER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #0A1628 (navy primary)
+Centered content, padding 5rem vertical
+
+Gold line 50px × 1px, centered, above heading
+
+H2: "Ready to Build\nSomething Beautiful?"
+"Something Beautiful" italic gold
+Font: Cormorant Garamond 300, clamp(2.5rem,5vw,5rem)
+Color: cream #F5F2ED, line-height 1.1
+
+Para: "Get a free site visit and 3D design 
+consultation — no obligation, no pressure."
+Font: DM Sans 300, 1rem, 65% cream, margin-bottom 2.5rem
+
+Two buttons centered:
+  "Book Free Consultation" — white on dark style
+  "Chat on WhatsApp" — ghost/outline white style
+  Gap: 1.2rem
+
+━━━ SECTION 14: CONTACT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Background: #F8F5F0 (cream)
+Layout: 2-column (1fr 1.3fr), gap 5rem
+
+LEFT — Contact info:
+  
+  Gold line + heading:
+  H2: "Let's Build\nSomething Beautiful"
+  "Beautiful" italic gold
+  
+  Para: "Tell us about your project and we'll 
+  get back within 24 hours to schedule a free 
+  site visit."
+  
+  Contact items (each: 38px circle icon + text):
+    📞 Phone: [NUMBER] (tel: link, gold color)
+    💬 WhatsApp: [NUMBER] (wa.me link, gold)
+    📧 Email: [EMAIL] (mailto: link)
+    📍 Address: [FULL ADDRESS]
+    🕐 Hours: Mon–Sat, 9 AM – 7 PM
+  
+  Google Maps embed:
+    iframe full width, height 220px, border-radius 2px
+    No additional border or frame
+    Use provided Google Maps embed code
+
+RIGHT — Form card:
+  Background: white
+  Padding: 2.5rem
+  Border-radius: 2px
+  Border: 1px solid rgba(10,22,40,0.08)
+  
+  Heading: "Get Your Free Quote"
+  Sub: "We respond within 24 hours"
+  Sub style: DM Sans 400, 0.83rem, #6B7A8D
+  Margin-bottom: 1.8rem
+  
+  FIELDS:
+  Row 1 (2-col):
+    Full Name (required) — placeholder "Your Full Name"
+    Phone Number (required, tel type) — 
+    placeholder "+91 XXXXX XXXXX"
+  
+  Service (dropdown, required):
+    "Select a service..."
+    Modular Kitchen | Wardrobe / Almirah | 
+    Full Home Interior | Bedroom Furniture | 
+    Wall Paneling / TV Unit | Doors & Partitions | 
+    Study Table / Computer Desk | Bookshelf / Shelf | 
+    Pooja Room / Mandir | False Ceiling | 
+    Painting & Polish | Plumbing & Electrical | 
+    Glass Work | Floor Carpet | Other / Not Sure
+  
+  Area/City (text) — placeholder "Locality, City"
+  
+  Message (textarea, 3 rows, optional):
+    placeholder "Room size, budget, timeline, 
+    special requirements..."
+  
+  Submit button (full width):
+    Text: "Send Enquiry — It's Free"
+    Background: #0A1628, cream text
+    Hover: background #C9A96E (gold)
+    
+    LOADING STATE (while submitting):
+      Button text: "Sending..."
+      Button disabled, 50% opacity
+    
+    SUCCESS STATE (after submit):
+      Hide form
+      Show success message:
+        Large ✓ checkmark (gold, 3rem)
+        "Thank you, [Name]!" (Cormorant italic 2rem gold)
+        "We'll call you within 24 hours."
+        WhatsApp button: "Also send on WhatsApp" 
+        (opens pre-filled message)
+    
+    ERROR STATE (validation fail):
+      Show inline red text below empty fields:
+        "Please enter your name"
+        "Please enter your phone number"
+      Scroll to first error
+  
+  Privacy note: 
+    "🔒 Your details are never shared. 
+    We reply within 24 hours."
+    DM Sans 400, 0.73rem, centered, #6B7A8D
+  
+  FORM SUBMISSION LOGIC:
+    1. Validate Name (not empty) and Phone (not empty)
+    2. If validation fails: show field errors, stop
+    3. If valid:
+       a. Try to send to form handling service 
+          (Formspree/EmailJS — set up email notification)
+       b. REGARDLESS of email success: open WhatsApp 
+          with pre-filled message
+       c. Redirect to /thank-you/ page after 1 second
+    
+    WhatsApp message format:
+    "Hi [BRAND], I'm [Name]. 
+    Service needed: [Service]. 
+    Location: [Area]. 
+    [Message if filled]. 
+    My number: [Phone]."
+    
+    URL: https://wa.me/91XXXXXXXXXX?text=[encoded]
+    
+    SPAM PROTECTION:
+    Add honeypot field (hidden input):
+    <input type="text" name="honeypot" 
+    style="display:none" tabindex="-1">
+    If honeypot has value, discard submission silently.
+    
+    Also add Google reCAPTCHA v3 (invisible):
+    Site key: [PROVIDE RECAPTCHA SITE KEY]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 6 — INNER PAGES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━ EACH SERVICE PAGE STRUCTURE (/modular-kitchen-[city]/ etc)
+
+Each service page needs ALL of:
+
+1. HERO (not full-screen, just 60vh):
+   Navy background
+   Breadcrumb: Home / Services / [Service Name]
+   H1: "[Service Name] in [CITY]"
+   e.g. "Modular Kitchen Design in [CITY]"
+   This H1 is the primary SEO keyword for this page.
+   Subtext: 2-line description
+   CTA: "Get Free [Service] Quote"
+
+2. FEATURED REAL PHOTO (full width, 480px height):
+   Real project photo for that specific service
+   Alt: "[service] by [BRAND] in [CITY]"
+
+3. OVERVIEW SECTION:
+   What it is, what we offer, why choose us for this
+
+4. WHAT'S INCLUDED (detailed checklist):
+   Every item/variant included in this service
+
+5. PROCESS (3-step simplified):
+   Consultation → Design → Execution
+
+6. GALLERY (6 real project photos of this service):
+   3-column grid, hover labels
+
+7. STARTING PRICE GUIDE:
+   e.g. "Modular Kitchen starts from ₹1.5 Lakh"
+   "Wardrobe starts from ₹35,000"
+   Include 3 tiers: Economy / Standard / Premium
+   NOTE: Include "Prices vary by size and material. 
+   Contact us for exact quote."
+
+8. FAQ (5 service-specific questions)
+
+9. CTA SECTION:
+   "Get a Free [Service] Quote for Your Home"
+   Form or WhatsApp button
+
+10. RELATED SERVICES (3 cards linking to other pages)
+
+━━━ PORTFOLIO PAGE (/portfolio/) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hero: "Our Work" / "Every room has a story."
+Navy background, medium height (50vh)
+
+FILTER BAR (sticky below nav):
+  Filter by: All | Kitchen | Bedroom | Living Room | 
+  Full Home | Office | Bathroom
+  Style: horizontal pills, navy background, 
+  gold border on active, smooth filter transition
+
+MASONRY GRID:
+  3 columns desktop, 2 tablet, 1 mobile
+  Real project photos with:
+    Project name, room type, city
+    Hover overlay with brief details
+  
+  Show 12 initially, "Load More" button at bottom
+
+━━━ BLOG LISTING PAGE (/blog/) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hero: "Interior Guides & Insights"
+Navy, 40vh
+
+CATEGORY FILTER:
+  All | Kitchen | Wardrobes | Wall Paneling | 
+  Interior Tips | Design Trends | Materials
+
+3-column grid of article cards (same style as homepage)
+Pagination or Load More at bottom
+
+SIDEBAR (desktop):
+  "Get Free Consultation" card (sticky)
+  Recent articles
+  Categories list
+  WhatsApp button
+
+━━━ INDIVIDUAL BLOG ARTICLE PAGE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Structure:
+  Breadcrumb: Home / Blog / [Category] / [Title]
+  
+  Article header:
+    Category tag (gold)
+    H1 (title — this is the SEO target keyword)
+    By [Author Name] · [Date] · [X] min read
+    Social share: WhatsApp, Facebook, LinkedIn icons
+  
+  Featured image: full width, 16:9, below header
+  
+  Article body (max-width 760px, centered):
+    H2 for major sections
+    H3 for sub-points
+    Body: DM Sans 400, 1rem, 1.75 line-height
+    Pull quotes: Cormorant italic, gold border-left
+  
+  PROGRESS BAR:
+    Fixed top, below nav (3px height, gold background)
+    Fills as user scrolls through article
+  
+  INLINE CTA (after 50% of article):
+    Box: navy background, cream text
+    "Interested in [service from article]?"
+    "[BRAND] offers free consultations."
+    Button: "Get Free Quote on WhatsApp"
+  
+  After article:
+    Author bio box
+    Social sharing row (WhatsApp, Facebook, Twitter, 
+    Copy Link)
+    "Related Articles" (3 cards)
+    "About [BRAND]" CTA card
+
+━━━ ABOUT PAGE (/about/) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hero: "About [BRAND]" — navy, 50vh
+
+Sections:
+  1. Our Story (founding, mission, values)
+  2. Meet the Team (photos + names + roles)
+  3. Our Workshop/Studio (photos of workspace)
+  4. Numbers (stats bar, same as homepage)
+  5. Awards/Certifications (if any)
+  6. Our Philosophy (design approach)
+  7. CTA section
+
+━━━ THANK YOU PAGE (/thank-you/) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+IMPORTANT: This page exists to track conversions in 
+Google Analytics. Set up a Goal/Conversion event 
+when this page is viewed.
+
+Design:
+  Navy background, centered content
+  Large gold checkmark animation (draw-on SVG)
+  Heading: "We've Received Your Enquiry"
+  Sub: "Our team will call you within 24 hours."
+  
+  What happens next (3 steps):
+    Step 1: "We'll call you within 24 hours"
+    Step 2: "Free site visit scheduled"
+    Step 3: "3D design presented in 3 days"
+  
+  Also WhatsApp button:
+    "Want a faster response? Chat on WhatsApp"
+  
+  Return home: "Return to Homepage" text link
+
+━━━ 404 PAGE (/404/) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Navy background
+Large "404" in Cormorant Garamond 300, 10rem, 
+10% white opacity (background watermark)
+Over it: "Page Not Found"
+Under: "The page you're looking for has moved 
+or doesn't exist."
+Two buttons: "Go to Homepage" and "Contact Us"
+No nav links — keep it clean
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 7 — BLOG ARTICLES (Write all 5 in full)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Write each article at minimum 1,000 words.
+Include H2 and H3 subheadings throughout.
+Include the focus keyword naturally 5–8 times.
+End every article with a CTA to WhatsApp.
+
+ARTICLE 1: /blog/modular-kitchen-cost-[city]/
+Focus keyword: "modular kitchen cost in [CITY]"
+Title: "Modular Kitchen Cost in [CITY] 2025: 
+A Complete Price Breakdown"
+Sections to cover:
+- What affects the price (size, layout, material, 
+  hardware, finish type)
+- Material grade explained (MR vs BWR vs BWP)
+- Hardware brands comparison (local vs Hettich/Ebco)
+- Laminate brands comparison (plain vs branded)
+- 3 budget tiers with real ranges:
+  Economy ₹1.5L–₹3L / Mid ₹3L–₹5L / Premium ₹5L+
+- What is included vs excluded in quotes
+- Red flags: how cheap quotes cut corners
+- Tips to get value without compromising
+- Closing CTA
+
+ARTICLE 2: /blog/fluted-vs-charcoal-panel/
+Focus keyword: "fluted panel vs charcoal panel"
+Title: "Fluted Panels vs Charcoal Panels: 
+Which Wall Treatment Is Right for You in 2025?"
+Sections:
+- What are fluted MDF panels (3D texture, vertical 
+  grooves, shadow effect)
+- What are charcoal panels (deep dark, matte, dramatic)
+- Room-wise recommendation
+- Cost comparison
+- Maintenance guide
+- How to choose based on existing furniture color
+- Real project examples
+
+ARTICLE 3: /blog/sliding-vs-hinged-wardrobe/
+Focus keyword: "sliding vs hinged wardrobe [CITY]"
+Title: "Sliding vs Hinged Wardrobe: 
+What Most Homeowners in [CITY] Get Wrong"
+Sections:
+- Space requirements (sliding saves room, hinged needs 
+  swing clearance of 60–80cm)
+- Cost comparison (sliding typically 20–30% more)
+- Accessibility (hinged better for visibility)
+- Room size guide
+- Material and finish options
+- Soft-close vs manual options
+- Closing CTA
+
+ARTICLE 4: /blog/full-home-interior-checklist/
+Focus keyword: "full home interior checklist [CITY]"
+Title: "Full Home Interior Checklist 2025: 
+Everything to Plan Before You Start"
+Room-by-room checklist format.
+Civil, electrical, plumbing, carpentry, paint checklists.
+Questions to ask your designer.
+
+ARTICLE 5: /blog/interior-design-mistakes/
+Focus keyword: "interior design mistakes to avoid"
+Title: "7 Interior Design Mistakes That Cost 
+Homeowners Lakhs (And How to Avoid Every One)"
+7 specific, detailed mistakes with real consequences 
+and how to avoid each.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 8 — COMPLETE SEO SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+▌ META TAGS (every page needs unique versions)
+
+Homepage:
+Title (max 60 chars):
+"Interior Designer [CITY] | Modular Kitchen, 
+Wardrobe & Full Home | [BRAND]"
+
+Meta description (max 155 chars):
+"[BRAND] — premium modular kitchen, wardrobe, 
+wall paneling & complete home interiors in [CITY]. 
+500+ projects ✓ 5-yr warranty ✓ Free 3D design."
+
+H1: "Spaces Designed to Move You Every Time"
+(editorial headline — SEO keywords live in meta title 
+and body content, not forced into H1)
+
+Service page example (Modular Kitchen):
+Title: "Modular Kitchen in [CITY] | Custom Design 
+& Installation | [BRAND]"
+Meta description: "Best modular kitchen designers 
+in [CITY]. Custom base cabinets, wall units, 
+countertops & full hardware. Free 3D design. 
+5yr warranty. Call now."
+H1: "Modular Kitchen Design in [CITY]"
+
+▌ SCHEMA MARKUP (copy this exact JSON-LD code into 
+every page's <head>, update bracketed values)
+
+Homepage schema:
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InteriorDesigner",
+  "@id": "https://[DOMAIN]/#business",
+  "name": "[BRAND] Interiors",
+  "url": "https://[DOMAIN]",
+  "telephone": "+91[PHONE]",
+  "email": "[EMAIL]",
+  "description": "Premium interior design services 
+  in [CITY] — modular kitchens, wardrobes, 
+  wall paneling & full home interiors.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[ADDRESS]",
+    "addressLocality": "[CITY]",
+    "addressRegion": "[STATE]",
+    "postalCode": "[PIN]",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "[LAT]",
+    "longitude": "[LNG]"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "[CITY1]"},
+    {"@type": "City", "name": "[CITY2]"}
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday","Tuesday","Wednesday",
+      "Thursday","Friday","Saturday"
+    ],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "priceRange": "₹₹₹",
+  "image": "https://[DOMAIN]/og-image.jpg",
+  "sameAs": [
+    "[INSTAGRAM URL]",
+    "[FACEBOOK URL]",
+    "[YOUTUBE URL]"
+  ]
+}
+</script>
+
+FAQ Schema (homepage — add this as a SECOND 
+JSON-LD script tag, not inside the first one):
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a modular kitchen cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A modular kitchen costs between 
+        ₹1.5 lakh to ₹8 lakh depending on size, 
+        layout, material grade, and hardware brands. 
+        We provide a detailed itemised quote after 
+        a free site visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does full home interior work take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A complete 2BHK takes 45–60 days; 
+        3BHK takes 60–90 days. We share a written 
+        timeline before work begins and honour it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide a warranty on interior work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. 1-year comprehensive warranty 
+        on all work and up to 5 years on structural 
+        carpentry and hardware."
+      }
+    }
+  ]
+}
+</script>
+
+BreadcrumbList Schema (all inner pages):
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://[DOMAIN]/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "[Page Name]",
+      "item": "https://[DOMAIN]/[page-url]/"
+    }
+  ]
+}
+</script>
+
+▌ IMAGE ALT TEXT RULES
+Every image MUST have alt text. Format:
+"[what it shows] by [BRAND] in [CITY]"
+
+Examples:
+"Modular kitchen with quartz countertop 
+ designed by [BRAND] in [CITY]"
+"Custom sliding wardrobe with mirror shutters 
+ installed by [BRAND] in [CITY]"
+"Charcoal fluted wall paneling in living room 
+ by [BRAND] [CITY]"
+"Full 3BHK home interior by [BRAND] [CITY]"
+
+Blank or generic alt text ("image", "photo", 
+"interior") is NOT acceptable.
+
+▌ URL STRUCTURE
+Homepage         : https://[DOMAIN]/
+Services dir     : https://[DOMAIN]/modular-kitchen-[city]/
+Portfolio        : https://[DOMAIN]/portfolio/
+Blog             : https://[DOMAIN]/blog/
+Blog article     : https://[DOMAIN]/blog/[slug]/
+Contact          : https://[DOMAIN]/contact/
+Thank you        : https://[DOMAIN]/thank-you/
+
+IMPORTANT: All URLs must end with a trailing slash /
+Set up 301 redirects: 
+/modular-kitchen → /modular-kitchen-[city]/
+
+▌ REQUIRED HEAD TAGS (every page)
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, 
+initial-scale=1.0, viewport-fit=cover">
+<title>[PAGE TITLE]</title>
+<meta name="description" content="[PAGE DESC]">
+<link rel="canonical" href="https://[DOMAIN]/[url]/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[TITLE]">
+<meta property="og:description" content="[DESC]">
+<meta property="og:url" content="https://[DOMAIN]/[url]/">
+<meta property="og:image" 
+content="https://[DOMAIN]/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" 
+content="summary_large_image">
+<meta name="twitter:title" content="[TITLE]">
+<meta name="twitter:description" content="[DESC]">
+<meta name="twitter:image" 
+content="https://[DOMAIN]/og-image.jpg">
+<link rel="alternate" hreflang="en-IN" 
+href="https://[DOMAIN]/">
+[Google Search Console verification tag]
+[Google Analytics 4 script]
+
+▌ OG IMAGE SPECIFICATIONS
+File: /og-image.jpg
+Size: 1200×630px exactly
+Content: Brand logo + "Interior Design [CITY]" text 
++ one premium project photo
+Format: JPEG, quality 85, max 200KB
+
+▌ FAVICON SPECIFICATIONS
+/favicon.ico — 32×32px
+/favicon-16x16.png — 16×16px
+/favicon-32x32.png — 32×32px
+/apple-touch-icon.png — 180×180px
+/android-chrome-192x192.png — 192×192px
+/android-chrome-512x512.png — 512×512px
+/site.webmanifest — PWA manifest
+
+▌ ROBOTS.TXT (at /robots.txt):
+User-agent: *
+Allow: /
+Disallow: /thank-you/
+Disallow: /admin/
+Sitemap: https://[DOMAIN]/sitemap.xml
+
+▌ SITEMAP (at /sitemap.xml):
+XML sitemap including ALL pages
+Priority settings:
+  Homepage: 1.0
+  Service pages: 0.9
+  Portfolio: 0.8
+  Blog articles: 0.8
+  Blog listing: 0.7
+  About/Contact: 0.6
+  Legal pages: 0.3
+  Thank you: 0.1 (or exclude)
+
+▌ GOOGLE ANALYTICS 4 SETUP
+Add GA4 tracking code to every page:
+<script async 
+src="https://www.googletagmanager.com/gtag/js?id=
+[MEASUREMENT_ID]"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '[MEASUREMENT_ID]', {
+    page_location: window.location.href,
+    page_title: document.title
+  });
+</script>
+
+CONVERSION EVENTS to track:
+- Form submission: gtag('event', 'generate_lead')
+- WhatsApp click: gtag('event', 'contact', 
+  {method: 'whatsapp'})
+- Phone click: gtag('event', 'contact', 
+  {method: 'phone'})
+- Thank you page view: marks as conversion
+- Consultation button click: gtag('event', 
+  'begin_checkout')
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 9 — PERFORMANCE REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TARGET SCORES (PageSpeed Insights):
+  Desktop: 90+ Performance, 90+ SEO, 90+ Best Practices
+  Mobile:  80+ Performance, 90+ SEO
+
+IMAGE SPECIFICATIONS:
+  Format: WebP (with JPEG fallback for older browsers)
+  Use <picture> element:
+  <picture>
+    <source srcset="image.webp" type="image/webp">
+    <img src="image.jpg" alt="[ALT TEXT]">
+  </picture>
+  
+  Hero image:    1920×1080px, max 150KB WebP
+  Portfolio:     800×600px, max 60KB WebP  
+  Blog thumbs:   800×450px, max 50KB WebP
+  About photo:   800×1000px, max 70KB WebP
+  
+  Lazy loading: add loading="lazy" to ALL images 
+  except hero (hero should load="eager")
+  
+  Width/height attributes: ALL images must have 
+  explicit width and height to prevent CLS
+
+LOADING:
+  Google Fonts: use rel="preconnect" and 
+  rel="preload" for font files
+  
+  Critical CSS: inline above-the-fold CSS in <head>
+  
+  Scripts: add defer attribute to all non-critical JS
+  <script defer src="main.js"></script>
+  
+  Total page size: aim under 1.5MB on mobile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 10 — ACCESSIBILITY (WCAG 2.1 AA Level)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Color contrast ratios:
+  Body text (#0A1628 on #F8F5F0): passes AA ✓
+  Gold on navy (#C9A96E on #0A1628): passes AA ✓
+  Cream on navy (#F5F2ED on #0A1628): passes AAA ✓
+  Muted text (#6B7A8D on #F8F5F0): test and confirm ✓
+
+Keyboard navigation:
+  All interactive elements reachable via Tab
+  Focus ring: 2px solid #C9A96E, 2px offset 
+  on all focusable elements
+  Skip-to-content link: first element in <body>
+  <a href="#main-content" class="skip-link">
+  Skip to main content</a>
+  Visible only on keyboard focus (position absolute, 
+  transformed off-screen, moves on-screen on :focus)
+
+ARIA labels:
+  <nav aria-label="Main navigation">
+  <footer aria-label="Site footer">
+  <main id="main-content" role="main">
+  Buttons without text: aria-label="[action]"
+  Social icons: aria-label="Follow us on [platform]"
+  WhatsApp float: aria-label="Chat on WhatsApp"
+  Hamburger: aria-label="Open navigation menu"
+  
+Form labels:
+  Every input MUST have an associated <label>
+  Use for/id pairing, NOT placeholder as label
+  Example:
+  <label for="name">Full Name</label>
+  <input id="name" type="text" name="name">
+
+Reduced motion:
+  Wrap all animations in:
+  @media (prefers-reduced-motion: no-preference) {
+    /* animations here */
+  }
+  Users who prefer reduced motion see instant 
+  transitions only.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 11 — WHAT ANTIGRAVITY COMMONLY GETS WRONG
+         (Read every point. Prevent every mistake.)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DESIGN MISTAKES:
+✗ Using #111111 or #0B0B0B instead of the navy 
+  (#060E1A / #0A1628). Double-check all hex codes.
+
+✗ Using border-radius 8px, 12px, or 16px anywhere. 
+  Every element: 2px ONLY.
+
+✗ Adding ALL CAPS section labels (like "OUR SERVICES").
+  This was explicitly prohibited. Use sentence case.
+
+✗ Adding "→" arrows to button text.
+  Every button must end with the last word, 
+  no arrow icon or symbol after.
+
+✗ Making the marquee text appear in ALL CAPS.
+  It should be title case as written.
+
+✗ Using yellow (#FFD700) instead of gold (#C9A96E).
+  These look completely different. Use exact codes.
+
+✗ Using generic template sections that weren't 
+  specified. If a section wasn't in this brief, 
+  it should not be on the site.
+
+✗ Not implementing the staggered why-us stat cards 
+  (card 2 down 2rem, card 3 up 2rem). This is what 
+  makes it look designed vs template.
+
+✗ Making all portfolio items the same size instead 
+  of the asymmetric 7-5 / 4-8 split.
+
+✗ Making the services sidebar not sticky. It MUST 
+  be position:sticky, top 6rem on desktop.
+
+FUNCTIONALITY MISTAKES:
+✗ WhatsApp number format. 
+  MUST be: https://wa.me/91XXXXXXXXXX
+  NOT: https://wa.me/+91XXXXXXXXXX  
+  NOT: https://wa.me/0XXXXXXXXXX
+  Test every single WhatsApp link before delivery.
+
+✗ Counter animation firing on page load instead of 
+  when the stats bar scrolls into view. 
+  Must use IntersectionObserver with threshold 0.5.
+  Must fire ONCE only (unobserve after trigger).
+
+✗ All services open in accordion by default. 
+  ONLY the first item (Modular Kitchen) is open. 
+  All others closed. Set class="open" in HTML on 
+  first item, not in JavaScript.
+
+✗ Mobile menu not closing after clicking a link. 
+  Every mobile nav link MUST call closeMobileMenu().
+  Also add event listener to backdrop click.
+
+✗ Nav transparent on light-background pages (About, 
+  Blog, Contact). These pages start in solid state. 
+  Add body class "light-page" and CSS:
+  body.light-page .nav { 
+    background: rgba(248,245,240,0.96);
+    backdrop-filter: blur(16px);
+  }
+
+✗ Announcement bar pushing nav down but nav not 
+  recalculating top offset after bar is closed.
+  Use JS to set nav top based on bar height.
+
+✗ Copyright year hardcoded as 2024 or 2025.
+  MUST be dynamic JavaScript (shown earlier).
+
+✗ Form submitting but no WhatsApp opening AND no 
+  redirect to thank-you page. Both must happen.
+
+✗ Social media footer links pointing to 
+  platform homepages (instagram.com) instead of 
+  the actual business profile pages. 
+  Set every link to the exact profile URL provided.
+
+✗ Google Analytics code missing, wrong, or firing 
+  only on some pages. Must be on EVERY page 
+  including thank-you, 404, blog articles.
+
+✗ Schema markup has JSON syntax errors 
+  (missing commas, unclosed brackets). 
+  Validate at: https://validator.schema.org/
+
+✗ Image alt text left as filename.jpg or empty.
+  Every image needs descriptive alt text as specified.
+
+✗ Canonical tags missing on service pages and 
+  blog articles. Missing canonicals = duplicate 
+  content risk.
+
+✗ Hero text overflowing or breaking badly on 
+  360px wide Android phones. Test specifically at 
+  360px width. Use clamp() for all heading sizes.
+
+✗ Sticky mobile bottom CTA bar not being built 
+  at all. This is a critical component. If absent, 
+  request it immediately.
+
+✗ Portfolio filter buttons built but filter 
+  not working (items don't hide/show on click).
+  Filter must actually work using CSS classes 
+  and JavaScript toggle.
+
+✗ All images same dimensions. Hero, portfolio, 
+  blog thumbnails all need different sizes as 
+  specified. Using same image everywhere 
+  makes it look template-built.
+
+SEO MISTAKES:
+✗ All pages have the same meta description.
+  Every page MUST have a unique meta description.
+
+✗ H1 tag missing or used multiple times on a page.
+  Exactly ONE H1 per page, always.
+
+✗ Blog article pages missing Article schema markup.
+
+✗ Service pages not indexed because they're 
+  accidentally blocked in robots.txt.
+
+✗ Sitemap not submitted to Google Search Console 
+  after launch.
+
+✗ Open Graph image not created (og:image missing).
+  Results in blank preview when shared on WhatsApp.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 12 — COOKIE CONSENT & LEGAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COOKIE CONSENT BANNER:
+  Appears on first visit, bottom of screen
+  Background: #060E1A, cream text
+  Text: "We use cookies to improve your experience 
+  and analyse site traffic."
+  Buttons: "Accept" (gold) · "Decline" (ghost)
+  On Accept: set cookie "consent=yes", 
+  load GA4 script, hide banner
+  On Decline: set cookie "consent=no", 
+  do not load GA4, hide banner
+  Store choice for 365 days
+  
+  NOTE: GA4 script should only fire AFTER 
+  consent is accepted.
+
+PRIVACY POLICY PAGE (/privacy-policy/):
+  Include: data collected, how used, cookies, 
+  third parties (Google Analytics), contact email, 
+  no data sold to third parties.
+
+TERMS OF SERVICE (/terms-of-service/):
+  Include: scope of service, payment terms, 
+  warranty terms, cancellation policy, 
+  dispute resolution.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 13 — PRE-LAUNCH QUALITY CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Complete every item before delivering the website:
+
+DESIGN:
+□ All hex colors match spec exactly (use eyedropper)
+□ All fonts loading correctly (Cormorant + DM Sans)
+□ No border-radius above 2px anywhere
+□ No ALL CAPS section labels
+□ No → arrows on buttons
+□ Announcement bar working and closeable
+□ Marquee scrolling smoothly, pauses on hover
+□ Hero layout correct on 360px, 390px, 768px, 1440px
+□ Sticky sidebar in services section working
+□ Portfolio asymmetric grid correct (7-5, 4-8)
+□ Staggered stat cards in Why Us section
+□ All hover states working (portfolio, blog cards)
+□ Material showcase section present
+□ Comparison table present
+□ 404 page designed
+□ Thank you page designed
+
+FUNCTIONALITY:
+□ All WhatsApp links tested (open correctly on mobile)
+□ Phone numbers are clickable tel: links on mobile
+□ Mobile menu opens and closes correctly
+□ All mobile menu links close the menu on click
+□ Sticky bottom mobile bar visible on mobile only
+□ Services accordion: only first open, only one at a time
+□ FAQ accordion: none open by default
+□ Portfolio filter working (shows/hides projects)
+□ Counter animation fires on scroll, not page load
+□ Counter fires once only
+□ Form validation working (name + phone required)
+□ Form honeypot field present (spam protection)
+□ Form submission opens WhatsApp with pre-filled message
+□ Form redirects to /thank-you/ after submit
+□ Thank you page tracks as conversion in GA4
+□ All internal links work (no 404s)
+□ All social media links go to correct profiles
+□ Google Maps embeds loading
+□ WhatsApp float button visible on all pages
+□ Scroll reveal animations working
+□ Nav becomes solid on scroll (all pages)
+□ Nav starts solid on non-hero pages
+
+SEO:
+□ Every page has unique title tag (max 60 chars)
+□ Every page has unique meta description (max 155 chars)
+□ Exactly one H1 per page
+□ All images have descriptive alt text
+□ All service pages have canonical tags
+□ All blog articles have canonical tags
+□ LocalBusiness schema on homepage (validate it)
+□ FAQPage schema on homepage (validate it)
+□ Article schema on blog posts
+□ BreadcrumbList on inner pages
+□ robots.txt live at /robots.txt
+□ XML sitemap live at /sitemap.xml
+□ OG image exists (1200×630px)
+□ Favicon set (all sizes)
+
+PERFORMANCE:
+□ All images in WebP format with JPEG fallback
+□ Hero image under 150KB
+□ Portfolio images under 60KB each
+□ loading="lazy" on all below-fold images
+□ loading="eager" on hero image
+□ All images have width + height attributes
+□ Google Fonts using preconnect
+□ JS scripts have defer attribute
+□ No console errors in browser dev tools
+
+ANALYTICS:
+□ GA4 tracking code on every page
+□ Conversion event on /thank-you/ page
+□ WhatsApp click event tracked
+□ Phone click event tracked
+□ Site submitted to Google Search Console
+□ Sitemap submitted in Search Console
+
+LEGAL:
+□ Cookie consent banner working
+□ GA4 only loads after cookie consent
+□ Privacy Policy page live
+□ Terms of Service page live
+□ Footer links to both pages working
+□ Copyright year is dynamic (JS)
+
+FINAL:
+□ Tested on real iPhone Safari
+□ Tested on real Android Chrome
+□ Tested on Samsung Internet browser
+□ Tested on slow 3G (Chrome DevTools throttle)
+□ SSL certificate active (https://)
+□ www redirects to non-www (or vice versa, pick one)
+□ Google My Business profile updated with website URL
+□ WhatsApp Business profile updated with website URL
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 14 — POST-LAUNCH ACTIONS (Do on Day 1)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Submit sitemap to Google Search Console
+□ Request indexing for homepage and 5 key pages
+□ Set up Google My Business post with website link
+□ Share website on Instagram stories + feed
+□ Send WhatsApp broadcast to past clients with link
+□ Ask 5 past clients for Google Reviews this week
+□ Set up weekly Google Search Console check
+□ Set up monthly PageSpeed Insights check
+□ Create a blog publishing calendar (1 article/month)
+□ Set up Google Alerts for brand name monitoring
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-13T23:04:26+05:30.
+</ADDITIONAL_METADATA>

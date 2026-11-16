@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you/
+Disallow: /admin/
+Sitemap: https://delhiinterior.com/sitemap.xml
