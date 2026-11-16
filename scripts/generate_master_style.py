@@ -456,9 +456,24 @@ select.form-control {
   line-height: var(--topbar-height);
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden !important;
   position: relative;
   z-index: 101;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+.top-utility-bar::-webkit-scrollbar,
+.top-utility-container::-webkit-scrollbar,
+.top-utility-left::-webkit-scrollbar,
+.top-utility-right::-webkit-scrollbar {
+  display: none !important;
+}
+.top-utility-container,
+.top-utility-left,
+.top-utility-right {
+  overflow: hidden !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
 
 .top-utility-container {
@@ -767,23 +782,43 @@ select.form-control {
   gap: 1rem;
 }
 
-.hamburger {
+.hamburger,
+.mobile-toggle {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 24px;
-  height: 18px;
+  width: 26px;
+  height: 19px;
   background: transparent;
   border: none;
+  cursor: pointer;
   padding: 0;
+  z-index: 1001;
 }
-.hamburger span {
+.hamburger span,
+.mobile-toggle span,
+.mobile-toggle .hamburger-bar {
   display: block;
-  height: 2px;
+  height: 2.5px;
   width: 100%;
   background-color: var(--color-dark);
-  border-radius: 1px;
+  border-radius: 2px;
   transition: all var(--duration-fast) ease;
+}
+
+@media (max-width: 991px) {
+  .main-navigation {
+    display: none !important;
+  }
+  .hamburger,
+  .mobile-toggle {
+    display: flex !important;
+  }
+  .header-actions .btn,
+  .header-actions .btn-primary,
+  .header-actions .nav-cta {
+    display: none !important;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -2931,4 +2966,9 @@ html, body {
     flex-wrap: wrap !important;
   }
 }
+"""
 
+with open("assets/css/style.css", "w", encoding="utf-8") as out_f:
+    out_f.write(css)
+
+print("Generated assets/css/style.css successfully!")
