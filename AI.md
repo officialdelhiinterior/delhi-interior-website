@@ -118,9 +118,10 @@ delhi-interior-website/
 ├── wall-paneling-delhi/                   # Service 4: Wall Paneling & TV Units
 ├── false-ceiling-delhi/                   # Service 5: False Ceiling & Lighting
 ├── doors-partitions-delhi/                # Service 6: Doors & Partitions
-├── bedroom-furniture-delhi/               # Service 7: Custom Woodwork & Furniture
-├── painting-polishing-delhi/              # Service 8: Painting & PU Polish
-├── plumbing-electrical-delhi/             # Service 9: Electrical & MEP
+├── aluminium-glass-work-delhi/            # Service 7: Architectural Aluminium & Glass Systems
+├── bedroom-furniture-delhi/               # Service 8: Custom Woodwork & Furniture
+├── painting-polishing-delhi/              # Service 9: Painting & PU Polish
+├── plumbing-electrical-delhi/             # Service 10: Electrical & MEP
 ├── blog/                                  # 6 High-intent architectural blog guides
 ├── privacy-policy/                        # Legal compliance
 ├── terms-of-service/                      # Service terms

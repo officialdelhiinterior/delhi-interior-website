@@ -28,6 +28,7 @@ PAGES = [
     'full-home-interior-delhi/index.html',
     'bedroom-furniture-delhi/index.html',
     'doors-partitions-delhi/index.html',
+    'aluminium-glass-work-delhi/index.html',
     'painting-polishing-delhi/index.html',
     'plumbing-electrical-delhi/index.html'
 ]
