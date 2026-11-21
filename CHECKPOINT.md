@@ -21,7 +21,9 @@
 > 12. Custom Doors & Partitions Elevation: Renamed and elevated service to **"Custom Doors & Partitions"** across all 29 HTML files, desktop dropdowns, mobile drawers, and footers (`Main Teak Doors, Flush & Glass`). Showcased in-house fabrication at Mohammadpur workshop with master carpenters (*karigars*), solid teak pivot doors, designer veneer flush doors, hardwood chaukhats with acoustic rubber buffers, and smart biometric locks.
 > 13. High-Intent SEO Door Authority Guide Published: Launched `/blog/main-door-design-guide-delhi/index.html` (*Main Door Design & Custom Wooden Doors in Delhi 2026: Types, Materials & Cost Guide*) to capture high-volume search queries ("main door design delhi", "teak wood door price delhi", "pivot door cost delhi"). Features full schema markup, comparison tables, 2026 pricing benchmarks, Vastu guidelines, and 5 interactive FAQs.
 > 14. Generated Custom Door Visual Assets: `assets/images/blog-main-doors.jpg` and `assets/images/blog-main-doors.webp` showing a grand custom teak pivot entrance door in a luxury Delhi residence.
-> 15. All 27 pages passing strict audit with 0 errors and 0 warnings.
+> 15. Published Highest Organic Search-Volume Master Pillar: `/blog/interior-design-cost-delhi/index.html` (*Interior Design Cost in Delhi 2026: 1BHK, 2BHK, 3BHK & 4BHK Price Guide per Sq Ft*) targeting tens of thousands of monthly searches ("interior design cost in delhi", "2bhk interior design cost delhi", "3bhk interior design cost delhi", "turnkey interior cost delhi"). Features full schema markup, 3 quality tier matrices, BHK breakdowns, room-by-room tables, and hidden cost warnings.
+> 16. Generated Custom Editorial Visual: `assets/images/blog-interior-cost.jpg` and `assets/images/blog-interior-cost.webp` depicting a luxury 3BHK living and dining room in South Delhi.
+> 17. All 28 pages passing strict audit with 0 errors and 0 warnings.
 
 ---
 

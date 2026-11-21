@@ -132,6 +132,18 @@
 - **Showcased In-House Workshop Fabrication**: Fully updated `/doors-partitions-delhi/` and homepage visual card #6 to highlight that Delhi Interior custom-fabricates doors in-house at the Mohammadpur, South Delhi workshop with master carpenters (*karigars*).
 - **Core Product Coverage**: Explicitly detailed Solid Burma & CP Teakwood Pivot Entrance Doors, Designer Veneered Flush Doors (Natural Walnut/Oak with CNC V-Grooving), Hardwood Chaukhats (Frames) with acoustic EPDM rubber buffers, PU/Duco finished room doors, smart biometric locks (Yale/Hafele/Godrej), and slimline fluted glass partitions.
 
+### Phase 20: Highest Search-Volume Master Authority Pillar Published (`/blog/interior-design-cost-delhi/`)
+- **Published #1 Organic Traffic Generator**: *Interior Design Cost in Delhi (2026): 1BHK, 2BHK, 3BHK & 4BHK Price Guide per Sq Ft*.
+- **Targeted Maximum-Volume Search Intent in Delhi NCR**: Captures high-volume queries: "interior design cost in delhi", "2bhk interior design cost delhi", "3bhk interior design cost delhi", "4bhk interior cost delhi", "interior designer cost per sq ft delhi", and "turnkey interior cost delhi".
+- **Complete Pricing & Scope Architecture**:
+  - Per sq. ft. rate tiers: Essential (₹1,200–₹1,750), Premium (₹1,800–₹2,900), Luxury Turnkey (₹3,000–₹5,500+).
+  - BHK-wise estimated budgets: 1BHK (₹2.2L–₹10.5L+), 2BHK (₹4.5L–₹22L+), 3BHK (₹7.5L–₹42L+), 4BHK / Builder Floors (₹13.5L–₹75L+).
+  - Room-by-room breakdown: Modular Kitchen, Wardrobes, Living Foyer, False Ceiling & MEP, Painting/Polish, Bathrooms.
+  - Housing type analysis: Gated societies (DLF, Godrej) vs Independent Builder Floors (South/West Delhi) vs DDA flat renovations.
+  - Hidden contractor costs exposed: GST, malba hauling in MCD zones, 4mm fireproof wiring, counterfeit hardware substitutions.
+- **Architectural Visual Assets**: Generated `assets/images/blog-interior-cost.jpg` and `assets/images/blog-interior-cost.webp` depicting a luxury open-concept South Delhi 3BHK living and dining room.
+- **Schema & Indexing**: Full Schema.org `BlogPosting`, `BreadcrumbList`, and `FAQPage` schemas, featured at top of `blog/index.html`, added to `sitemap.xml` with top priority `0.9`, and listed in `sitemap/index.html`.
+
 ### Phase 19: High-Intent SEO Door Authority Guide Published (`/blog/main-door-design-guide-delhi/`)
 - **Published Comprehensive 3,800+ Word Guide**: *Main Door Design & Custom Wooden Doors in Delhi (2026): Types, Materials & Cost Guide*.
 - **Targeted High-Search Ranking Keywords**: Optimized for top search queries in Delhi NCR including "main door design delhi", "custom wooden doors delhi", "teak wood door price delhi", "pivot door cost delhi", and "flush door vs solid teak".
@@ -197,7 +209,7 @@ delhi-interior-website/
 
 ## 4. Verification & Testing Commands
 ```bash
-# 1. Run rigorous 27-page compliance and link audit
+# 1. Run rigorous 28-page compliance and link audit
 python scripts/audit_site.py
 
 # 2. Run button, form, and accordion interactive audit
