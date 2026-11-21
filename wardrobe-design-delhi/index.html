@@ -42,25 +42,112 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://delhiinterior.com/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://delhiinterior.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://delhiinterior.com/sitemap/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Custom Wardrobe & Almirah Design",
+          "item": "https://delhiinterior.com/wardrobe-design-delhi/"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "Service",
+      "@id": "https://delhiinterior.com/wardrobe-design-delhi/#service",
+      "name": "Custom Wardrobe & Almirah Design in Delhi NCR",
+      "url": "https://delhiinterior.com/wardrobe-design-delhi/",
+      "provider": {
+        "@id": "https://delhiinterior.com/#organization"
+      },
+      "serviceType": "Custom Sliding & Hinged Wardrobe Fabrication",
+      "description": "Floor-to-ceiling custom sliding wardrobes, hinged almirahs, and walk-in closets with anti-warp aluminum stiffeners and luxury finishes.",
+      "areaServed": [
+        "South Delhi",
+        "Greater Kailash",
+        "Vasant Vihar",
+        "Defence Colony",
+        "Panchsheel Park",
+        "Hauz Khas",
+        "Jor Bagh",
+        "Chanakyapuri",
+        "Gurugram",
+        "Golf Course Road Gurugram",
+        "DLF Phase 1-5",
+        "Noida",
+        "Delhi NCR"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "price": "1400",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "INR",
+          "price": "1400",
+          "unitText": "SQFT"
+        }
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Custom Wardrobe Design in Delhi",
-      "item": "https://delhiinterior.com/wardrobe-design-delhi/"
+      "@type": "FAQPage",
+      "@id": "https://delhiinterior.com/wardrobe-design-delhi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which is better for Delhi bedrooms: sliding or hinged wardrobes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sliding wardrobes are ideal for rooms where bed-to-wall clearance is under 3 feet since doors do not swing out. Hinged wardrobes offer 100% full view of clothes at once and cost slightly less."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you prevent tall 8-foot shutters from bending?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We install internal aluminum shutter stiffeners and use premium calibrated 18mm ply or HDMR boards, completely preventing warping over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you add a hidden locker or safe inside the wardrobe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We frequently integrate biometric or digital fireproof safes concealed behind false drawer fronts or secret plinth drawers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does custom wardrobe manufacturing take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically 14 to 18 days from 3D approval to on-site assembly and hardware calibration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do your sliding doors have bottom tracks that gather dirt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We prefer top-hung sliding systems that eliminate unsightly floor tracks and operate effortlessly for decades."
+          }
+        }
+      ]
     }
   ]
 }
@@ -661,7 +748,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2025</span> Delhi Interior. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy-policy/">Privacy Policy</a>
           <a href="/terms-of-service/">Terms of Service</a>

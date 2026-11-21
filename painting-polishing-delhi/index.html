@@ -42,25 +42,112 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://delhiinterior.com/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://delhiinterior.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://delhiinterior.com/sitemap/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Master Painting & Italian PU / Duco Polish",
+          "item": "https://delhiinterior.com/painting-polishing-delhi/"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "Service",
+      "@id": "https://delhiinterior.com/painting-polishing-delhi/#service",
+      "name": "Master Painting & Italian PU / Duco Polish in Delhi NCR",
+      "url": "https://delhiinterior.com/painting-polishing-delhi/",
+      "provider": {
+        "@id": "https://delhiinterior.com/#organization"
+      },
+      "serviceType": "Architectural Painting & PU / Duco Polishing",
+      "description": "Italian high-gloss and matte PU polishing, Duco spray finishes, texture walls, and premium interior coatings applied by master polishers.",
+      "areaServed": [
+        "South Delhi",
+        "Greater Kailash",
+        "Vasant Vihar",
+        "Defence Colony",
+        "Panchsheel Park",
+        "Hauz Khas",
+        "Jor Bagh",
+        "Chanakyapuri",
+        "Gurugram",
+        "Golf Course Road Gurugram",
+        "DLF Phase 1-5",
+        "Noida",
+        "Delhi NCR"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "price": "35",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "INR",
+          "price": "35",
+          "unitText": "SQFT"
+        }
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Paints, Polish & Surface Finishing in Delhi",
-      "item": "https://delhiinterior.com/painting-polishing-delhi/"
+      "@type": "FAQPage",
+      "@id": "https://delhiinterior.com/painting-polishing-delhi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between PU polish and regular Melamine polish?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Melamine turns yellow over time and stains easily from water rings. Italian PU (Polyurethane) remains crystal clear, is completely non-yellowing, and offers 5x superior scratch and heat resistance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Duco paint emit strong fumes inside the house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "During active spray application there is an odor, which is why we exhaust the space with commercial blowers. Once cured within 24 hours, the surface is completely non-toxic and odor-free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you fix peeling wall paint caused by moisture seepage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We never paint over active dampness. We identify the source, apply specialized chemical crystalline waterproofing primers, let the masonry cure, and then proceed with breathable finish coats."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you match exact paint shades from luxury international catalogues?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Using computerized spectrophotometer tinting, we match precise shades from Farrow & Ball, Benjamin Moore, or Asian Paints collections."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does painting a 3BHK apartment take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Surface prep and painting typically takes 7 to 10 days, ensuring adequate drying time between progressive coats."
+          }
+        }
+      ]
     }
   ]
 }
@@ -658,7 +745,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2025</span> Delhi Interior. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy-policy/">Privacy Policy</a>
           <a href="/terms-of-service/">Terms of Service</a>

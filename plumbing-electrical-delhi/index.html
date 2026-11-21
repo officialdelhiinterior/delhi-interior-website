@@ -42,25 +42,112 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://delhiinterior.com/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://delhiinterior.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://delhiinterior.com/sitemap/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Concealed MEP Plumbing & Electrical Contractors",
+          "item": "https://delhiinterior.com/plumbing-electrical-delhi/"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "Service",
+      "@id": "https://delhiinterior.com/plumbing-electrical-delhi/#service",
+      "name": "Concealed MEP Plumbing & Electrical Contractors in Delhi NCR",
+      "url": "https://delhiinterior.com/plumbing-electrical-delhi/",
+      "provider": {
+        "@id": "https://delhiinterior.com/#organization"
+      },
+      "serviceType": "Concealed MEP Plumbing & Electrical Contracting",
+      "description": "Heavy gauge copper wiring, architectural lighting distribution, concealed CPVC/UPVC plumbing, and premium sanitaryware installation.",
+      "areaServed": [
+        "South Delhi",
+        "Greater Kailash",
+        "Vasant Vihar",
+        "Defence Colony",
+        "Panchsheel Park",
+        "Hauz Khas",
+        "Jor Bagh",
+        "Chanakyapuri",
+        "Gurugram",
+        "Golf Course Road Gurugram",
+        "DLF Phase 1-5",
+        "Noida",
+        "Delhi NCR"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "price": "120",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "INR",
+          "price": "120",
+          "unitText": "SQFT"
+        }
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Concealed Plumbing & Electrical in Delhi",
-      "item": "https://delhiinterior.com/plumbing-electrical-delhi/"
+      "@type": "FAQPage",
+      "@id": "https://delhiinterior.com/plumbing-electrical-delhi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you ensure that newly tiled bathrooms will not leak into ceilings below?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We apply a double-layer chemical crystalline waterproof slurry followed by an elastic acrylic fiber membrane across the entire sunken slab and 12 inches up the walls. We flood-test the bathroom for 72 hours before tiling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will our electrical wiring support multiple heavy 2-ton inverter ACs running simultaneously?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We run independent, unshared 4 sq. mm fire-retardant copper wires with dedicated MCB breakers directly from the main distribution panel for each air conditioner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you install smart automation switches that work with Alexa and Google Home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We integrate smart touch panels and concealed relay modules from Legrand, Schneider, or smart Wi-Fi systems into standard switch boxes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide high-pressure booster pump installations for luxury rain showers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Multi-function rain and mist showers require 2.5 to 3.5 bar pressure, so we size and install silent hydro-pneumatic booster systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does full electrical and plumbing overhaul take for a 3BHK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically 12 to 16 days, scheduled alongside initial civil masonry before false ceilings and modular woodwork begin."
+          }
+        }
+      ]
     }
   ]
 }
@@ -658,7 +745,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2025</span> Delhi Interior. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy-policy/">Privacy Policy</a>
           <a href="/terms-of-service/">Terms of Service</a>

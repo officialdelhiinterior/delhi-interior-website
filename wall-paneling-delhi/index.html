@@ -42,25 +42,112 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://delhiinterior.com/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://delhiinterior.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://delhiinterior.com/sitemap/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Architectural Wall Paneling & TV Units",
+          "item": "https://delhiinterior.com/wall-paneling-delhi/"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "Service",
+      "@id": "https://delhiinterior.com/wall-paneling-delhi/#service",
+      "name": "Architectural Wall Paneling & TV Units in Delhi NCR",
+      "url": "https://delhiinterior.com/wall-paneling-delhi/",
+      "provider": {
+        "@id": "https://delhiinterior.com/#organization"
+      },
+      "serviceType": "Wall Paneling, Louvers & Media Console Fabrication",
+      "description": "Luxury charcoal panels, fluted MDF louvers, acoustic wooden paneling, and custom TV units handcrafted in our Mohammadpur workshop.",
+      "areaServed": [
+        "South Delhi",
+        "Greater Kailash",
+        "Vasant Vihar",
+        "Defence Colony",
+        "Panchsheel Park",
+        "Hauz Khas",
+        "Jor Bagh",
+        "Chanakyapuri",
+        "Gurugram",
+        "Golf Course Road Gurugram",
+        "DLF Phase 1-5",
+        "Noida",
+        "Delhi NCR"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "price": "250",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "INR",
+          "price": "250",
+          "unitText": "SQFT"
+        }
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Wall Paneling & TV Units in Delhi",
-      "item": "https://delhiinterior.com/wall-paneling-delhi/"
+      "@type": "FAQPage",
+      "@id": "https://delhiinterior.com/wall-paneling-delhi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can charcoal panels handle Delhi humidity and rainy seasons?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. High quality charcoal panels are manufactured from polymer and coal powder composites that are 100% waterproof, termite-proof, and impervious to weather fluctuations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will all wires behind the TV unit truly be hidden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, completely. We install concealed PVC conduits inside the paneling substrate for HDMI, power, and optical cables before mounting the TV."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to panel a standard living room wall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically 2 to 4 days, minimizing any disruption to your home."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are fluted panels difficult to keep clean from dust?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at all. Standard micro-fiber dusting or a soft vacuum attachment keeps the vertical grooves pristine. Our panels have smooth anti-static coatings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you mount heavy 75-inch or 85-inch TVs on the paneling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We anchor heavy-duty structural steel brackets directly into the civil masonry behind the paneling to safely support any display size."
+          }
+        }
+      ]
     }
   ]
 }
@@ -658,7 +745,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2025</span> Delhi Interior. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy-policy/">Privacy Policy</a>
           <a href="/terms-of-service/">Terms of Service</a>

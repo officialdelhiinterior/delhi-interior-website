@@ -42,25 +42,112 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://delhiinterior.com/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://delhiinterior.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://delhiinterior.com/sitemap/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Custom Doors & Architectural Partitions",
+          "item": "https://delhiinterior.com/doors-partitions-delhi/"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "Service",
+      "@id": "https://delhiinterior.com/doors-partitions-delhi/#service",
+      "name": "Custom Doors & Architectural Partitions in Delhi NCR",
+      "url": "https://delhiinterior.com/doors-partitions-delhi/",
+      "provider": {
+        "@id": "https://delhiinterior.com/#organization"
+      },
+      "serviceType": "Custom Door Manufacturing & Partition Installation",
+      "description": "Solid teak main pivot doors, designer flush doors, acoustic sliding partitions, and CNC jali screens crafted to millimeter precision.",
+      "areaServed": [
+        "South Delhi",
+        "Greater Kailash",
+        "Vasant Vihar",
+        "Defence Colony",
+        "Panchsheel Park",
+        "Hauz Khas",
+        "Jor Bagh",
+        "Chanakyapuri",
+        "Gurugram",
+        "Golf Course Road Gurugram",
+        "DLF Phase 1-5",
+        "Noida",
+        "Delhi NCR"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "price": "14000",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "INR",
+          "price": "14000",
+          "unitText": "UNIT"
+        }
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Custom Doors & Partitions in Delhi",
-      "item": "https://delhiinterior.com/doors-partitions-delhi/"
+      "@type": "FAQPage",
+      "@id": "https://delhiinterior.com/doors-partitions-delhi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do your sliding glass partitions require a track on the floor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We use top-hung overhead tracks with concealed ceiling reinforcements. Your floor tile remains completely smooth without tripping hazards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you ensure wooden main doors do not swell during Delhi monsoons?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use exclusively kiln-seasoned hardwoods with moisture content under 12%, followed by six protective coats of exterior-grade PU sealers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you integrate biometric smart locks on custom doors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We cut precision cavities for Yale, Godrej, Hafele, and Samsung digital smart locks with fingerprint and PIN access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does fluted glass provide adequate visual privacy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fluted glass diffuses light beautifully while obscuring clear visibility, making it the perfect choice between dining, living, and kitchen zones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does door fabrication and polish take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Approximately 10 to 14 days, with on-site installation completed in a single day per door."
+          }
+        }
+      ]
     }
   ]
 }
@@ -668,7 +755,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2025</span> Delhi Interior. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy-policy/">Privacy Policy</a>
           <a href="/terms-of-service/">Terms of Service</a>

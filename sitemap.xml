@@ -1,171 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://delhiinterior.com/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/hero-kitchen.jpg</image:loc>
+      <image:title>Luxury Modular Kitchen &amp; Living Room in Greater Kailash II by Delhi Interior</image:title>
+      <image:caption>Luxury Modular Kitchen &amp; Living Room in Greater Kailash II by Delhi Interior — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/service-fullhome.jpg</image:loc>
+      <image:title>Residential Interior Designing Delhi NCR</image:title>
+      <image:caption>Residential Interior Designing Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/portfolio-office.jpg</image:loc>
+      <image:title>Commercial Interior Designing Delhi NCR</image:title>
+      <image:caption>Commercial Interior Designing Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/about-workshop.jpg</image:loc>
+      <image:title>Delhi Interior Dedicated Woodworking Workshop in South Delhi</image:title>
+      <image:caption>Delhi Interior Dedicated Woodworking Workshop in South Delhi — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/service-kitchen.jpg</image:loc>
+      <image:title>Modular Kitchen Designs in Delhi NCR</image:title>
+      <image:caption>Modular Kitchen Designs in Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/service-wardrobe.jpg</image:loc>
+      <image:title>Custom Wardrobe Designs in Delhi NCR</image:title>
+      <image:caption>Custom Wardrobe Designs in Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/portfolio-fullhome.jpg</image:loc>
+      <image:title>Full Home Turnkey Interiors Delhi NCR</image:title>
+      <image:caption>Full Home Turnkey Interiors Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/service-paneling.jpg</image:loc>
+      <image:title>Wall Paneling and TV Units Delhi NCR</image:title>
+      <image:caption>Wall Paneling and TV Units Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/service-ceiling.jpg</image:loc>
+      <image:title>False Ceiling and Lighting Design Delhi NCR</image:title>
+      <image:caption>False Ceiling and Lighting Design Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/service-doors.jpg</image:loc>
+      <image:title>Custom Doors and Architectural Partitions Delhi NCR</image:title>
+      <image:caption>Custom Doors and Architectural Partitions Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/service-furniture.jpg</image:loc>
+      <image:title>Custom Woodwork &amp; Carpentry Services in Delhi NCR</image:title>
+      <image:caption>Custom Woodwork &amp; Carpentry Services in Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/service-painting.jpg</image:loc>
+      <image:title>Painting and Luxury Polishing Delhi NCR</image:title>
+      <image:caption>Painting and Luxury Polishing Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/service-electrical.jpg</image:loc>
+      <image:title>Plumbing and Electrical MEP Delhi NCR</image:title>
+      <image:caption>Plumbing and Electrical MEP Delhi NCR — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/portfolio-mandir.jpg</image:loc>
+      <image:title>Sacred Teakwood Mandir &amp; Custom Woodwork in Mohammadpur South Delhi</image:title>
+      <image:caption>Sacred Teakwood Mandir &amp; Custom Woodwork in Mohammadpur South Delhi — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/portfolio-kitchen.jpg</image:loc>
+      <image:title>L-Shaped Acrylic Kitchen in Greater Kailash</image:title>
+      <image:caption>L-Shaped Acrylic Kitchen in Greater Kailash — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/portfolio-bedroom.jpg</image:loc>
+      <image:title>Master Suite with Fluted Backdrop in Panchsheel</image:title>
+      <image:caption>Master Suite with Fluted Backdrop in Panchsheel — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/portfolio-living.jpg</image:loc>
+      <image:title>Modern Minimalist Lounge in Gulmohar Park</image:title>
+      <image:caption>Modern Minimalist Lounge in Gulmohar Park — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/hero-wardrobe.jpg</image:loc>
+      <image:title>Walk-In Closet in Jor Bagh</image:title>
+      <image:caption>Walk-In Closet in Jor Bagh — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/portfolio-tvunit.jpg</image:loc>
+      <image:title>Acoustic TV Backdrop in Gurugram</image:title>
+      <image:caption>Acoustic TV Backdrop in Gurugram — Delhi Interior Master Workshop</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
   </url>
-
-  <!-- Service Pages (0.9 Priority) -->
+  <url>
+    <loc>https://delhiinterior.com/full-home-interior-delhi/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://delhiinterior.com/modular-kitchen-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/wardrobe-design-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/wall-paneling-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/false-ceiling-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://delhiinterior.com/full-home-interior-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/bedroom-furniture-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/doors-partitions-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/aluminium-glass-work-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/painting-polishing-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/plumbing-electrical-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Portfolio (0.8 Priority) -->
+  <url>
+    <loc>https://delhiinterior.com/blog/interior-design-cost-delhi/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://delhiinterior.com/portfolio/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Articles (0.8 Priority) -->
+  <url>
+    <loc>https://delhiinterior.com/blog/main-door-design-guide-delhi/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://delhiinterior.com/blog/modular-kitchen-cost-delhi/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/blog/fluted-vs-charcoal-panel/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/blog/sliding-vs-hinged-wardrobe/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/blog/full-home-interior-checklist/</loc>
-    <lastmod>2026-11-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://delhiinterior.com/blog/interior-design-cost-delhi/</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://delhiinterior.com/blog/main-door-design-guide-delhi/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/blog/interior-design-mistakes/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Blog Listing (0.7 Priority) -->
   <url>
     <loc>https://delhiinterior.com/blog/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- About, Process, Contact (0.6 Priority) -->
   <url>
     <loc>https://delhiinterior.com/about/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/process/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/contact/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Legal & User Utility Pages (0.3 Priority) -->
   <url>
     <loc>https://delhiinterior.com/sitemap/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/privacy-policy/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://delhiinterior.com/terms-of-service/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -3175,3 +3175,166 @@ html, body {
     padding: 0.65rem 1rem;
   }
 }
+
+
+/* --------------------------------------------------------------------------
+   AEO DECISION MATRIX: DIRECT WORKSHOP VS AGGREGATORS VS CONTRACTORS
+   -------------------------------------------------------------------------- */
+.decision-matrix-section {
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+  background: #F8FAFC;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.matrix-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 2rem;
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--color-border);
+}
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+  min-width: 680px;
+}
+.matrix-table th,
+.matrix-table td {
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.matrix-table th {
+  background: #0B2540;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: var(--font-heading);
+}
+.matrix-table th.highlight-col {
+  background: #081B2F;
+  color: #E2C37A;
+  border-bottom: 2px solid #B89058;
+}
+.matrix-table td.highlight-col {
+  background: rgba(184, 144, 88, 0.05);
+  font-weight: 600;
+  color: #0B2540;
+}
+.matrix-badge-best {
+  display: inline-block;
+  background: #B89058;
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  margin-left: 0.4rem;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   GEO MICRO-MARKETS SECTION: DELHI NCR LOCALITY HUBS
+   -------------------------------------------------------------------------- */
+.geo-markets-section {
+  padding: clamp(3.5rem, 6vw, 5rem) 0;
+  background: #FFFFFF;
+}
+.geo-zones-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.25rem;
+}
+.geo-zone-card {
+  background: #F8FAFC;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.geo-zone-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(11, 37, 64, 0.08);
+  border-color: #B89058;
+}
+.geo-zone-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #B89058;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.08em;
+}
+.geo-zone-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: #0B2540;
+  margin-bottom: 0.85rem;
+}
+.geo-colonies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.geo-colonies-list li {
+  font-size: 0.86rem;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.geo-colonies-list li::before {
+  content: "•";
+  color: #B89058;
+  font-weight: bold;
+}
+.geo-trust-banner {
+  margin-top: 2.5rem;
+  background: linear-gradient(135deg, #0B2540 0%, #061524 100%);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border: 1px solid rgba(184, 144, 88, 0.3);
+}
+.geo-trust-text h4 {
+  color: #E2C37A;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+.geo-trust-text p {
+  color: #CBD5E1;
+  font-size: 0.88rem;
+  margin: 0;
+  line-height: 1.5;
+}
+@media (max-width: 1024px) {
+  .geo-zones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .geo-zones-grid {
+    grid-template-columns: 1fr;
+  }
+  .geo-trust-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+  }
+}

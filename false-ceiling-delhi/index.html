@@ -42,25 +42,112 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://delhiinterior.com/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://delhiinterior.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://delhiinterior.com/sitemap/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Designer False Ceiling & Architectural Lighting",
+          "item": "https://delhiinterior.com/false-ceiling-delhi/"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "Service",
+      "@id": "https://delhiinterior.com/false-ceiling-delhi/#service",
+      "name": "Designer False Ceiling & Architectural Lighting in Delhi NCR",
+      "url": "https://delhiinterior.com/false-ceiling-delhi/",
+      "provider": {
+        "@id": "https://delhiinterior.com/#organization"
+      },
+      "serviceType": "Gypsum False Ceiling & Cove Lighting Installation",
+      "description": "Precision Saint-Gobain gypsum false ceilings, architectural POP moldings, concealed cove lighting, and magnetic track light systems.",
+      "areaServed": [
+        "South Delhi",
+        "Greater Kailash",
+        "Vasant Vihar",
+        "Defence Colony",
+        "Panchsheel Park",
+        "Hauz Khas",
+        "Jor Bagh",
+        "Chanakyapuri",
+        "Gurugram",
+        "Golf Course Road Gurugram",
+        "DLF Phase 1-5",
+        "Noida",
+        "Delhi NCR"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "price": "110",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "INR",
+          "price": "110",
+          "unitText": "SQFT"
+        }
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "False Ceiling Design & Lighting in Delhi",
-      "item": "https://delhiinterior.com/false-ceiling-delhi/"
+      "@type": "FAQPage",
+      "@id": "https://delhiinterior.com/false-ceiling-delhi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does a false ceiling reduce room height drastically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard peripheral cove ceiling only drops 5 to 6 inches along the borders, leaving the central ceiling at full height. It actually makes the room feel taller through uplighting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you prevent cracks appearing along false ceiling joints?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use original Gyproc fiber tape with specialized jointing compounds, applied in 3 progressive coats to absorb thermal micro-movements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ceiling fans be mounted on a false ceiling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fans are never anchored into the gypsum board. We install heavy structural steel down-rods securely fastened directly to the RCC slab above."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a 3BHK false ceiling project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically 10 to 14 days for framing, boarding, jointing, and primer prep."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we integrate smart ambient lights with mobile app controls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We regularly install Wi-Fi and Zigbee compatible CCT tunable strip lights that you can dim or schedule from your phone."
+          }
+        }
+      ]
     }
   ]
 }
@@ -658,7 +745,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2025</span> Delhi Interior. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy-policy/">Privacy Policy</a>
           <a href="/terms-of-service/">Terms of Service</a>

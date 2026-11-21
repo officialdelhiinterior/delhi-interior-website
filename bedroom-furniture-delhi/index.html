@@ -42,25 +42,112 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://delhiinterior.com/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://delhiinterior.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://delhiinterior.com/sitemap/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Custom Woodwork, Fine Carpentry & Teak Mandirs",
+          "item": "https://delhiinterior.com/bedroom-furniture-delhi/"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "Service",
+      "@id": "https://delhiinterior.com/bedroom-furniture-delhi/#service",
+      "name": "Custom Woodwork, Fine Carpentry & Teak Mandirs in Delhi NCR",
+      "url": "https://delhiinterior.com/bedroom-furniture-delhi/",
+      "provider": {
+        "@id": "https://delhiinterior.com/#organization"
+      },
+      "serviceType": "Custom Woodwork, Fine Carpentry & Mandir Manufacturing",
+      "description": "Master handcrafted solid CP teak mandirs, hydraulic storage beds, bespoke dining sets, and architectural millwork by seasoned carpenters.",
+      "areaServed": [
+        "South Delhi",
+        "Greater Kailash",
+        "Vasant Vihar",
+        "Defence Colony",
+        "Panchsheel Park",
+        "Hauz Khas",
+        "Jor Bagh",
+        "Chanakyapuri",
+        "Gurugram",
+        "Golf Course Road Gurugram",
+        "DLF Phase 1-5",
+        "Noida",
+        "Delhi NCR"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "price": "1500",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "INR",
+          "price": "1500",
+          "unitText": "SQFT"
+        }
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Custom Woodwork & Precision Carpentry in Delhi",
-      "item": "https://delhiinterior.com/bedroom-furniture-delhi/"
+      "@type": "FAQPage",
+      "@id": "https://delhiinterior.com/bedroom-furniture-delhi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can the hydraulic bed be lifted easily by one person?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We calibrate the German gas-lift struts to the exact weight of your mattress, allowing anyone to lift it effortlessly with one hand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the study desk have visible wire clutter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We install concealed wire organizers, modesty panel channels, and desktop pop-up sockets for laptop chargers and monitors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you build customized mandirs with brass bells and CNC jali?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Pooja mandirs are a studio specialty. We incorporate sacred proportions, bells, drawer storage for incense, and warm halo illumination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What wood do you use for heavy bookshelf loads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use minimum 25mm calibrated BWP plywood or high-density HDMR, ensuring shelves never bend even when packed with heavy encyclopedias."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer on-site fabric selection for headboards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our team brings swatch booklets of stain-resistant velvets, leathers, and textured bouclé fabrics directly to your site."
+          }
+        }
+      ]
     }
   ]
 }
@@ -658,7 +745,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2025</span> Delhi Interior. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy-policy/">Privacy Policy</a>
           <a href="/terms-of-service/">Terms of Service</a>

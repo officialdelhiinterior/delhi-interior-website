@@ -42,25 +42,112 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://delhiinterior.com/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://delhiinterior.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://delhiinterior.com/sitemap/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Turnkey Full Home Interior (2BHK, 3BHK, 4BHK)",
+          "item": "https://delhiinterior.com/full-home-interior-delhi/"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "Service",
+      "@id": "https://delhiinterior.com/full-home-interior-delhi/#service",
+      "name": "Turnkey Full Home Interior (2BHK, 3BHK, 4BHK) in Delhi NCR",
+      "url": "https://delhiinterior.com/full-home-interior-delhi/",
+      "provider": {
+        "@id": "https://delhiinterior.com/#organization"
+      },
+      "serviceType": "Turnkey Residential Interior Design & Execution",
+      "description": "Comprehensive turnkey interior design for 2BHK, 3BHK, 4BHK apartments and luxury villas with structured milestone delivery and direct workshop rates.",
+      "areaServed": [
+        "South Delhi",
+        "Greater Kailash",
+        "Vasant Vihar",
+        "Defence Colony",
+        "Panchsheel Park",
+        "Hauz Khas",
+        "Jor Bagh",
+        "Chanakyapuri",
+        "Gurugram",
+        "Golf Course Road Gurugram",
+        "DLF Phase 1-5",
+        "Noida",
+        "Delhi NCR"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "price": "1200",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "INR",
+          "price": "1200",
+          "unitText": "SQFT"
+        }
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Full Home Turnkey Interiors in Delhi",
-      "item": "https://delhiinterior.com/full-home-interior-delhi/"
+      "@type": "FAQPage",
+      "@id": "https://delhiinterior.com/full-home-interior-delhi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does a complete 3BHK interior take in Delhi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard 3BHK turnkey transformation takes 60 to 75 days. We provide a milestone-linked calendar before commencement and adhere strictly to it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we live in the house while full interior work is ongoing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For full home civil, electrical, and flooring work, we strongly recommend vacating the property so our teams can work without noise and dust constraints to finish faster."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are electrical appliances and loose furniture included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our core turnkey packages cover all fixed architectural woodwork, civil, electrical, plumbing, ceiling, and painting. Soft furnishings, appliances, and loose sofas can be curated on request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your payment milestone structure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We operate on transparent milestone stages: booking advance, 3D design sign-off, workshop production commencement, on-site framework completion, and final handover."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What quality assurances do you provide on turnkey work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We conduct detailed multi-point quality audits across all civil, electrical, plumbing, and carpentry installations before handover, accompanied by original manufacturer documentation for certified hardware and materials."
+          }
+        }
+      ]
     }
   ]
 }
@@ -661,7 +748,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2025</span> Delhi Interior. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy-policy/">Privacy Policy</a>
           <a href="/terms-of-service/">Terms of Service</a>

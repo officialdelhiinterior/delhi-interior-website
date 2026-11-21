@@ -42,25 +42,112 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://delhiinterior.com/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://delhiinterior.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://delhiinterior.com/sitemap/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Modular Kitchen Design & Installation",
+          "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "Service",
+      "@id": "https://delhiinterior.com/modular-kitchen-delhi/#service",
+      "name": "Modular Kitchen Design & Installation in Delhi NCR",
+      "url": "https://delhiinterior.com/modular-kitchen-delhi/",
+      "provider": {
+        "@id": "https://delhiinterior.com/#organization"
+      },
+      "serviceType": "Modular Kitchen Design, Fabrication & Installation",
+      "description": "Bespoke modular kitchens manufactured in our South Delhi workshop using calibrated BWP 710 marine plywood, Greenpanel HDHMR, and Blum/Hettich soft-close hardware.",
+      "areaServed": [
+        "South Delhi",
+        "Greater Kailash",
+        "Vasant Vihar",
+        "Defence Colony",
+        "Panchsheel Park",
+        "Hauz Khas",
+        "Jor Bagh",
+        "Chanakyapuri",
+        "Gurugram",
+        "Golf Course Road Gurugram",
+        "DLF Phase 1-5",
+        "Noida",
+        "Delhi NCR"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "price": "1200",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "INR",
+          "price": "1200",
+          "unitText": "SQFT"
+        }
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Modular Kitchen Design in Delhi",
-      "item": "https://delhiinterior.com/modular-kitchen-delhi/"
+      "@type": "FAQPage",
+      "@id": "https://delhiinterior.com/modular-kitchen-delhi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you determine the scope for a custom modular kitchen in Delhi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our modular kitchen solutions are custom planned based on your exact layout, counter dimensions, and storage needs. Every design includes architectural layouts, genuine BWP 710 marine ply, premium quartz, and German soft-close fittings with an itemized BOQ commitment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which plywood grade is best for Indian kitchens?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We strictly recommend BWP (Boiling Water Proof) 710-grade plywood for kitchen sink and base units because it withstands steam, water spills, and heavy load without delamination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does modular kitchen installation take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fabrication takes approximately 20–25 days in our dedicated workshop. Once delivered on site, our in-house carpentry team installs the kitchen in 3 to 5 working days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide civil modifications, plumbing, and chimney ducting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Delhi Interior is a full-service studio. We manage core-cutting for chimney exhaust, plumbing relocation, tile dado work, and electrical switch points under one turnkey contract."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What hardware brands do you offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work exclusively with certified international brands including Hettich, Ebco, Blum, and Hafele, all installed to authentic manufacturer specifications."
+          }
+        }
+      ]
     }
   ]
 }
@@ -661,7 +748,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2025</span> Delhi Interior. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Delhi Interior. All rights reserved.</p>
         <div class="footer-legal">
           <a href="/privacy-policy/">Privacy Policy</a>
           <a href="/terms-of-service/">Terms of Service</a>
