@@ -7,7 +7,8 @@
 
   function initLeadForm() {
     const form = document.getElementById('quote-form');
-    if (!form) return;
+    if (!form || form.dataset.quoteBound) return;
+    form.dataset.quoteBound = 'true';
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();

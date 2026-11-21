@@ -205,7 +205,18 @@
   // 9. Interactive Hero Consultation Quote Form
   function initQuoteForm() {
     const form = document.getElementById('quote-form');
-    if (!form) return;
+    if (!form || form.dataset.quoteBound) return;
+    form.dataset.quoteBound = 'true';
+
+    // Remove is-invalid on user typing
+    const inputs = form.querySelectorAll('.form-control');
+    inputs.forEach(input => {
+      input.addEventListener('input', function () {
+        if (this.classList.contains('is-invalid') && this.value.trim()) {
+          this.classList.remove('is-invalid');
+        }
+      });
+    });
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -214,27 +225,54 @@
       const phoneInput = form.querySelector('[name="phone"]');
       const serviceInput = form.querySelector('[name="service"]');
       const areaInput = form.querySelector('[name="area"]');
+      const messageInput = form.querySelector('[name="message"]');
       const honeypot = form.querySelector('[name="honeypot"]');
+      const submitBtn = form.querySelector('#submit-quote-btn');
 
       // Bot protection
-      if (honeypot && honeypot.value) return;
+      if (honeypot && honeypot.value.trim() !== '') return;
 
+      let isValid = true;
       const name = nameInput ? nameInput.value.trim() : '';
       const phone = phoneInput ? phoneInput.value.trim() : '';
-      const service = serviceInput ? serviceInput.value : 'Complete Interior';
-      const area = areaInput ? areaInput.value.trim() : 'Delhi NCR';
 
-      if (!name || !phone) {
-        alert('Please fill in your Name and Phone Number to book your consultation.');
+      if (!name) {
+        if (nameInput) nameInput.classList.add('is-invalid');
+        isValid = false;
+      } else if (nameInput) {
+        nameInput.classList.remove('is-invalid');
+      }
+
+      const cleanPhone = phone.replace(/\D/g, '');
+      if (!phone || cleanPhone.length < 10) {
+        if (phoneInput) phoneInput.classList.add('is-invalid');
+        isValid = false;
+      } else if (phoneInput) {
+        phoneInput.classList.remove('is-invalid');
+      }
+
+      if (!isValid) {
+        const firstError = form.querySelector('.is-invalid');
+        if (firstError) {
+          firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          firstError.focus();
+        }
         return;
       }
 
-      // Check phone pattern
-      const cleanPhone = phone.replace(/[^\d+]/g, '');
-      if (cleanPhone.length < 10) {
-        alert('Please enter a valid 10-digit Indian mobile number.');
-        return;
+      // UI Loading Feedback
+      if (submitBtn) {
+        submitBtn.innerHTML = 'Sending...';
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
       }
+
+      const service = serviceInput ? serviceInput.value : 'Turnkey Interior Consultation';
+      const area = areaInput && areaInput.value.trim() ? areaInput.value.trim() : 'Delhi NCR';
+      const msg = messageInput && messageInput.value.trim() ? messageInput.value.trim() : '';
+
+      const waMsg = `Hi Delhi Interior, my name is ${name}. I am looking for ${service} in ${area}.${msg ? ' Details: ' + msg + '.' : ''} Please connect with me to schedule my free consultation. (Phone: ${phone})`;
+      const waUrl = `https://wa.me/919643817099?text=${encodeURIComponent(waMsg)}`;
 
       // Instant UI Success Feedback
       const fieldsContainer = form.querySelector('.form-fields-container');
@@ -243,21 +281,34 @@
       const waDirectLink = form.querySelector('.wa-direct-link');
 
       if (nameDisplay) nameDisplay.textContent = name;
+      if (waDirectLink) waDirectLink.href = waUrl;
 
-      const waMsg = `Hi Delhi Interior, my name is ${name}. I am looking for ${service} in ${area}. Please connect with me to schedule my free consultation. (Phone: ${phone})`;
-      const waUrl = `https://wa.me/919643817099?text=${encodeURIComponent(waMsg)}`;
-
-      if (waDirectLink) {
-        waDirectLink.href = waUrl;
+      // Track GA4 event if present
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', {
+          event_category: 'form',
+          event_label: service,
+          value: 1
+        });
       }
 
-      if (fieldsContainer) fieldsContainer.style.display = 'none';
-      if (successBox) {
-        successBox.style.display = 'block';
-      }
+      setTimeout(() => {
+        if (fieldsContainer) fieldsContainer.style.display = 'none';
+        if (successBox) successBox.style.display = 'block';
 
-      // Store in session
-      sessionStorage.setItem('delhi_interior_lead', JSON.stringify({ name, phone, service, area, time: new Date().toISOString() }));
+        // Store in session
+        try {
+          sessionStorage.setItem('delhi_interior_lead', JSON.stringify({ name, phone, service, area, time: new Date().toISOString() }));
+        } catch (err) {}
+
+        // Open WhatsApp in new tab
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+        // Graceful redirect to thank-you page after 1.5s
+        setTimeout(() => {
+          window.location.href = '/thank-you/';
+        }, 1500);
+      }, 500);
     });
   }
 
@@ -448,6 +499,43 @@
     });
   }
 
+
+  // 15. Cookie Consent & DPDP Act Compliance
+  function initCookieConsent() {
+    const consentKey = 'delhi_interior_cookie_consent';
+    const banner = document.getElementById('cookie-consent-banner');
+    if (!banner) return;
+
+    if (localStorage.getItem(consentKey)) {
+      banner.style.display = 'none';
+      return;
+    }
+
+    setTimeout(() => {
+      banner.classList.add('show');
+    }, 600);
+
+    function closeBanner(value) {
+      try {
+        localStorage.setItem(consentKey, value);
+      } catch (e) {}
+      banner.classList.remove('show');
+      setTimeout(() => {
+        banner.style.display = 'none';
+      }, 400);
+    }
+
+    const acceptBtn = document.getElementById('cookie-btn-accept');
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', () => closeBanner('accepted_all'));
+    }
+
+    const essentialBtn = document.getElementById('cookie-btn-essential');
+    if (essentialBtn) {
+      essentialBtn.addEventListener('click', () => closeBanner('essential_only'));
+    }
+  }
+
   // DOM Ready
   document.addEventListener('DOMContentLoaded', function () {
     initCopyright();
@@ -463,5 +551,6 @@
     initScrollAnimations();
     initMetricCounters();
     initBriefTierLinks();
+    initCookieConsent();
   });
 })();

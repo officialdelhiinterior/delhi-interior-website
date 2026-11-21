@@ -157,6 +157,18 @@
   - `www.delhiinterior.com`: Points to `76a76e89362cb008.vercel-dns-017.com` (CNAME Record, Production).
 - Live HTTPS tested: returns `HTTP 200 OK` with valid SSL certificate.
 
+
+### Phase 21: Form QA Bug Fixes, Cookie Consent & DPDP Act 2023 Trust Architecture
+- **Resolved Contact Form Initial Load Visibility Bug**: Added `.invalid-feedback { display: none; }` and `.form-success-state { display: none; }` in `assets/css/style.css`. Error messages and success confirmations are strictly hidden on initial page load and only revealed dynamically upon interaction.
+- **Eliminated Disruptive Browser Alert() Popups**: Modernized form submission handling across `assets/js/main.js` and `assets/js/form.js` to use inline validation with `.is-invalid` borders and contextual feedback, smooth button state transitions (`Sending...`), pre-filled WhatsApp routing, and `/thank-you/` conversion redirection. Added `dataset.quoteBound` safeguarding to eliminate duplicate event listeners.
+- **Interactive Floating Cookie Consent Banner**: Implemented dark obsidian luxury banner (`#060E18` / Golden Brass `#B89058`) with "Accept All" and "Essential Only" options persisting consent via `localStorage.getItem('delhi_interior_cookie_consent')`. Fully compliant with India's Digital Personal Data Protection (DPDP) Act 2023 and IT Act 2000.
+- **Privacy Policy & Terms Consent in Forms**: Embedded explicit consent disclaimer under `#quote-form` across `index.html` and `contact/index.html` ("By clicking 'Get Free Estimate', you agree to our Privacy Policy and Terms of Service").
+- **Legal & Trust Navigation in Mobile Drawers**: Deployed a dedicated "Trust & Legal" section into the mobile navigation drawer (`#mobile-menu`) across all 26 site pages, providing one-click mobile access to Privacy Policy, Terms of Service, and HTML Sitemap.
+- **Privacy Policy Legal Expansion (`/privacy-policy/`)**: Standardized studio address to `F-128/4, Mohammadpur, New Delhi 110066`, corrected duplicate city strings, and detailed Data Principal rights (Access, Correction & Erasure, Grievance Redressal, Nomination) per DPDP Act 2023.
+- **Hero Badge Layout & Clutter Elimination**: Positioned `.hero-badge-quality` alongside `.hero-badge-warranty` in `style.css` and suppressed floating badge clutter on small viewports (`@media (max-width: 768px)`), keeping photography clean and un-occluded.
+- **Corrected Hero Copy Typo**: Resolved `"4-BHK Turnkey Delivered in Delivered On Schedule"` to `"4-BHK Turnkey Delivered On Schedule"`.
+
+
 ---
 
 ## 3. Directory & File Structure
