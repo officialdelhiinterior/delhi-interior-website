@@ -232,6 +232,19 @@
   - Smooth scrolling preserves one-click accessibility from hero and navigation CTAs.
 - **Truthful Capabilities Strip**: Replaced arbitrary numerical counters with 4 authentic studio capability blocks: `01 In-House Workshop`, `02 Turnkey Execution`, `03 Certified Materials`, `04 Delhi NCR Focus`.
 
+### Phase 27: Mobile Horizontal Containment & Sub-390px Zero Overflow Verification
+- **Issue**: Visual subagent audit revealed mobile horizontal expansion where `.hero-eyebrow`, `.hero-subtext`, `.hero-bottom-bar`, and `.top-utility-bar` caused horizontal scroll stretch at 390px viewport width.
+- **Permanent Responsive Fixes**:
+  - Added `overflow-x: clip !important` and `overflow-x: hidden !important` to `html` and `body`.
+  - Added `white-space: normal !important`, `word-break: break-word !important`, and `max-width: 100% !important` to `.hero-eyebrow`.
+  - Bound `.hero-subtext` and `.hero-copy` to `width: 100% !important; max-width: 100% !important` on mobile.
+  - Re-flowed `.hero-bottom-bar` on screens `<= 768px` into a vertical column with `max-width: 100%` and broken spans.
+  - Constrained `.top-utility-bar` and `.top-utility-container` to `max-width: 100vw; overflow: hidden`, hiding non-essential tagline and timing spans on screens `<= 768px`.
+  - Injected `@media (max-width: 640px)` refinements for `.hero-title` (`clamp(1.75rem, 6.5vw, 2.2rem)`) and single-column `.trust-strip-grid`.
+- **Rigorous Headless Verification**:
+  - Verified across 9 scroll checkpoints (y = 0px to 30,000px): `html` and `body` remain strictly 375.2px with zero horizontal overflow (`scrollWidth <= 390px`).
+  - Desktop layout (1280x800) re-verified and confirmed completely intact and luxury-grade.
+
 ---
 
 ## 3. Directory & File Structure
