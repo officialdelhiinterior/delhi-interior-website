@@ -21,6 +21,7 @@ PAGES = [
     'blog/sliding-vs-hinged-wardrobe/index.html',
     'blog/full-home-interior-checklist/index.html',
     'blog/interior-design-mistakes/index.html',
+    'blog/main-door-design-guide-delhi/index.html',
     'modular-kitchen-delhi/index.html',
     'wardrobe-design-delhi/index.html',
     'wall-paneling-delhi/index.html',

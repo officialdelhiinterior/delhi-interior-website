@@ -18,6 +18,10 @@
 > 9. Added Google Search Console verification file `google112b923c0b214496.html` and updated `sitemap.xml` timestamps.  
 > 10. Mobile Color Consistency & Dark Mode Protection: Added `<meta name="color-scheme" content="light">` and `<meta name="theme-color" content="#0B2540">` across all 26 HTML pages. Restored sleek 32px Dark Obsidian Navy (`#060E18`) top utility bar on mobile to ensure desktop and mobile share the exact same top header color anchor. Purged legacy foreign blues (`#2563EB`).
 > 11. Vercel Custom Domain verified: `delhiinterior.com` (A Record -> `216.198.79.1`) and `www.delhiinterior.com` (CNAME -> `76a76e89362cb008.vercel-dns-017.com`) active and serving traffic over HTTPS.  
+> 12. Custom Doors & Partitions Elevation: Renamed and elevated service to **"Custom Doors & Partitions"** across all 29 HTML files, desktop dropdowns, mobile drawers, and footers (`Main Teak Doors, Flush & Glass`). Showcased in-house fabrication at Mohammadpur workshop with master carpenters (*karigars*), solid teak pivot doors, designer veneer flush doors, hardwood chaukhats with acoustic rubber buffers, and smart biometric locks.
+> 13. High-Intent SEO Door Authority Guide Published: Launched `/blog/main-door-design-guide-delhi/index.html` (*Main Door Design & Custom Wooden Doors in Delhi 2026: Types, Materials & Cost Guide*) to capture high-volume search queries ("main door design delhi", "teak wood door price delhi", "pivot door cost delhi"). Features full schema markup, comparison tables, 2026 pricing benchmarks, Vastu guidelines, and 5 interactive FAQs.
+> 14. Generated Custom Door Visual Assets: `assets/images/blog-main-doors.jpg` and `assets/images/blog-main-doors.webp` showing a grand custom teak pivot entrance door in a luxury Delhi residence.
+> 15. All 27 pages passing strict audit with 0 errors and 0 warnings.
 
 ---
 

@@ -127,6 +127,18 @@
 - **Phone OS Dark Mode Lock**: Added `<meta name="color-scheme" content="light">` and `<meta name="theme-color" content="#0B2540">` across all 26 HTML pages. Prevents mobile browsers (Chrome Android, Safari iOS, Samsung Internet) from force-inverting or washing out the luxury palette when the user's phone is set to Dark Mode.
 - **Foreign Accent Blues Purged**: Replaced 5 legacy instances of bright electric blue (`#2563EB`) in `index.html` and `#0D47A1` in service subpages with official Deep Navy (`#0B2540`) and Architectural Golden Brass (`#B89058`).
 
+### Phase 18: Custom Door Manufacturing & Architectural Partitions Elevation
+- **Elevated Trade Naming**: Refined service taxonomy from generic "Doors & Partitions" to **"Custom Doors & Partitions"** across all 29 HTML pages, navigation dropdowns, mobile drawers, and footers (`Main Teak Doors, Flush & Glass`).
+- **Showcased In-House Workshop Fabrication**: Fully updated `/doors-partitions-delhi/` and homepage visual card #6 to highlight that Delhi Interior custom-fabricates doors in-house at the Mohammadpur, South Delhi workshop with master carpenters (*karigars*).
+- **Core Product Coverage**: Explicitly detailed Solid Burma & CP Teakwood Pivot Entrance Doors, Designer Veneered Flush Doors (Natural Walnut/Oak with CNC V-Grooving), Hardwood Chaukhats (Frames) with acoustic EPDM rubber buffers, PU/Duco finished room doors, smart biometric locks (Yale/Hafele/Godrej), and slimline fluted glass partitions.
+
+### Phase 19: High-Intent SEO Door Authority Guide Published (`/blog/main-door-design-guide-delhi/`)
+- **Published Comprehensive 3,800+ Word Guide**: *Main Door Design & Custom Wooden Doors in Delhi (2026): Types, Materials & Cost Guide*.
+- **Targeted High-Search Ranking Keywords**: Optimized for top search queries in Delhi NCR including "main door design delhi", "custom wooden doors delhi", "teak wood door price delhi", "pivot door cost delhi", and "flush door vs solid teak".
+- **Structured Architectural Data**: Includes full `BlogPosting` and `BreadcrumbList` schema markup, material comparison matrix (Teak vs HDHMR vs BWP Blockboard vs Tubular), chaukhat selection guide (Marandi vs Teak), Italian PU spray finishing standards, 2026 Delhi NCR pricing tables, Vastu Shastra rules, and 5 interactive FAQs with schema.
+- **Generated Custom Architectural Visuals**: Added `assets/images/blog-main-doors.jpg` and `assets/images/blog-main-doors.webp` depicting a grand custom teak pivot entrance door in a luxury Delhi residence.
+- **Index & Sitemap Integration**: Indexed on `blog/index.html` (featured card), `sitemap.xml`, and `sitemap/index.html`.
+
 ### Phase 16: Vercel Production Custom Domain Configuration
 - Verified authoritative DNS resolution on global root servers:
   - `delhiinterior.com`: Points to `216.198.79.1` (A Record, 308 redirect).
@@ -185,7 +197,7 @@ delhi-interior-website/
 
 ## 4. Verification & Testing Commands
 ```bash
-# 1. Run rigorous 26-page compliance and link audit
+# 1. Run rigorous 27-page compliance and link audit
 python scripts/audit_site.py
 
 # 2. Run button, form, and accordion interactive audit
