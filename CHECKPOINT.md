@@ -1,18 +1,17 @@
 # AGENT RESUME CHECKPOINT
 
-> **Status**: PRODUCTION READY, UNCLUTTERED LUXURY HERO & 100% SUB-390PX MOBILE CONTAINMENT VERIFIED  
-> **Timestamp**: 2026-11-22T04:19:00+05:30  
+> **Status**: PRODUCTION READY, UNCONSTRAINED ON-SITE WORKSHOP POSITIONING, LOWER FORM RELOCATION & CORMORANT+OUTFIT TYPOGRAPHY DEPLOYED  
+> **Timestamp**: 2026-11-22T05:28:00+05:30  
 > **Remote Repository**: `https://github.com/officialdelhiinterior/delhi-interior-website.git`  
 > **Collaborator**: `anurag9702`  
 > **Production URL**: `https://www.delhiinterior.com/` (SSL Active, HTTP 200)  
 > **Local Server**: Running on `http://localhost:8000/` via `scripts/server.py`  
 > **Latest Updates**:  
-> 1. Uncluttered Luxury Hero Layout: Full-bleed architectural penthouse showcase with editorial typography, eliminating image-in-image card overlays and lead-gen form clutter.  
-> 2. Complete Purge of Guarantees, Fake Estimates & Assumptions: Removed all fabricated numbers ('500+ Homes', '4.9★'), fake timeline promises ('24-Hr Quote', 'Save 30-40%'), and estimate buzzwords ('Get Free Estimate'). Standardized on authentic studio terms ('Schedule a Consultation', 'Request Consultation').  
-> 3. Dedicated Consultation Intake Section: Placed consultation form into its own dignified section with smooth-scroll linking from hero and navigation.  
-> 4. Mobile Horizontal Containment & Sub-390px Zero Overflow: Fixed all mobile expansion vectors (`.hero-eyebrow`, `.hero-title`, `.hero-subtext`, `.hero-bottom-bar`, `.top-utility-bar`). Verified zero horizontal overflow across entire 30,000px scroll height via browser subagent.  
-> 5. Truthful Capabilities Strip: Replaced arbitrary numeric counters with authentic capabilities: In-House Mohammadpur Workshop, Master Carpentry, Century BWP 710 Ply, and South Delhi & NCR focus.  
-> 6. Automated Testing: 0 errors, 0 warnings across `scripts/audit_site.py`, 0 broken links in `scripts/audit_buttons_and_interactions.py`, 0 forbidden claims in `scripts/scan_forbidden.py`.
+> 1. Removal of Mohammadpur Constraints: Re-anchored studio messaging to emphasize on-site execution, bespoke master carpentry, and turnkey delivery across South Delhi & Delhi NCR. Purged "Mohammadpur workshop" phrasing from hero subtext, credit bar, trust strip, comparison matrix, and FAQs.  
+> 2. Relocated Consultation Intake Form: Moved `#consultation-card` from right under the hero/trust strip down to the lower part of the page before the final CTA banner. The top fold now breathes naturally, flowing directly into "Why Choose Us" and Curated Suites without premature form clutter.  
+> 3. Luxury Architectural Typography System: Deployed Cormorant Garamond (grand editorial serif) + Outfit (crisp architectural sans) across `assets/css/style.css` and all 28 HTML templates, eliminating faux-bold rendering.  
+> 4. Sub-390px Mobile Containment: Maintained 100% strict horizontal containment (`overflow-x: clip`, fluid clamp, zero horizontal scrollbar).  
+> 5. Automated Testing: 0 errors, 0 warnings across `scripts/audit_site.py`, 0 broken links in `scripts/audit_buttons_and_interactions.py`, 0 forbidden claims in `scripts/scan_forbidden.py`.
 
 ---
 

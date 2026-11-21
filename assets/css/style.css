@@ -39,11 +39,12 @@
   --color-border: #E2E8F0;           /* Clean Structural Border */
   --color-border-light: #F1F5F9;     /* Hairline Divider */
 
-  /* Typography Scale (Blu Bloom Editorial & Architectural Pairing) */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Typography Scale (Architectural Editorial & Modern Sans Pairing) */
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body: 'Plus Jakarta Sans', var(--font-sans);
-  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
 
   /* Precise Architectural Radii (Clean, sharp, never bulbous AI rounded) */
   --radius-xs: 3px;
@@ -152,7 +153,7 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   3. TYPOGRAPHY SYSTEM (BLU BLOOM EDITORIAL SERIF & SANS PAIRING)
+   3. TYPOGRAPHY SYSTEM (ARCHITECTURAL CORMORANT & OUTFIT PAIRING)
    -------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6,
 .hero-headline h1,
@@ -166,30 +167,30 @@ h1, h2, h3, h4, h5, h6,
   font-family: var(--font-serif);
   color: var(--color-primary);
   font-weight: 600;
-  line-height: 1.22;
+  line-height: 1.16;
   letter-spacing: -0.015em;
 }
 
 h1 {
-  font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+  font-size: clamp(2.6rem, 4.6vw, 4rem);
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+  font-size: clamp(2.1rem, 3.4vw, 3rem);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.16;
 }
 
 h3 {
-  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.95rem);
   font-weight: 600;
-  line-height: 1.28;
+  line-height: 1.25;
 }
 
 h4 {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.35;
 }
@@ -197,11 +198,11 @@ h4 {
 p {
   font-family: var(--font-body);
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--color-body);
 }
 
-/* Editorial Italic Emphasis (Blu Bloom Signature) */
+/* Editorial Italic Emphasis */
 h1 em, h2 em, h3 em,
 .hero-headline h1 em,
 .highlight, .highlight-serif {
@@ -216,8 +217,8 @@ h1 em, h2 em, h3 em,
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -1125,9 +1126,10 @@ select.form-control {
 .hero-eyebrow {
   display: inline-block;
   color: #E5C38E;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
   max-width: 100%;
@@ -1137,13 +1139,13 @@ select.form-control {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 4.2rem);
-  font-weight: 800;
-  line-height: 1.1;
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-weight: 600;
+  line-height: 1.08;
   color: #FFFFFF;
   margin-bottom: 1.35rem;
-  letter-spacing: -0.025em;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.015em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.45);
   max-width: 100%;
   overflow-wrap: break-word;
 }
@@ -1156,10 +1158,11 @@ select.form-control {
 }
 
 .hero-subtext {
+  font-family: var(--font-body);
   font-size: clamp(1.02rem, 1.25vw, 1.15rem);
-  line-height: 1.75;
+  line-height: 1.8;
   color: #F1F5F9;
-  max-width: 620px;
+  max-width: 640px;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 2rem;
@@ -1175,9 +1178,11 @@ select.form-control {
 }
 
 .btn-hero-primary {
+  font-family: var(--font-heading);
   background: var(--color-primary);
   color: #FFFFFF !important;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   padding: 0.95rem 2.25rem;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -1197,10 +1202,12 @@ select.form-control {
 }
 
 .btn-hero-secondary {
+  font-family: var(--font-heading);
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.35);
   color: #FFFFFF !important;
   font-weight: 600;
+  letter-spacing: 0.04em;
   padding: 0.95rem 2rem;
   border-radius: var(--radius-sm);
   text-decoration: none;
@@ -1226,11 +1233,12 @@ select.form-control {
   align-items: center;
   padding: 1.5rem 0 1.75rem;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #CBD5E1;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 3rem;
   width: 100%;
   box-sizing: border-box;
@@ -3053,8 +3061,8 @@ html, body {
   }
 
   .hero-title {
-    font-size: clamp(1.85rem, 6.8vw, 2.45rem) !important;
-    line-height: 1.15 !important;
+    font-size: clamp(2.1rem, 7.5vw, 2.75rem) !important;
+    line-height: 1.1 !important;
     margin-bottom: 1rem !important;
     max-width: 100% !important;
     overflow-wrap: break-word !important;
@@ -3298,8 +3306,8 @@ html, body {
   }
 
   .hero-title {
-    font-size: clamp(1.75rem, 6.5vw, 2.2rem) !important;
-    line-height: 1.15 !important;
+    font-size: clamp(1.95rem, 7vw, 2.45rem) !important;
+    line-height: 1.12 !important;
     margin-bottom: 0.85rem !important;
   }
 

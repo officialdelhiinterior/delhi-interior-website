@@ -245,6 +245,13 @@
   - Verified across 9 scroll checkpoints (y = 0px to 30,000px): `html` and `body` remain strictly 375.2px with zero horizontal overflow (`scrollWidth <= 390px`).
   - Desktop layout (1280x800) re-verified and confirmed completely intact and luxury-grade.
 
+### Phase 28: Removal of Mohammadpur Constraints, Lower Form Relocation & Luxury Architectural Typography
+- **Per User Directive**:
+  1. *Removed Mohammadpur Constraints*: Highlighted both bespoke workshop millwork AND active on-site carpentry & turnkey execution across South Delhi and Delhi NCR. Purged "Mohammadpur workshop" phrasing from the hero subtext, hero credit bar, trust strip, comparison matrix, and marketing FAQs.
+  2. *Relocated Consultation Intake Form*: Moved the consultation intake form (`#consultation-card`) from right below the trust strip down to the lower part of the page (immediately preceding the final CTA banner). The top fold now flows gracefully and naturally from the architectural Hero and Trust Strip directly into "Why Choose Us" and Curated Suites, eliminating premature form clutter. Smooth scrolling on hero and navigation CTAs glides seamlessly down to `#consultation-card`.
+  3. *High-Fashion Luxury Architectural Typography*: Upgraded typography system to **Cormorant Garamond** (for grand display titles and editorial headings) paired with **Outfit** (for crisp geometric architectural eyebrows, badges, buttons, and UI components) and **Plus Jakarta Sans** (for body reading measure), eliminating heavy, faux-bold rendering.
+- **Site-Wide Google Fonts Update**: Rolled out the Cormorant Garamond + Outfit font stack across all 28 HTML templates.
+
 ---
 
 ## 3. Directory & File Structure
