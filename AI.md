@@ -217,16 +217,20 @@
 
 ### Phase 25: Cinematic Architectural Background & Hero Section Transformation
 - **Immersive Architectural Background**: Integrated high-resolution (1920x1080) cinematic photograph (`hero-luxury-bg.webp` / `hero-luxury-bg.jpg`) depicting a luxury South Delhi penthouse living & dining space with double-height ceiling, warm 3000K recessed cove lighting, bespoke fluted teak millwork, and floor-to-ceiling glass windows overlooking greenery.
-- **Multi-Layered Scrim & Contrast System**:
-  - Horizontal Gradient (`.hero-bg-scrim`): 94% to 88% dark navy opacity on the left side, guaranteeing WCAG AAA contrast ratio (~14:1) for all white/gold headings and copy, gently softening to 38% on the right to reveal the architectural space.
-  - Vertical Vignette (`.hero-bg-vignette`): Seamlessly anchors the hero to the navigation header above and the docked consultation card below.
-- **Editorial Typography & Visual Hierarchy**:
-  - Two-tone H1 headline (`Playfair Display`): Crisp white with golden italic emphasis (*Master Carpentry*).
-  - Floating Golden Sparkle Pill Badge: `✦ DIRECT WORKSHOP RATES · TURNKEY INTERIOR DESIGNERS & MASTER CARPENTERS`.
-  - Luxury Dual Buttons: Primary Golden Brass button (`#C5A880`) paired with frosted glassmorphism outline button (`rgba(255, 255, 255, 0.08)` with backdrop blur).
-- **Spotlight Portfolio Showcase Frame**: Framed architectural highlight card featuring Greater Kailash II 4-BHK turnkey execution with real-time trust metrics (500+ Homes Delivered | 4.9 ★ Google Verified | 100% Century BWP 710).
-- **Above-the-Fold Desktop Optimization**: Tuned padding and margins so that the entire hero layout (headline, USPs, CTAs, and featured project card) is 100% visible above the 800px desktop fold.
-- **Mobile Responsive Perfection**: Verified via browser subagent on 390x844 viewport: 0px horizontal overflow (`width = 375.2px <= 390px`), vertical stacking, clean touch targets, and full dark-scrim legibility.
+
+### Phase 26: Architectural Hero Refinement, Removal of Fake Estimates & Uncluttered Luxury Layout
+- **Per User Directive**: Purged all fake estimates, unverified numbers, and aggressive lead-generation card clutter from the hero.
+  - Eliminated "Get Free Estimate", "24-Hr Quote", "Save 30-40%", "500+ Homes Delivered", and "4.9 ★ Google Verified".
+  - Transformed intake language into authentic studio consultation terms: "Schedule a Consultation" and "Request Consultation".
+- **Pure Luxury Architectural Composition**:
+  - Eliminated the floating project card collage over the hero photograph. The stunning high-resolution penthouse background is now completely un-occluded, delivering an open, serene, high-end editorial feel modeled after BluBloom and elite architectural studios.
+  - Grand editorial headline (`Playfair Display`): *"Designing Refined Spaces. Built by Master Craftsmen."*
+  - Grounded authentic description highlighting in-house master carpenters, Mohammadpur workshop, certified BWP 710 marine ply, and turnkey execution.
+  - Editorial bottom credit bar: `FROM CONCEPT TO COMPLETION / IN-HOUSE WORKSHOP · MOHAMMADPUR, SOUTH DELHI / SOUTH DELHI & DELHI NCR`.
+- **Dedicated Consultation Intake Section (`#consultation-card`)**:
+  - Relocated the consultation form from being awkwardly squeezed into the hero into its own spacious, beautifully typeset intake section right below the trust strip.
+  - Smooth scrolling preserves one-click accessibility from hero and navigation CTAs.
+- **Truthful Capabilities Strip**: Replaced arbitrary numerical counters with 4 authentic studio capability blocks: `01 In-House Workshop`, `02 Turnkey Execution`, `03 Certified Materials`, `04 Delhi NCR Focus`.
 
 ---
 
