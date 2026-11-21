@@ -188,6 +188,35 @@
 
 ---
 
+### Phase 23: Mobile Layout Hardening, Hero Form Single-Column Stacking & Browser Verification (390px Viewport)
+- **Viewport Lock**: Enforced `overflow-x: hidden !important; width: 100% !important; max-width: 100vw !important;` on `html, body`.
+- **Hero Form Single-Column Stacking**: On viewports `<= 768px`, explicitly forced `.consult-form-grid` to `grid-template-columns: 1fr !important;` and set `.form-submit-col`, `.form-submit-cell`, and submit buttons to `grid-column: span 1 !important; width: 100% !important;`.
+- **Spacer Cleanup**: Suppressed `.form-submit-col .label-spacer` on mobile (`display: none !important;`), eliminating artificial vertical whitespace gaps above the submit button.
+- **Independent Matrix Table Scrolling**: Enforced isolated touch scrolling on `#comparison .matrix-table-wrap` (`overflow-x: auto; -webkit-overflow-scrolling: touch; display: block; width: 100%; max-width: 100%;`).
+- **Live Browser Verification (390x844px)**: Verified via Browser QA Subagent (`97c7b035-6682-4c3e-becb-b31ac105c19a`):
+  - Document `html` & `body` width: 375.20px (<= 390px, accommodating 14.80px scrollbar).
+  - 0 overflowing elements across all DOM nodes (`maxRightBound = 375.20px`).
+  - Hero consultation inputs stacked in single column with identical width (288.80px).
+  - Geo zones cards stacked in single column (338.40px width).
+  - Comparison table scrolls horizontally inside wrapper without expanding the page document.
+
+### Phase 24: In-Content Contextual Internal Linking Clusters
+- Deployed high-converting, authoritative **2026 Editorial Planning Guide** resource cards across all 10 service pages right after their FAQ sections.
+- Established bidirectional semantic linking between services and high-ranking pillar guides:
+  - Modular Kitchen -> Modular Kitchen Cost Guide & Full Home Interior Cost Guide.
+  - Wardrobe Design -> Sliding vs Hinged Wardrobes Guide & Full Home Interior Cost Guide.
+  - Custom Doors & Partitions -> Main Door Design Guide & Fluted vs Charcoal Louvers Guide.
+  - Wall Paneling -> Fluted vs Charcoal Louvers Guide & Main Door Design Guide.
+  - Full Home Interiors -> Full Home Interior Cost Guide & Turnkey Renovation Checklist.
+  - Bedroom Furniture -> Sliding vs Hinged Wardrobe Guide & Full Home Cost Guide.
+  - False Ceiling -> 7 Expensive Interior & False Ceiling Mistakes & Turnkey Cost Guide.
+  - Painting & Polishing -> Turnkey Surface Finishing Checklist & Turnkey Cost Guide.
+  - Aluminium & Glass Works -> Architectural Doors & Partitions Guide & Turnkey Cost Guide.
+  - Plumbing & MEP -> 7 Costly MEP Renovation Mistakes & Turnkey Site Checklist.
+- Strengthens search engine crawlability, user time-on-site, and PageRank distribution.
+
+---
+
 ## 3. Directory & File Structure
 ```
 delhi-interior-website/
