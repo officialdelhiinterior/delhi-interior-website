@@ -215,6 +215,19 @@
   - Plumbing & MEP -> 7 Costly MEP Renovation Mistakes & Turnkey Site Checklist.
 - Strengthens search engine crawlability, user time-on-site, and PageRank distribution.
 
+### Phase 25: Cinematic Architectural Background & Hero Section Transformation
+- **Immersive Architectural Background**: Integrated high-resolution (1920x1080) cinematic photograph (`hero-luxury-bg.webp` / `hero-luxury-bg.jpg`) depicting a luxury South Delhi penthouse living & dining space with double-height ceiling, warm 3000K recessed cove lighting, bespoke fluted teak millwork, and floor-to-ceiling glass windows overlooking greenery.
+- **Multi-Layered Scrim & Contrast System**:
+  - Horizontal Gradient (`.hero-bg-scrim`): 94% to 88% dark navy opacity on the left side, guaranteeing WCAG AAA contrast ratio (~14:1) for all white/gold headings and copy, gently softening to 38% on the right to reveal the architectural space.
+  - Vertical Vignette (`.hero-bg-vignette`): Seamlessly anchors the hero to the navigation header above and the docked consultation card below.
+- **Editorial Typography & Visual Hierarchy**:
+  - Two-tone H1 headline (`Playfair Display`): Crisp white with golden italic emphasis (*Master Carpentry*).
+  - Floating Golden Sparkle Pill Badge: `✦ DIRECT WORKSHOP RATES · TURNKEY INTERIOR DESIGNERS & MASTER CARPENTERS`.
+  - Luxury Dual Buttons: Primary Golden Brass button (`#C5A880`) paired with frosted glassmorphism outline button (`rgba(255, 255, 255, 0.08)` with backdrop blur).
+- **Spotlight Portfolio Showcase Frame**: Framed architectural highlight card featuring Greater Kailash II 4-BHK turnkey execution with real-time trust metrics (500+ Homes Delivered | 4.9 ★ Google Verified | 100% Century BWP 710).
+- **Above-the-Fold Desktop Optimization**: Tuned padding and margins so that the entire hero layout (headline, USPs, CTAs, and featured project card) is 100% visible above the 800px desktop fold.
+- **Mobile Responsive Perfection**: Verified via browser subagent on 390x844 viewport: 0px horizontal overflow (`width = 375.2px <= 390px`), vertical stacking, clean touch targets, and full dark-scrim legibility.
+
 ---
 
 ## 3. Directory & File Structure

@@ -6,6 +6,12 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <image:loc>https://delhiinterior.com/assets/images/hero-luxury-bg.jpg</image:loc>
+      <image:title>Luxury Turnkey Penthouse Interior Design &amp; Master Carpentry in Delhi NCR</image:title>
+      <image:caption>Bespoke double-height living room interior with fluted teak wall paneling, Italian Statuario marble floors, and architectural lighting in South Delhi by Delhi Interior</image:caption>
+      <image:geo_location>New Delhi, India</image:geo_location>
+    </image:image>
+    <image:image>
       <image:loc>https://delhiinterior.com/assets/images/hero-kitchen.jpg</image:loc>
       <image:title>Luxury Modular Kitchen &amp; Living Room in Greater Kailash II by Delhi Interior</image:title>
       <image:caption>Luxury Modular Kitchen &amp; Living Room in Greater Kailash II by Delhi Interior — Delhi Interior Master Workshop</image:caption>

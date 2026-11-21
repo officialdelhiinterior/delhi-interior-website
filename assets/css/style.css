@@ -1004,149 +1004,316 @@ select.form-control {
 }
 
 /* --------------------------------------------------------------------------
-   10. HERO SECTION & DOCKED HORIZONTAL CONSULTATION RIBBON
+   10. CINEMATIC LUXURY ARCHITECTURAL HERO & CONSULTATION DOCK
    -------------------------------------------------------------------------- */
 .hero-livspace {
-  padding: clamp(2.5rem, 5vw, 4rem) 0 3.5rem;
-  background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+  padding: clamp(2rem, 3.5vw, 3rem) 0 3rem;
+  background-color: #060E18;
   position: relative;
   overflow: hidden;
+  color: #FFFFFF;
+}
+
+/* Background Media & Multi-Layer Scrim */
+.hero-bg-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 36%;
+  transform: scale(1.02);
+}
+
+.hero-bg-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 14, 24, 0.94) 0%,
+    rgba(6, 14, 24, 0.88) 42%,
+    rgba(6, 14, 24, 0.62) 75%,
+    rgba(6, 14, 24, 0.38) 100%
+  );
+}
+
+.hero-bg-vignette {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(6, 14, 24, 0.75) 0%,
+    rgba(6, 14, 24, 0.15) 30%,
+    rgba(6, 14, 24, 0.35) 60%,
+    rgba(6, 14, 24, 0.92) 100%
+  );
+}
+
+.hero-container-dock {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-layout {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: clamp(2rem, 4vw, 3.5rem);
   align-items: center;
 }
 
-.hero-headline h1 {
-  margin-bottom: 1.2rem;
-}
-
-.hero-subhead {
-  font-size: clamp(1rem, 1.2vw, 1.1rem);
-  color: var(--color-body);
-  line-height: 1.7;
-  max-width: 580px;
-}
-
-.hero-usps {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.85rem;
-  margin-top: 1.8rem;
-}
-
-.hero-usp-item {
-  display: flex;
+/* Hero Typography */
+.pill-badge-hero {
+  background: rgba(184, 144, 88, 0.18) !important;
+  border: 1px solid rgba(184, 144, 88, 0.45) !important;
+  color: #F5E6D0 !important;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: #1E293B;
-}
-.hero-usp-item svg {
-  width: 18px;
-  height: 18px;
-  fill: var(--color-primary);
-  flex-shrink: 0;
+  margin-bottom: 1.25rem;
 }
 
+.pill-badge-hero .gold-sparkle {
+  color: #E5C38E;
+  font-size: 0.9rem;
+}
+
+.hero-headline-title {
+  color: #FFFFFF !important;
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 3.8vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
+.hero-headline-title .highlight-editorial {
+  color: #E5C38E !important;
+  font-style: italic;
+  font-weight: 400;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  display: inline;
+}
+
+.hero-subhead-dark {
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  color: #E2E8F0 !important;
+  line-height: 1.65;
+  max-width: 580px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark USPs Grid */
+.hero-usps-dark {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.hero-usps-dark .hero-usp-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #F8FAFC !important;
+}
+
+.hero-usps-dark .hero-usp-item svg {
+  width: 18px;
+  height: 18px;
+  fill: #C5A880 !important;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 3px rgba(184, 144, 88, 0.4));
+}
+
+/* CTA Buttons */
 .hero-cta-group {
   display: flex;
   gap: 1rem;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
 }
 
-/* Right Photography Showcase */
+.btn-hero-gold {
+  background: linear-gradient(135deg, #C5A880 0%, #A87E45 100%) !important;
+  color: #060E18 !important;
+  font-weight: 700 !important;
+  border: 1px solid #DFCAA7 !important;
+  padding: 0.85rem 1.85rem !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: 0 8px 24px rgba(184, 144, 88, 0.35) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.25s var(--ease-out);
+}
+.btn-hero-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(184, 144, 88, 0.5) !important;
+  background: linear-gradient(135deg, #D4AF37 0%, #B89058 100%) !important;
+  color: #060E18 !important;
+}
+
+.btn-hero-glass {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  color: #FFFFFF !important;
+  padding: 0.85rem 1.75rem !important;
+  border-radius: var(--radius-md) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-weight: 600 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.25s var(--ease-out);
+}
+.btn-hero-glass:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  border-color: #FFFFFF !important;
+  transform: translateY(-2px);
+  color: #FFFFFF !important;
+}
+
+/* Right Column: Spotlight Architecture Card */
 .hero-visual-showcase {
   position: relative;
 }
 
-.hero-main-photo {
-  width: 100%;
-  height: clamp(380px, 42vw, 490px);
-  object-fit: cover;
+.hero-spotlight-frame {
+  background: rgba(11, 37, 64, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(184, 144, 88, 0.35);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-card);
+  padding: 1rem;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45);
 }
 
-.hero-glass-badge {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.9);
-  border-radius: var(--radius-md);
-  padding: 0.65rem 0.95rem;
-  box-shadow: var(--shadow-sm);
+.spotlight-frame-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.65rem;
-  z-index: 5;
+  padding: 0.25rem 0.5rem 0.75rem;
 }
 
-.hero-glass-badge strong {
+.spotlight-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #E5C38E;
+}
+
+.spotlight-tag {
+  font-size: 0.75rem;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+.spotlight-img-box {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.spotlight-img-box .hero-main-photo {
+  width: 100%;
+  height: clamp(230px, 23vw, 300px);
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-md);
+}
+
+.spotlight-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem 1rem 0.75rem;
+  background: linear-gradient(0deg, rgba(6, 14, 24, 0.92) 0%, transparent 100%);
+  color: #FFFFFF;
+}
+
+.spotlight-caption strong {
   display: block;
   font-family: var(--font-display);
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  color: var(--color-dark);
+  color: #FFFFFF;
 }
-.hero-glass-badge span {
+
+.spotlight-caption span {
+  font-size: 0.78rem;
+  color: #CBD5E1;
+}
+
+.spotlight-metrics-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  padding: 0.9rem 0.5rem 0.35rem;
+  text-align: center;
+}
+
+.spotlight-metric .metric-val {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #E5C38E;
+}
+
+.spotlight-metric .metric-lbl {
   display: block;
   font-size: 0.72rem;
-  color: var(--color-muted);
+  color: #94A3B8;
+  font-weight: 500;
 }
 
-.hero-badge-location {
-  top: 1.25rem;
-  left: 1.25rem;
-}
-
-.hero-badge-warranty,
-.hero-badge-quality {
-  bottom: 1.25rem;
-  left: 1.25rem;
-}
-.hero-badge-warranty .check-icon,
-.hero-badge-quality .check-icon {
-  width: 24px;
+.spotlight-sep {
+  width: 1px;
   height: 24px;
-  border-radius: 50%;
-  background: var(--color-accent-subtle);
-  color: var(--color-accent);
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
-}
-
-.hero-badge-rating {
-  bottom: 1.25rem;
-  right: 1.25rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.2rem;
-}
-.hero-badge-rating .stars {
-  color: #F59E0B;
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* Docked Consultation Card (Architectural Ribbon) */
 .hero-consult-card-dock {
-  margin-top: clamp(2.5rem, 5vw, 3.5rem);
-  background: #FFFFFF;
-  border: 1px solid var(--color-border);
+  margin-top: clamp(2rem, 3.5vw, 2.75rem);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(184, 144, 88, 0.35);
+  border-top: 3px solid var(--color-secondary);
   border-radius: var(--radius-lg);
-  padding: clamp(1.5rem, 3vw, 2.25rem);
-  box-shadow: var(--shadow-card);
+  padding: clamp(1.5rem, 2.5vw, 2rem);
+  box-shadow: 0 20px 48px -10px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 5;
 }
 
 .consult-dock-header {
@@ -2866,6 +3033,42 @@ html, body {
     max-width: 100% !important;
   }
 
+  .hero-bg-scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(6, 14, 24, 0.95) 0%,
+      rgba(6, 14, 24, 0.88) 40%,
+      rgba(6, 14, 24, 0.95) 100%
+    ) !important;
+  }
+
+  .hero-usps-dark {
+    grid-template-columns: 1fr !important;
+    gap: 0.65rem !important;
+  }
+
+  .hero-cta-group {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+  }
+
+  .btn-hero-gold,
+  .btn-hero-glass {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .hero-headline-title {
+    font-size: clamp(1.85rem, 6.8vw, 2.3rem) !important;
+  }
+
+  .hero-spotlight-frame {
+    margin-top: 1.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
   .geo-zones-grid {
     grid-template-columns: 1fr !important;
   }
@@ -3001,6 +3204,7 @@ html, body {
   /* All Multi-Column Grids Stack to Single Column on Mobile */
   .hero-layout,
   .hero-usps,
+  .hero-usps-dark,
   .services-visual-grid,
   .portfolio-grid,
   .brief-tiers-container,
